@@ -1,6 +1,6 @@
 <link rel="icon" type="image/png" href="<?= $site_images ?>favicon.png" />
-<link type="text/css" href="<?= $site_assets ?>style.css" rel="stylesheet" media="screen" />
 <script type="text/javascript" src="<?= base_url() ?>js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost/js/jquery-ui.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>js/social.core.js"></script>
 <script type="text/javascript">
 //Global User Data:

@@ -12,7 +12,7 @@
 <meta name="keywords" content="<?= $site_keywords ?>" />
 <meta name="author" content="">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="<?= $site_assets ?>css/style.css">
+<link rel="stylesheet" href="<?= $site_assets ?>style.css">
 <script src="<?= $site_assets ?>js/libs/modernizr-2.0.6.min.js"></script>
 
 <?= $head ?>
@@ -29,8 +29,7 @@
 	<footer>
 		<?= $footer ?>
 	</footer>
-</div> <!--! end of #container -->
-
+</div>
 
 </body>
 </html>
