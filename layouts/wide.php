@@ -18,18 +18,20 @@
 <?= $head ?>
 </head>
 <body>
+<header>
+	<?= $logged ?>		
+</header>
+
 
 <div id="container">
-	<header>
-		<?= $logged ?>		
-	</header>
 	<div id="main" role="main">
 		<?= $content ?>
 	</div>
-	<footer>
-		<?= $footer ?>
-	</footer>
 </div>
+
+<footer>
+	<?= $footer ?>
+</footer>
 
 </body>
 </html>

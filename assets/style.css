@@ -260,14 +260,26 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 
 /* EMOOME CUSTOM STYLES */
-#container 			{ width: 1000px; margin: 45px auto; }
+@font-face {  
+  font-family: HelveticaNeue;  
+  src: url(/application/modules/emoome/assets/helveticaneue.ttf) format("truetype");  
+}  
+
+h1, h2, h3			{ font-family: HelveticaNeue; font-weight: 100; }
+h1					{ font-size: 36px; }
+h2					{ font-size: 30px; }
+h3					{ font-size: 24px; }
+
+#container 			{ margin-left: 3em; }
 
 #index_holder		{ width: 269px; text-align: center; margin: 45px auto; }
 #index_holder img	{ margin: 0 0 25px 0; }
 
-#header				{ height: 28px; }
-#header ul			{ list-style: none; }
-#header ul li		{ float: left; margin: 0 15px; }
+#header				{ height: 72px; margin: 2em 3em; }
+#header_home		{ float: left; }
+#header_links		{ float: left; margin: 28px 0 0 20px; padding: 0px; list-style: none; }
+#header_links li	{ float: left; margin: 0 2em; padding: 0px; }
+#header_links li a	{ background-image: -webkit-gradient(linear, center top, center bottom, from(#999999), to(#666666)); border: 1px solid #555555; padding: 6px 12px; color: #eeeeee; text-decoration: none; text-shadow: 1px 1px 1px #333333; border-radius: 10px; }
 
 #footer ul 			{ list-style: none; }
 #footer ul li 		{ float: left; margin: 0 15px; }
@@ -277,17 +289,17 @@ table { border-collapse: collapse; border-spacing: 0; }
 .clear				{ clear: both; }
 
 
-
 /* Visualize - Experiences */
 #user_experiences	{ min-width: 1000px; }
 .log_column			{ width: 120px; height: 180px; color: #333; font-size: 14px; float: left; border-radius: 10px; margin: 13px; padding: 20px 10px 10px 10px; text-align: center; text-shadow: 1px 1px 1px #eeeeee; border: 1px solid #b3b3b3; background-color: #e0dce2; background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(224, 220, 226)),to(rgb(202, 199, 203))); background-image: -webkit-linear-gradient(top, rgb(224, 220, 226), rgb(202, 199, 203)); background-image: -moz-linear-gradient(top, rgb(224, 220, 226), rgb(202, 199, 203)); background-image: -o-linear-gradient(top, rgb(224, 220, 226), rgb(202, 199, 203)); background-image: -ms-linear-gradient(top, rgb(224, 220, 226), rgb(202, 199, 203)); background-image: linear-gradient(top, rgb(224, 220, 226), rgb(202, 199, 203)); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e0dce2', EndColorStr='#cac7cb'); }
 .log_column p		{ font-size: 12px; font-style: italic; color: #999; }
 
-/* Visualize - History */
-#user_word_map_container { width: 1000px; height: 300px; overflow-y: hidden; overflow-x: scroll; margin-right: 45px; }
-#user_word_map		{  }
-.type_swatch		{ width: 75px; height: 50px; display: block; margin-bottom: 25px; }
-.color_swatch		{ width: 75px; height: 25px; display: block; float: left; margin-bottom: 5px; }
+/* Visualize - Map */
+#user_word_map_container { max-width: 1000px; height: 1100px; float: left; overflow-y: hidden; overflow-x: scroll; }
+#user_word_map		{ width: auto; }
+#user_word_colors	{ width: 100px; height: 1100px; float: left; margin-right: 25px; }
+.type_swatch		{ width: 100px; height: 75px; display: block; padding-top: 25px; font-size: 11px; text-align: center; text-transform: uppercase; }
+.color_swatch		{ width: 30px; height: 30px; border-radius: 16px; display: block; margin: 0 auto 10px auto; border: 1px solid #c3c3c3; }
 
 
 
