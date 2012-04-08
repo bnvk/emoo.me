@@ -1,4 +1,7 @@
-<link rel="icon" type="image/png" href="<?= $site_images ?>favicon.png" />
+<link rel="stylesheet" href="<?= $site_assets ?>style.css">
+<link rel="icon" type="image/png" href="<?= $site_assets ?>emoome_32.png" />
+
+<script src="<?= $site_assets ?>js/libs/modernizr-2.0.6.min.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>js/jquery.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>js/jquery-ui.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>js/social.core.js"></script>

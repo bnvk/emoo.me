@@ -1,3 +1,3 @@
 <div id="footer">
-	<span id="copyright">&copy;<?= date('Y').' '.$site_title ?></span>
+	&copy;<?= date('Y').' '.$site_title ?>
 </div>

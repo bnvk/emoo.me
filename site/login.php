@@ -1,4 +1,4 @@
-<h2>Login</h2>
+<h1>Login</h1>
 <form method="post" name="user_login" id="user_login">
 <table border="0" cellpadding="0" cellspacing="0">
 <tr>

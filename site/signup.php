@@ -1,4 +1,4 @@
-<h2>Signup</h2>
+<h1>Signup</h1>
 <?php if (config_item('users_signup') == 'TRUE'): ?>
 <form method="post" name="user_signup" id="user_signup">
 <table border="0" cellpadding="0" cellspacing="0">
