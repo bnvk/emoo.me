@@ -293,6 +293,8 @@ input[type=submit]:focus, input[type=button]:focus, button:focus { border: 1px s
 #footer ul 			{ list-style: none; }
 #footer ul li 		{ float: left; s }
 
+div.social_login	{ margin: 25px 0; }
+
 #main				{  }
 
 .clear				{ clear: both; }
@@ -300,33 +302,8 @@ input[type=submit]:focus, input[type=button]:focus, button:focus { border: 1px s
 a.button 			{ padding: 10px 15px; color: #eeeeee; text-decoration: none; text-shadow: 1px 1px 1px #333333; border-radius: 10px; border: 1px solid #555555; background-color: #999999; background-image: -webkit-gradient(linear, left top, left bottom, from(#999999),to(#666666)); background-image: -webkit-linear-gradient(top, #999999, #666666); background-image: -moz-linear-gradient(top, #999999, #666666); background-image: -o-linear-gradient(top, #999999, #666666); background-image: -ms-linear-gradient(top, #999999, #666666); background-image: linear-gradient(top, #999999, #666666); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#999999', EndColorStr='#666666'); }
 a.button:hover 		{ border: 1px solid #444444; background-color: #666666; background-image: -webkit-gradient(linear, left top, left bottom, from(#666666),to(#888888)); background-image: -webkit-linear-gradient(top, #666666, #888888); background-image: -moz-linear-gradient(top, #666666, #888888); background-image: -o-linear-gradient(top, #666666, #888888); background-image: -ms-linear-gradient(top, #666666, #888888); background-image: linear-gradient(top, #666666, #888888); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#666666', EndColorStr='#888888'); }
 
-a.category_button	{
-display: block; border: 1px solid #555555; color: #eeeeee; text-shadow: 1px 1px 1px #333333; border-radius: 15px; margin: 15px 0; padding: 20px 20px 15px 20px; font-family:  Helvetica, Arial, Sans-Serif; font-size: 24px; line-height: 24px; text-decoration: none;  
-background-color: #999999; background-image: -webkit-gradient(linear, left top, left bottom, from(#999999),to(#666666)); background-image: -webkit-linear-gradient(top, #999999, #666666); background-image: -moz-linear-gradient(top, #999999, #666666); background-image: -o-linear-gradient(top, #999999, #666666); background-image: -ms-linear-gradient(top, #999999, #666666); background-image: linear-gradient(top, #999999, #666666); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#999999', EndColorStr='#666666');
-}
-
-a.category_button:hover {
-border: 1px solid #444444; background-color: #666666; background-image: -webkit-gradient(linear, left top, left bottom, from(#666666),to(#888888)); background-image: -webkit-linear-gradient(top, #666666, #888888); background-image: -moz-linear-gradient(top, #666666, #888888); background-image: -o-linear-gradient(top, #666666, #888888); background-image: -ms-linear-gradient(top, #666666, #888888); background-image: linear-gradient(top, #666666, #888888); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#666666', EndColorStr='#888888'); }
-}
-
-#blah_blah_blah { width: 125px; height: 100px; background-color: aqua; } 
-
-span.icons { width: 100px; height: 100px; display: block; background: aqua; }
-
-.icon_profile {
-background: url(/application/modules/emoome/assets/icons/profile_1899.svg) 0 0 no-repeat;
--o-background-size: 75% 75%;
--webkit-background-size: 75% 75%;
-}
-
-.icon_brain {
-background: url(/application/modules/emoome/assets/icons/brain_685.svg) 0 0 no-repeat;
--o-background-size: 75% 75%;
--webkit-background-size: 75% 75%;
-}
-
-a.category_buttonn	{ 
-display: block; border: 1px solid #a3a3a3; color: #333333; border-radius: 15px; margin: 15px 0; padding: 20px 20px 15px 20px; font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; font-size: 24px; line-height: 24px; text-decoration: none;  
+a.category_button	{ 
+display: block; border: 1px solid #a3a3a3; color: #333333; border-radius: 15px; margin: 15px 0; padding: 20px 20px 15px 20px; font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; font-size: 30px; line-height: 30px; text-decoration: none;  
 background-color: #ffffff;
 background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff),to(#eeeeee));
 background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
@@ -337,23 +314,44 @@ background-image: linear-gradient(top, #ffffff, #eeeeee);
 filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#eeeeee');
 }
 
-a.category_buttonn:hover {
+a.category_button:hover {
 border: 1px solid #666666;
-
-background-color: #dedede;
-background-image: -webkit-gradient(linear, left top, left bottom, from(#dedede),to(#efefef));
-background-image: -webkit-linear-gradient(top, #dedede, #efefef);
-background-image: -moz-linear-gradient(top, #dedede, #efefef);
-background-image: -o-linear-gradient(top, #dedede, #efefef);
-background-image: -ms-linear-gradient(top, #dedede, #efefef);
-background-image: linear-gradient(top, #dedede, #efefef);
-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#dedede', EndColorStr='#efefef');
+background-color: #eeeeee;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee),to(#ffffff));
+background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff);
+background-image: -moz-linear-gradient(top, #eeeeee, #ffffff);
+background-image: -o-linear-gradient(top, #eeeeee, #ffffff);
+background-image: -ms-linear-gradient(top, #eeeeee, #ffffff);
+background-image: linear-gradient(top, #eeeeee, #ffffff);
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#eeeeee', EndColorStr='#ffffff');
 }
+
+span.cat_link_icon	{ width: 100px; display: block; float: left; } 
+span.cat_link_text	{ display: block; float: left; text-align: center; } 
+
+
+#blah_blah_blah { width: 125px; height: 100px; background-color: aqua; } 
+span.icons { width: 100px; height: 100px; display: block; background: aqua; }
+.icon_profile {
+background: url(/application/modules/emoome/assets/icons/profile_1899.svg) 0 0 no-repeat;
+-o-background-size: 75% 75%;
+-webkit-background-size: 75% 75%;
+}
+.icon_brain {
+background: url(/application/modules/emoome/assets/icons/brain_685.svg) 0 0 no-repeat;
+-o-background-size: 75% 75%;
+-webkit-background-size: 75% 75%;
+}
+
+
 
 /* Will Be Device Specific (Web, iPhone, iPad, Android) */
 div.content_center	{ width: 500px; margin-left: auto; margin-right: auto; }
 div.text_center		{ text-align: center; }
 
+
+/* Contribute - Feeling */
+#log_describe_this	{ font-family: Times, serif; font-size: 24px; font-style: italic; font-weight: bold; color: #999999; } 
 
 
 /* Visualize - Experiences */
@@ -361,15 +359,17 @@ div.text_center		{ text-align: center; }
 .log_column			{ width: 120px; height: 180px; color: #333; font-size: 14px; float: left; border-radius: 10px; margin: 13px; padding: 20px 10px 10px 10px; text-align: center; text-shadow: 1px 1px 1px #eeeeee; border: 1px solid #b3b3b3; background-color: #e0dce2; background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(224, 220, 226)),to(rgb(202, 199, 203))); background-image: -webkit-linear-gradient(top, rgb(224, 220, 226), rgb(202, 199, 203)); background-image: -moz-linear-gradient(top, rgb(224, 220, 226), rgb(202, 199, 203)); background-image: -o-linear-gradient(top, rgb(224, 220, 226), rgb(202, 199, 203)); background-image: -ms-linear-gradient(top, rgb(224, 220, 226), rgb(202, 199, 203)); background-image: linear-gradient(top, rgb(224, 220, 226), rgb(202, 199, 203)); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e0dce2', EndColorStr='#cac7cb'); }
 .log_column p		{ font-size: 12px; font-style: italic; color: #999; }
 
+
 /* Visualize - Map */
-#user_word_colors	{ width: 100px; height: 1100px; float: left; margin-right: 25px; }
-#user_word_map_container { max-width: 1000px; height: 1100px; float: left; overflow-y: hidden; overflow-x: scroll; }
-#user_word_map		{ width: auto; height: 1100px; }
-#user_word_map_dates{ width: 10000px; }
-.word_map_date		{ width: 40px; font-size: 8px; float: left; }
+#user_word_container{ width: 10000px; overflow-x: scroll; overflow-y: hidden; }
+#user_word_colors	{ width: 100px; height: 700px; float: left; margin-right: 25px; }
+#user_word_map 		{ width: 100%; height: 700px; float: left; }
+.word_map_column	{ width: 80px; height: 700px; float: left; border-radius: 40px; text-align: center; }
+.word_map_column:hover { background: #d9d9d9; }
 .type_swatch		{ width: 100px; height: 75px; display: block; padding-top: 25px; font-size: 12px; font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; text-align: center; text-transform: uppercase; }
 .color_swatch		{ width: 30px; height: 30px; border-radius: 16px; display: block; margin: 0 auto 10px auto; border: 1px solid #c3c3c3; }
 
+.ui-tooltip-content span { color: #999999; font-size: 12px; font-style: italic; display: block; }
 
 
 /* jQuery UI Dialog */
