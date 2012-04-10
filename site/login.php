@@ -66,7 +66,7 @@ $(document).ready(function()
 						$('html, body').animate({scrollTop:0});
 						if (result.status == 'success')
 						{
-							setTimeout(function() { window.location.href = base_url + 'home' });					
+							setTimeout(function() { window.location.href = base_url + 'contribute' });					
 						}
 						else
 						{
