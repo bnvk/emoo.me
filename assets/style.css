@@ -265,9 +265,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 body				{ font-family: Helvetica, Arial, Sans-serif; font-size: 14px; }
 
 h1, h2, h3			{ font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; }
-h1					{ font-size: 48px; font-weight: bold; }
-h2					{ font-size: 36px; font-weight: bold; }
-h3					{ font-size: 30px; font-weight: bold; }
+h1					{ font-size: 48px; }
+h2					{ font-size: 36px; }
+h3					{ font-size: 30px; }
 
 input[type=text], input[type=password], input[type=email], input[type=url] { height: 32px; font-size: 18px; font-family: Helvetica, sans-serif; margin: 0 10px 25px 10px; padding: 2px 10px; border-radius: 8px;  -webkit-border-radius: 8px; border: 1px solid #999999; }
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus { height: 32px; margin: 0 10px 25px 10px; border-radius: 8px; -webkit-border-radius: 8px; border: 1px solid #999999; }
@@ -314,6 +314,15 @@ span.icon_brain 	{ background: url(/application/modules/emoome/assets/icons/brai
 /* Will Be Device Specific (Web, iPhone, iPad, Android) */
 div.content_center	{ width: 450px; margin-left: auto; margin-right: auto; }
 div.text_center		{ text-align: center; }
+div.text_left		{ text-align: left; }
+div.text_right		{ text-align: right; }
+
+
+/* Index */
+#index_name			{ width: 173px; height: 28px; background: url(emoome-name.png) 0 0 no-repeat; }
+#index_name span	{ display: none; }
+#index_define		{ margin-bottom: 45px; }
+.index_define		{ font-size: 16px; line-height: 21px; }
 
 
 /* Record - Feeling */
