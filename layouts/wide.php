@@ -23,9 +23,8 @@
 
 
 <div id="container">
-	<div id="main" role="main">
-		<?= $content ?>
-	</div>
+	<div id="content_message" class="message_normal"><?= $message ?></div>
+	<?= $content ?>
 </div>
 
 <footer>

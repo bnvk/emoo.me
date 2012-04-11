@@ -87,7 +87,7 @@ $(document).ready(function()
 							$('[name=password]').val('');
 							$('[name=password_confirm]').val('');						
 
-							$('#content_message').notify({status:result.status,message:result.message,complete:'redirect',redirect: base_url + 'home'});								
+							setTimeout(function() { window.location.href = base_url + 'record/feeling' });
 						}
 						else
 						{
