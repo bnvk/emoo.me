@@ -269,6 +269,8 @@ h1					{ font-size: 48px; }
 h2					{ font-size: 36px; }
 h3					{ font-size: 30px; }
 
+p					{ margin-bottom: 60px; }
+
 input[type=text], input[type=password], input[type=email], input[type=url] { height: 32px; font-size: 18px; font-family: Helvetica, sans-serif; margin: 0 10px 25px 10px; padding: 2px 10px; border-radius: 8px;  -webkit-border-radius: 8px; border: 1px solid #999999; }
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus { height: 32px; margin: 0 10px 25px 10px; border-radius: 8px; -webkit-border-radius: 8px; border: 1px solid #999999; }
 
@@ -350,6 +352,12 @@ div.common_words			{ width: 100%; margin: 15px 0; border-radius: 10px; padding: 
 div.common_words_line		{ width: 100%; height: 1px; background: #999999; }
 div.common_words_count		{ width: 80px; height: 100%; margin-right: 20px; text-align: center; float: left; font-size: 36px; border-right: 1px solid #333333; }
 div.common_words_words		{ margin-top: 6px; font-style: italic; font-size: 24px; line-height: 30px; color: #888888; text-transform: capitalize; }
+
+div.strong_experience		{ margin-bottom: 25px; }
+div.strong_experience_circle{ float: left; }
+div.strong_experience_action{ float: left; margin-top: 12px; margin-left: 20px; font-style: italic; font-size: 24px; line-height: 30px; color: #888888; }
+span.strong_experience_date	{ display: block; margin-left: 10px; font-size: 14px; font-weight: bold; font-style: normal; color: #333333; }
+
 
 /* Visualize - Experiences */
 #user_experiences			{ min-width: 1000px; }
