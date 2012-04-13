@@ -260,16 +260,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 
 /* EMOOME CUSTOM STYLES */
-@font-face 			{ font-family: 'Raleway'; src: url('/application/modules/emoome/assets/raleway_thin-webfont.eot'); src: url('/application/modules/emoome/assets/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'), url('/application/modules/emoome/assets/raleway_thin-webfont.woff') format('woff'), url('/application/modules/emoome/assets/raleway_thin-webfont.ttf') format('truetype'), url('/application/modules/emoome/assets/raleway_thin-webfont.svg#Helvetica Neue') format('svg'); }
+@font-face { font-family: 'Raleway'; src: url('/application/modules/emoome/assets/raleway_thin-webfont.eot'); src: url('/application/modules/emoome/assets/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'), url('/application/modules/emoome/assets/raleway_thin-webfont.woff') format('woff'), url('/application/modules/emoome/assets/raleway_thin-webfont.ttf') format('truetype'), url('/application/modules/emoome/assets/raleway_thin-webfont.svg#Helvetica Neue') format('svg'); }
 
 body				{ font-family: Helvetica, Arial, Sans-serif; font-size: 14px; }
 
-h1, h2, h3			{ font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; }
+h1, h2, h3			{ font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; font-weight: 100; }
 h1					{ font-size: 48px; }
 h2					{ font-size: 36px; }
 h3					{ font-size: 30px; }
-
-p					{ margin-bottom: 60px; }
 
 input[type=text], input[type=password], input[type=email], input[type=url] { height: 32px; font-size: 18px; font-family: Helvetica, sans-serif; margin: 0 10px 25px 10px; padding: 2px 10px; border-radius: 8px;  -webkit-border-radius: 8px; border: 1px solid #999999; }
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus { height: 32px; margin: 0 10px 25px 10px; border-radius: 8px; -webkit-border-radius: 8px; border: 1px solid #999999; }
@@ -286,8 +284,8 @@ input[type=submit]:focus, input[type=button]:focus, button:focus { border: 1px s
 #header				{ height: 72px; margin: 2em 3em; }
 #header_home		{ float: left; }
 #header_name		{ position: relative; top: -20px; left: 20px; margin-right: 20px; }
-#header_links		{ float: right; margin: 28px 0 0 20px; padding: 0px; list-style: none; }
-#header_links li	{ float: left; margin: 0 1.5em; padding: 0px; }
+#header_links		{ float: right; position: relative; top: 25px; right: 20px; margin: 0px; padding: 0px; list-style: none; }
+#header_links li	{ float: left; margin-left: 2.5em; padding: 0px; }
 
 #container 			{ margin: 3em; }
 
@@ -320,6 +318,7 @@ div.message_success		{ padding: 12px 15px; background: #479e45; color: #fbedbd; 
 
 
 /* Will Be Device Specific (Web, iPhone, iPad, Android) */
+div.content_left	{ width: 450px; margin-right: auto; }
 div.content_center	{ width: 450px; margin-left: auto; margin-right: auto; }
 div.text_center		{ text-align: center; }
 div.text_left		{ text-align: left; }
