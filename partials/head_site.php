@@ -1,11 +1,8 @@
 <link rel="stylesheet" href="<?= $site_assets ?>style.css">
-<link rel="stylesheet" href="<?= $site_assets ?>jquery.qtip.min.css">
 
-<script src="<?= $site_assets ?>js/libs/modernizr-2.0.6.min.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>js/jquery.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>js/social.core.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>application/modules/emoome/assets/jquery.jKey.js"></script>
-<script type="text/javascript" src="<?= $site_assets ?>jquery.qtip.min.js"></script>
+<script type="text/javascript" src="<?= base_url() ?>application/modules/emoome/assets/plugins.js"></script>
 <script type="text/javascript">
 //Global User Data:
 var user_data = {
