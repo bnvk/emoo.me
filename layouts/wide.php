@@ -10,15 +10,7 @@
 <meta name="title" content="<?= site_title($sub_title, $page_title, $site_title) ?>" />
 <meta name="description" content="<?= $site_description ?>" />
 <meta name="keywords" content="<?= $site_keywords ?>" />
-<meta name="author" content="Brennan Novak">             
-<?php if ($this->agent->is_mobile()): ?>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
-<?php else: ?>
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<?php endif; ?>
-<link rel="shortcut icon" href="<?= $site_assets ?>favicon.ico" />
-<link rel="icon" type="image/png" href="<?= $site_assets ?>emoome_32.png" />
-<link rel="apple-touch-icon-precomposed" href="<?= $site_assets ?>apple-touch-icon-precomposed.png" />
+<meta name="author" content="Brennan Novak">
 <?= $head ?>
 </head>
 <body>

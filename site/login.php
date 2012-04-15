@@ -1,32 +1,24 @@
 <h1>Login</h1>
 <form method="post" name="user_login" id="user_login">
-<table border="0" cellpadding="0" cellspacing="0">
-<tr>
-  <td>Email</td>
-  <td>
-  	<input type="text" name="email" id="login_email" placeholder="you@email.com" value="">
-  	<span id="login_email_error"></span>
-  </td>
-</tr>
-<tr>  
-  <td>Password</td>
-  <td>
-  	<input type="password" name="password" id="login_password" placeholder="********" value="">
-  	<span id="login_password_error"></span>
-  </td>
-</tr>
-<tr>
-  <td>Remember</td> 
-  <td><?= form_checkbox('remember', '1', TRUE, 'id="login_remember"');?> 
-  <a href="<?= base_url() ?>forgot_password">Forgot password?</a>      
-  </td>
-</tr>    
-<tr>
-  <td colspan="2">
-  	<input type="submit" name="submit" value="Login">
-  </td>
-</tr>
-</table>
+	
+	<p>
+		<label>Email</label><br>
+		<input type="text" name="email" id="login_email" placeholder="you@email.com" autocorrect="off" value=""><br>
+		<span id="login_email_error"></span>
+	</p>
+	<p>
+		<label>Password</label><br>
+		<input type="password" name="password" id="login_password" placeholder="********" autocorrect="off" value=""><br>
+		<span id="login_password_error"></span>
+	</p>
+	<p>
+		<label>Remember</label> <?= form_checkbox('remember', '1', TRUE, 'id="login_remember"');?> 
+		<a href="<?= base_url() ?>forgot_password">Forgot password?</a>
+	</p>
+	<p>
+		<input type="submit" name="submit" value="Login">
+  	</p>
+
 </form>
 <?= $this->social_igniter->get_social_logins('<div class="social_login">', '</div>'); ?>
 <script type="text/javascript">
