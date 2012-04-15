@@ -1,0 +1,20 @@
+h1	{ font-size: 36px; }
+h2	{ font-size: 30px; }
+h3	{ font-size: 24px; }
+
+#header				{ height: 72px; margin: 20px; }
+#header_home		{ float: left; width: 72px; height: 72px; display: block; background: url(../apple-touch-icon-72x72-precomposed.png) }
+#header_name		{ position: relative; top: -20px; left: 20px; margin-right: 20px; }
+#header_links		{ float: right; position: relative; top: 20px; right: 0px; margin: 0px; padding: 0px; list-style: none; }
+#header_links li	{ float: left; margin-left: 20px; padding: 0px; }
+#container 			{ margin: 20px 0px 40px 0px; }
+#footer				{ display: none; visibility: hidden; }
+
+div.content_left	{ width: 450px; margin-right: auto; }
+div.content_center	{ width: 450px; margin-left: auto; margin-right: auto; }
+
+/* Index */
+#index_name			{ width: 173px; height: 28px; background: url(../emoome-name.png) 0 0 no-repeat; }
+#index_name span	{ display: none; }
+#index_define		{ width: 320px; margin-bottom: 45px; }
+.index_define		{ font-size: 16px; line-height: 21px; }
