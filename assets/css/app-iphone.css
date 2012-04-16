@@ -1,6 +1,6 @@
-h1	{ font-size: 36px; color: blue; }
-h2	{ font-size: 30px; color: blue; }
-h3	{ font-size: 24px; color: blue; }  
+h1	{ font-size: 36px; }
+h2	{ font-size: 30px; }
+h3	{ font-size: 24px; }  
 
 #header				{ height: 57px; margin: 20px; }
 #header_home		{ float: left; width: 57px; height: 57px; display: block; background: url(../apple-touch-icon-57x57-precomposed.png) }

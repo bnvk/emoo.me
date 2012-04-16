@@ -16,6 +16,7 @@
 		<a href="<?= base_url() ?>forgot_password">Forgot password?</a>
 	</p>
 	<p>
+		<input type="hidden" name="session" value="1">
 		<input type="submit" name="submit" value="Login">
   	</p>
 
@@ -24,6 +25,7 @@
 <script type="text/javascript">
 $(document).ready(function()
 {
+
 	$('#user_login').bind('submit', function(e)
 	{	
 		e.preventDefault();
@@ -53,15 +55,21 @@ $(document).ready(function()
 					type		: 'POST',
 					dataType	: 'json',
 					data		: login_data,
+					error		: function(request, ajaxOptions, thrownError)
+					{
+						console.log(request.status);
+						console.log(request.responseText);
+						console.log(thrownError);
+					},
 			  		success		: function(result)
 			  		{
-						$('html, body').animate({scrollTop:0});
 						if (result.status == 'success')
 						{
 							setTimeout(function() { window.location.href = base_url + 'record/feeling' });					
 						}
 						else
 						{
+							$('html, body').animate({scrollTop:0});
 							$('#content_message').notify({status:result.status,message:result.message});					
 						}
 				 	}
@@ -69,5 +77,6 @@ $(document).ready(function()
 			}
 		});
 	});
+
 });
 </script>
