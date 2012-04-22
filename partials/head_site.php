@@ -42,12 +42,13 @@ var user_data = {
 	"location":"<?= $logged_location ?>",
 	"geo_enabled":"<?= $logged_geo_enabled ?>",
 	"geo_lat":"",
-	"geo_long":"",
+	"geo_lon":"",
 	"privacy":"<?= $logged_privacy ?>",	 
 	"consumer_key": "<?= $oauth_consumer_key ?>",
 	"consumer_secret": "<?= $oauth_consumer_secret ?>",
 	"token": "<?= $oauth_token ?>",
-	"token_secret": "<?= $oauth_token_secret ?>"
+	"token_secret": "<?= $oauth_token_secret ?>",
+	"source": "<?= $user_source ?>"
 }
 
 var base_url 		= '<?= base_url() ?>';
@@ -62,5 +63,8 @@ $(document).ready(function()
 	$('.error').hide();
 
 	if ($('#content_message').html() != '') $('#content_message').notify({status:'success',message:$('#content_message').html()});
+
+	$('body').append('<div id="request_lightbox"><div id="lightbox_message">Blah blah blah I am cool!</div></div>');
+
 });
 </script>
