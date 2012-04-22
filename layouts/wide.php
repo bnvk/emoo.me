@@ -11,6 +11,15 @@
 <meta name="description" content="<?= $site_description ?>" />
 <meta name="keywords" content="<?= $site_keywords ?>" />
 <meta name="author" content="Brennan Novak">
+
+<!-- OpenGraph (Facebook) http://ogp.me -->
+<meta property="og:title" content="<?= $site_title ?>"/>
+<meta property="og:type" content="website" />
+<meta property="og:image" content="<?= $site_assets ?>apple-touch-icon-114x114-precomposed.png"/>
+<meta property="og:url" content="<?= base_url() ?>"/>
+<meta property="og:site_name" content="<?= $site_title ?>"/>
+<meta property="og:description" content="<?= $site_description ?>">
+
 <?= $head ?>
 </head>
 <body>

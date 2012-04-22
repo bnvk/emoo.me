@@ -17,7 +17,6 @@
 
 <!-- Mobile CSS Stylesheets -->
 <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="<?= $site_assets ?>css/app-ipad.css" type="text/css" />		
-<link rel="stylesheet" media="only screen and (max-device-width: 960px)" href="<?= $site_assets ?>css/app-iphone-4.css" type="text/css" />
 <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="<?= $site_assets ?>css/app-iphone.css" type="text/css" />
 
 <?php else: ?>
