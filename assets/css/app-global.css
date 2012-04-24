@@ -209,19 +209,19 @@ span.icon_profile 		{ background: url(/application/modules/emoome/assets/icons/p
 span.icon_brain 		{ background: url(/application/modules/emoome/assets/icons/brain_685.svg) 0 0 no-repeat; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; }
 span.icon_lightbulb		{ background: url(/application/modules/emoome/assets/icons/lightbulb_756_1.svg) 0 0 no-repeat; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; }
 
+/* Error Messages */
 div.message_normal		{ padding: 0; }
 div.message_error		{ padding: 12px 15px; background: #b54545; color: #f2edda; text-shadow:1px 1px 1px #fff; border-radius: 10px; }
 div.message_alert		{ padding: 12px 15px; background: #f2e3af; color: #666666; text-shadow:1px 1px 1px #d6d6d6; border-radius: 10px; }
 div.message_success		{ padding: 12px 15px; background: #479e45; color: #fbedbd; text-shadow:1px 1px 1px #666666; border-radius: 10px; }
 
 
-
 /* Request Lightbox Message */
 #request_lightbox { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 100; background: #000000; filter: alpha(opacity=90); -moz-opacity: 0.90; opacity: .90; display: none; text-align: left; }
-#lightbox_message { width: 300px; text-align: center; position:absolute; font-family: Helvetica, Arial, Sans-Serif; font-weight: bold; font-size: 30px; line-height: 48px; top: 40; left: 50%; margin-top: 50px; margin-left: -150px; }
+#lightbox_message { width: 300px; text-align: center; position:absolute; font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; font-weight: 100; font-size: 36px; line-height: 48px; top: 30%; left: 50%; margin-top: 0px; margin-left: -150px; }
 
 .lightbox_message_normal { color: #eeeeee !important; }
-.lightbox_message_success { color: #35a61f !important; }
+.lightbox_message_success { color: #eeeeee !important; }
 .lightbox_message_error { color: #b20a0a !important; }
 
 
