@@ -33,5 +33,6 @@
 <footer>
 	<?= $footer ?>
 </footer>
+<?php if (!$this->uri->segment(1)) echo $google_analytics; ?>
 </body>
 </html>
