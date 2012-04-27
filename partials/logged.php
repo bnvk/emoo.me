@@ -30,7 +30,7 @@
 	<?php if ($this->social_auth->logged_in()): ?>
 		<li><a class="button" href="<?= base_url() ?>record/feeling">Record</a></li>	
 		<li><a class="button" href="<?= base_url() ?>visualize">Visualize</a></li>	
-		<li><a class="button" href="<?= base_url() ?>emoome/user">Settings</a></li>
+		<li><a class="button" href="<?= base_url() ?>emoome/user/">Settings</a></li>
 		<li><a class="button" href="<?= $link_logout ?>">Log Out</a></li>
 	<?php else: ?>
 		<?php if (config_item('users_signup') == 'TRUE'): ?>
