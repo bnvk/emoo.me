@@ -17,7 +17,7 @@ audio[controls], canvas, video { display: inline-block; *display: inline; *zoom:
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body {  background: #e9e8e8; margin: 0; font-size: 13px; line-height: 1.231; font-family: Helvetica, Arial, Sans-serif; font-size: 14px; }
+body {  background: #e9e8e8; /* background: #e9e8e8; */ margin: 0; font-size: 13px; line-height: 1.231; font-family: Helvetica, Arial, Sans-serif; font-size: 14px; }
 body, button, input, select, textarea { font-family: sans-serif; color: #333; }
 
 /* 
@@ -139,11 +139,21 @@ a.category_button		{ display: block; border: 1px solid #a3a3a3; color: #333333; 
 a.category_button:hover { border: 1px solid #666666; background-color: #eeeeee; background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee),to(#ffffff)); background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff); background-image: -moz-linear-gradient(top, #eeeeee, #ffffff); background-image: -o-linear-gradient(top, #eeeeee, #ffffff); background-image: -ms-linear-gradient(top, #eeeeee, #ffffff); background-image: linear-gradient(top, #eeeeee, #ffffff); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#eeeeee', EndColorStr='#ffffff'); }
 
 span.cat_link_icon		{ width: 100px; height: 100px; display: block; float: left; } 
+span.cat_link_icon_small{ width: 32px; height: 32px; display: block; float: left; } 
+
 span.cat_link_text		{ width: 300px; margin-top: 25px; display: block; float: left; text-align: center; line-height: 48px; } 
+span.cat_link_text_small{ width: 355px; margin-top: 5px; display: block; float: left; text-align: center; line-height: 24px; } 
+
 
 span.icon_profile 		{ background: url(/application/modules/emoome/assets/icons/profile_1899.svg) 0 0 no-repeat; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; }
 span.icon_brain 		{ background: url(/application/modules/emoome/assets/icons/brain_685.svg) 0 0 no-repeat; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; }
 span.icon_lightbulb		{ background: url(/application/modules/emoome/assets/icons/lightbulb_756_1.svg) 0 0 no-repeat; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; }
+
+span.icon_small_notifications	{ background: url(/application/modules/emoome/assets/icons/antenna_1086.svg) 0 0 no-repeat; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; }
+span.icon_small_account 		{ background: url(/application/modules/emoome/assets/icons/torso_416.svg) 0 0 no-repeat; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; }
+span.icon_small_password 		{ background: url(/application/modules/emoome/assets/icons/key_311.svg) 0 0 no-repeat; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; }
+
+
 
 /* Error Messages */
 div.message_normal		{ padding: 0; }
