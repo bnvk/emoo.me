@@ -43,6 +43,7 @@ var user_data = {
 	"geo_enabled":"<?= $logged_geo_enabled ?>",
 	"geo_lat":"",
 	"geo_lon":"",
+	"language":"<?= $this->session->userdata('language') ?>",
 	"privacy":"<?= $logged_privacy ?>",	 
 	"consumer_key": "<?= $oauth_consumer_key ?>",
 	"consumer_secret": "<?= $oauth_consumer_secret ?>",
@@ -66,5 +67,10 @@ $(document).ready(function()
 
 	$('body').append('<div id="request_lightbox"><div id="lightbox_message">Blah blah blah I am cool!</div></div>');
 
+	// Language
+	if (user_data.language != 'en')
+	{
+		$('#container').html('<h1>Sorry!</h1><h3>We are not setup to handle other languages at present.</h3><h3>We will let you know when we are.</h3>');
+	}
 });
 </script>
