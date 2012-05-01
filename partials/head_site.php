@@ -68,7 +68,7 @@ $(document).ready(function()
 	$('body').append('<div id="request_lightbox"><div id="lightbox_message">Blah blah blah I am cool!</div></div>');
 
 	// Language
-	if (user_data.language != 'en')
+	if (user_data.language != 'en' && user_data.language != '')
 	{
 		$('#container').html('<h1>Sorry!</h1><h3>We are not setup to handle other languages at present.</h3><h3>We will let you know when we are.</h3>');
 	}
