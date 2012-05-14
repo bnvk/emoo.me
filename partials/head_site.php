@@ -67,10 +67,24 @@ $(document).ready(function()
 
 	$('body').append('<div id="request_lightbox"><div id="lightbox_message">Blah blah blah I am cool!</div></div>');
 
+
 	// Language
 	if (user_data.language != 'en' && user_data.language != '')
 	{
-		$('#container').html('<h1>Sorry!</h1><h3>We are not setup to handle other languages at present.</h3><h3>We will let you know when we are.</h3>');
+		$('#container').html('<h1>Sorry!</h1><h3>We are not setup to handle non english languages at present.</h3><h3>We will let you know when we are.</h3>');
 	}
+	
+
+	// Render Logged In ToolBar
+	if (user_data.user_id != '')
+	{
+		$('#header_logged_avatar').css('background-image', 'url(' + user_data.image + ')');
+		$('#header_logged_name').html(user_data.name);
+		
+		var entry_count = 175;
+		
+		$('#header_logged_count').html("You've recorded " + entry_count + " entries");
+	}
+	
 });
 </script>
