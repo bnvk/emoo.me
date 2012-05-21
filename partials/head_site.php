@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black" /> -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
 <!-- Apple Icons -->
 <link rel="apple-touch-icon-precomposed" href="<?= $site_assets ?>apple-touch-icon-precomposed.png" />
@@ -58,6 +58,10 @@ var core_modules	= jQuery.parseJSON('<?= json_encode(config_item('core_modules')
 var core_assets		= '<?= $dashboard_assets.'icons/' ?>';
 var site_assets		= '<?= $site_assets ?>';
 
+// Already Logged In
+var pages_views	= new Array('content_index', 'content_login', 'content_signup', 'content_log_feeling');
+	
+
 $(document).ready(function()
 {	
 	// Hides Things
@@ -78,12 +82,18 @@ $(document).ready(function()
 	// Render Logged In ToolBar
 	if (user_data.user_id != '')
 	{
-		$('#header_logged_avatar').css('background-image', 'url(' + user_data.image + ')');
-		$('#header_logged_name').html(user_data.name);
+		showHeaderLogged();
 		
-		var entry_count = 175;
-		
-		$('#header_logged_count').html("You've recorded " + entry_count + " entries");
+		// Show Content
+		if (window.location.href == base_url)
+		{
+			window.location = base_url + '#!/log_feeling'; 
+		}
+	}
+	else
+	{
+		$('#header_logged').hide();
+		$('#header_not_logged').fadeIn('normal');	
 	}
 	
 });

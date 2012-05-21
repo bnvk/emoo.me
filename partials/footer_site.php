@@ -3,8 +3,7 @@
 	<p><a href="<?= base_url() ?>">Home</a> <a href="<?= base_url() ?>blog">Blog</a> <a href="<?= base_url() ?>privacy">Privacy</a> <a href="mailto:info@emoo.me">Contact</a></p>
 	<p>&copy;<?= date('Y').' '.$site_title ?></p>
 </div>
-
-<?php if ($this->uri->segment(1)): ?>
+<?php /* if ($this->uri->segment(1)): ?>
 <style type="text/css">
 #feedback {
     background-color: #919191;
@@ -33,14 +32,10 @@
 <script type="text/javascript">
 $(document).ready(function()
 {	
-
 	$('#feedback').bind('click', function()
 	{
-	
-		$(this).css('margin-bottom', '-20px');
-	
+		$(this).css('margin-bottom', '-20px');	
 	});
-
 });
 </script>
 <div id="feedback">
@@ -58,4 +53,4 @@ $(document).ready(function()
 		<p><input type="submit" name="submit" value="Send"></p>
 	</form>
 </div>
-<?php endif; ?>
+<?php endif; */ ?>
