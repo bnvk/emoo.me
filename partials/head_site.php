@@ -1,27 +1,10 @@
 <link rel="stylesheet" media="screen" href="<?= $site_assets ?>css/app-global.css" type="text/css" />
 
-<?php if ($this->agent->is_mobile()): ?>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
-
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-
 <!-- Apple Icons -->
 <link rel="apple-touch-icon-precomposed" href="<?= $site_assets ?>apple-touch-icon-precomposed.png" />
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?= $site_assets ?>apple-touch-icon-57x57-precomposed.png" />
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?= $site_assets ?>apple-touch-icon-72x72-precomposed.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?= $site_assets ?>apple-touch-icon-114x114-precomposed.png" />
-
-<!-- Apple Launch Screen -->
-<link rel="apple-touch-startup-image" href="<?= $site_assets ?>app-startup-320.png">
-
-<!-- Mobile CSS Stylesheets -->
-<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="<?= $site_assets ?>css/app-ipad.css" type="text/css" />		
-<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="<?= $site_assets ?>css/app-iphone.css" type="text/css" />
-
-<?php else: ?>
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<?php endif; ?>
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="<?= $site_assets ?>favicon.ico" />
@@ -71,28 +54,27 @@ $(document).ready(function()
 
 	$('body').append('<div id="request_lightbox"><div id="lightbox_message">Blah blah blah I am cool!</div></div>');
 
-
-	// Language
+	// Language Hide
 	if (user_data.language != 'en' && user_data.language != '')
 	{
 		$('#container').html('<h1>Sorry!</h1><h3>We are not setup to handle non english languages at present.</h3><h3>We will let you know when we are.</h3>');
 	}
 	
-
 	// Render Logged In ToolBar
 	if (user_data.user_id != '')
-	{
-		showHeaderLogged();
-		
+	{		
 		// Show Content
 		if (window.location.href == base_url)
 		{
-			window.location = base_url + '#!/log_feeling'; 
+			window.location = base_url + 'record/feeling'; 
+		}
+		else
+		{
+			showHeaderLogged(user_data.name, user_data.image);
 		}
 	}
 	else
 	{
-		$('#header_logged').hide();
 		$('#header_not_logged').fadeIn('normal');	
 	}
 	

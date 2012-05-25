@@ -1,18 +1,19 @@
 <div id="header">
 	<?php // if (is_public_page($this->uri->segment(1))): ?>
 
-	<div id="header_not_logged">
+	<div id="header_not_logged" class="hide">
 		<div id="header_logo"></div>
 		<h1><a id="header_home" href="<?= base_url() ?>">emo<span class="name_ome">ome</span></a></h1>
 		<ul id="header_links_public" class="header_links">
-			<li>Have<br>Account</li>
-			<li><a class="navigation_button" href="<?= base_url().'#!/login' ?>"><span class="header_icons icon_login"></span>Login</a></li>
-			<li>Create<br>Account</li>
-			<li><a class="navigation_button" href="<?= base_url().'#!/signup' ?>"><span class="header_icons icon_signup"></span>Signup</a></li>
+			<li class="header_text">Have<br>Account</li>
+			<li><a class="navigation_button" href="<?= base_url() ?>#!/login"><span class="header_icons icon_login"></span>Login</a></li>
+			<li class="header_text">Create<br>Account</li>
+			<li><a class="navigation_button" href="<?= base_url() ?>#!/signup"><span class="header_icons icon_signup"></span>Signup</a></li>
 		</ul>
+		<div class="clear"></div>
 	</div>	
 
-	<div id="header_logged">
+	<div id="header_logged" class="hide">
 		<div id="header_logged_user">
 			<div id="header_logged_avatar"></div>
 			<h1 id="header_logged_name"></h1>
