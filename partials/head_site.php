@@ -1,4 +1,4 @@
-<link rel="stylesheet" media="screen" href="<?= $site_assets ?>css/app-global.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="<?= $site_assets ?>css/site.css" type="text/css" />
 
 <!-- Apple Icons -->
 <link rel="apple-touch-icon-precomposed" href="<?= $site_assets ?>apple-touch-icon-precomposed.png" />
@@ -12,7 +12,6 @@
 
 <script type="text/javascript" src="<?= base_url() ?>js/jquery.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>js/social.core.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>application/modules/emoome/assets/js/plugins.js"></script>
 <script type="text/javascript" src="<?= base_url() ?>application/modules/emoome/assets/js/emoome.js"></script>
 <script type="text/javascript">
 //Global User Data:
@@ -41,10 +40,6 @@ var core_modules	= jQuery.parseJSON('<?= json_encode(config_item('core_modules')
 var core_assets		= '<?= $dashboard_assets.'icons/' ?>';
 var site_assets		= '<?= $site_assets ?>';
 
-// Already Logged In
-var pages_views	= new Array('content_index', 'content_login', 'content_signup', 'content_log_feeling');
-	
-
 $(document).ready(function()
 {	
 	// Hides Things
@@ -70,7 +65,7 @@ $(document).ready(function()
 		}
 		else
 		{
-			showHeaderLogged(user_data.name, user_data.image);
+			showWebLogged(user_data.name, user_data.image);
 		}
 	}
 	else
