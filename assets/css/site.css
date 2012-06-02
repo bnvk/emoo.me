@@ -122,15 +122,12 @@ a.button:hover 					{ border: 1px solid #444444; background-color: #666666; back
 a.category_button				{ display: block; border: 1px solid #a3a3a3; color: #333333; border-radius: 15px; margin: 15px 0 25px 0; padding: 18px 20px 15px 20px; font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; font-size: 30px; line-height: 30px; text-decoration: none; background-color: #ffffff; background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff),to(#eeeeee)); background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee); background-image: -moz-linear-gradient(top, #ffffff, #eeeeee); background-image: -o-linear-gradient(top, #ffffff, #eeeeee); background-image: -ms-linear-gradient(top, #ffffff, #eeeeee); background-image: linear-gradient(top, #ffffff, #eeeeee); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#eeeeee'); }
 a.category_button:hover 		{ border: 1px solid #666666; background-color: #eeeeee; background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee),to(#ffffff)); background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff); background-image: -moz-linear-gradient(top, #eeeeee, #ffffff); background-image: -o-linear-gradient(top, #eeeeee, #ffffff); background-image: -ms-linear-gradient(top, #eeeeee, #ffffff); background-image: linear-gradient(top, #eeeeee, #ffffff); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#eeeeee', EndColorStr='#ffffff'); }
 
-span.cat_link_icon				{ width: 100px; height: 100px; display: block; float: left; background-image: url(/application/modules/emoome/assets/images/sprite.png); background-repeat: no-repeat; } 
 span.cat_link_icon_small		{ width: 32px; height: 32px; display: block; float: left; background-image: url(/application/modules/emoome/assets/images/sprite.png); background-repeat: no-repeat; } 
-span.cat_link_text				{ width: 300px; margin-top: 25px; display: block; float: left; text-align: center; line-height: 48px; } 
 span.cat_link_text_small		{ width: 355px; margin-top: 5px; display: block; float: left; text-align: center; line-height: 24px; } 
 
-span.icon_brain 				{ background-position: -140px 0; }
-span.icon_profile 				{ background-position: -140px -98px; }
-span.icon_lightbulb				{ background-position: -140px -212px; }
-
+span.icon_small_brain 			{ background-position: -106px -130px; }
+span.icon_small_profile 		{ background-position: -106px -160px; }
+span.icon_small_lightbulb		{ background-position: -106px -200px; }
 span.icon_small_password 		{ background-position: -106px  0; }
 span.icon_small_notifications	{ background-position: -106px -32px; }
 span.icon_small_account 		{ background-position: -106px -64px; }
