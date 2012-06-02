@@ -60,7 +60,7 @@ $(document).ready(function()
 	{		
 		// Show Content
 		if (window.location.href == base_url)
-		{
+		{		
 			window.location = base_url + 'record/feeling'; 
 		}
 		else
