@@ -209,6 +209,8 @@ div.memory_map_bot			{ width: 100%; border-bottom: 1px dashed #c3c3c3; }
 #visualize_language				{ margin: 0 0 60px 0; }
 #person_circles					{ width: 100%; min-height: 225px; margin-bottom: 45px; }
 div.person_circles_circle		{ height: 225px; float: left; margin-right: 20px; margin-bottom: 20px; font-size: 12px; text-align: center; }
+#visualize_last_five 			{ width: 575px; height: 435px; float: left; margin-right: 25px; }
+#visualize_all_time 			{ width: 575px; height: 435px; float: left; }
 
 /* Visualize - Common Words */
 #visualize_common				{ margin: 0 0 60px 0; }
