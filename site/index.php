@@ -123,12 +123,10 @@
 	</form>
 </div>
 
-
 <script type="text/javascript">
 $(document).ready(function()
 {
 	// Determine View
 	determineView();
-
 });
 </script>

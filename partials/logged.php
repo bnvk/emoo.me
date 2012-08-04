@@ -18,7 +18,7 @@
 			<div class="clear"></div>
 		</div>
 		<ul id="header_links_logged" class="header_links">	
-			<li><a href="<?= base_url() ?>record"><span class="header_icons icon_record"></span>Record</a></li>	
+			<li><a href="<?= base_url() ?>record/feeling"><span class="header_icons icon_record"></span>Record</a></li>	
 			<li><a href="<?= base_url() ?>visualize"><span class="header_icons icon_visualize"></span>Visualize</a></li>	
 			<li><a href="<?= base_url() ?>emoome/user"><span class="header_icons icon_settings"></span>Settings</a></li>
 		</ul>
