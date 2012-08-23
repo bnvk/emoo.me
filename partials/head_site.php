@@ -59,7 +59,7 @@ $(document).ready(function()
 	if (user_data.user_id != '')
 	{		
 		// Show Content
-		if (window.location.href == base_url)
+		if (isNotLoggedUrl(window.location.href))
 		{		
 			window.location = base_url + 'record/feeling'; 
 		}

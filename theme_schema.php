@@ -8,5 +8,6 @@
 		"sidebar":["content","sidebar","wide"],
 		"wide":["wide"]
 	},
-	"default_layout":"wide"
+	"default_layout":"wide",
+	"head_footer":"no"
 }
