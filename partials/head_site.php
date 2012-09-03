@@ -72,6 +72,7 @@ $(document).ready(function()
 	{
 		$('#header_not_logged').fadeIn('normal');	
 	}
+
 	
 });
 </script>
