@@ -42,36 +42,7 @@ var site_assets		= '<?= $site_assets ?>';
 
 $(document).ready(function()
 {	
-	// Hides Things
-	$('.error').hide();
 
-	if ($('#content_message').html() != '') $('#content_message').notify({status:'success',message:$('#content_message').html()});
-
-	$('body').append('<div id="request_lightbox"><div id="lightbox_message">Blah blah blah I am cool!</div></div>');
-
-	// Language Hide
-	if (user_data.language != 'en' && user_data.language != '')
-	{
-		$('#container').html('<h1>Sorry!</h1><h3>We are not setup to handle non english languages at present.</h3><h3>We will let you know when we are.</h3>');
-	}
-	
-	// Render Logged In ToolBar
-	if (user_data.user_id != '')
-	{		
-		// Show Content
-		if (isNotLoggedUrl(window.location.href))
-		{		
-			window.location = base_url + 'record/feeling'; 
-		}
-		else
-		{
-			showWebLogged(user_data.name, user_data.image);
-		}
-	}
-	else
-	{
-		$('#header_not_logged').fadeIn('normal');	
-	}
 
 	
 });
