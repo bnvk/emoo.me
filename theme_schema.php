@@ -6,8 +6,9 @@
 	"creator":"Brennan Novak",
 	"layouts":{
 		"sidebar":["content","sidebar","wide"],
-		"wide":["wide"]
+		"web":["wide"],
+		"mobile":["mobile"]
 	},
-	"default_layout":"wide",
+	"default_layout":"web",
 	"head_footer":"no"
 }

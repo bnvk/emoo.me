@@ -1,49 +1,27 @@
-<link rel="stylesheet" media="screen" href="<?= $site_assets ?>css/site.css" type="text/css" />
+<title><?= $site_title ?></title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="title" content="<?= site_title($sub_title, $page_title, $site_title) ?>" />
+<meta name="description" content="<?= $site_description ?>" />
+<meta name="keywords" content="<?= $site_keywords ?>" />
+<meta name="author" content="Brennan Novak">
+
+<!-- OpenGraph (Facebook) http://ogp.me -->
+<meta property="og:title" content="<?= $site_title ?>"/>
+<meta property="og:type" content="website" />
+<meta property="og:image" content="<?= $site_assets ?>apple-touch-icon-114x114-precomposed.png"/>
+<meta property="og:url" content="<?= base_url() ?>"/>
+<meta property="og:site_name" content="<?= $site_title ?>"/>
+<meta property="og:description" content="<?= $site_description ?>">
+
+<link rel="stylesheet" media="screen" href="<?= $site_assets ?>css/<?= $user_source ?>.css" type="text/css" />
 
 <!-- Apple Icons -->
-<link rel="apple-touch-icon-precomposed" href="<?= $site_assets ?>apple-touch-icon-precomposed.png" />
-<link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?= $site_assets ?>apple-touch-icon-57x57-precomposed.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?= $site_assets ?>apple-touch-icon-72x72-precomposed.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?= $site_assets ?>apple-touch-icon-114x114-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" href="<?= $site_assets ?>icons/apple-touch-icon-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?= $site_assets ?>icons/apple-touch-icon-57x57-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?= $site_assets ?>icons/apple-touch-icon-72x72-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?= $site_assets ?>icons/apple-touch-icon-114x114-precomposed.png" />
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="<?= $site_assets ?>favicon.ico" />
-<link rel="icon" type="image/png" href="<?= $site_assets ?>icon-32.png" />
-
-<script type="text/javascript" src="<?= base_url() ?>js/jquery.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>js/social.core.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>application/modules/emoome/assets/js/emoome.js"></script>
-<script type="text/javascript">
-//Global User Data:
-var user_data = {
-	"user_id":"<?= $logged_user_id ?>",
-	"username":"<?= $logged_username ?>",
-	"user_level_id":"<?= $logged_user_level_id ?>",
-	"name":"<?= $logged_name ?>",
-	"image":"<?= $logged_image ?>",
-	"location":"<?= $logged_location ?>",
-	"geo_enabled":"<?= $logged_geo_enabled ?>",
-	"geo_lat":"",
-	"geo_lon":"",
-	"language":"<?= $this->session->userdata('language') ?>",
-	"privacy":"<?= $logged_privacy ?>",	 
-	"consumer_key": "<?= $oauth_consumer_key ?>",
-	"consumer_secret": "<?= $oauth_consumer_secret ?>",
-	"token": "<?= $oauth_token ?>",
-	"token_secret": "<?= $oauth_token_secret ?>",
-	"source": "<?= $user_source ?>"
-}
-
-var base_url 		= '<?= base_url() ?>';
-var current_module	= jQuery.url.segment(1);
-var core_modules	= jQuery.parseJSON('<?= json_encode(config_item('core_modules')) ?>');
-var core_assets		= '<?= $dashboard_assets.'icons/' ?>';
-var site_assets		= '<?= $site_assets ?>';
-
-$(document).ready(function()
-{	
-
-
-	
-});
-</script>
+<link rel="shortcut icon" href="<?= $site_assets ?>icons/favicon.ico" />
+<link rel="icon" type="image/png" href="<?= $site_assets ?>icons/icon-32.png" />
