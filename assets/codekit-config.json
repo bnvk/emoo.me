@@ -794,7 +794,7 @@
     },
     "\/js\/dataviz\/g.bar.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/dataviz\/g.bar.js",
@@ -950,13 +950,6 @@
       "type" : 1,
       "position" : 0,
       "linkedFileAbbreviatedPath" : "\/js\/routers\/global-router.js",
-      "baseFileAbbreviatedPath" : "\/js\/routers-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/js\/routers\/global-router.js",
       "baseFileAbbreviatedPath" : "\/js\/routers-web.js",
       "followForSyntaxChecking" : 1
     },
@@ -965,6 +958,111 @@
       "position" : 1,
       "linkedFileAbbreviatedPath" : "\/js\/routers\/visualize-router.js",
       "baseFileAbbreviatedPath" : "\/js\/routers-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/js\/routers\/global-router.js",
+      "baseFileAbbreviatedPath" : "\/js\/routers-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/auth.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.jkey.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.qtip.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 3,
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.timers.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 4,
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.url.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 5,
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.validator.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 6,
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/functions.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/lightbox-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/navigation-mobile-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/content-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 3,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/auth-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 4,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/record-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 5,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/settings-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 6,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/visualize-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
@@ -1000,6 +1098,27 @@
       "position" : 4,
       "linkedFileAbbreviatedPath" : "\/js\/models\/visualize-language-model.js",
       "baseFileAbbreviatedPath" : "\/js\/models-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/js\/dataviz\/raphael.js",
+      "baseFileAbbreviatedPath" : "\/js\/dataviz.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/js\/dataviz\/g.raphael.js",
+      "baseFileAbbreviatedPath" : "\/js\/dataviz.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/js\/dataviz\/g.pie.js",
+      "baseFileAbbreviatedPath" : "\/js\/dataviz.js",
       "followForSyntaxChecking" : 1
     },
     {
@@ -1047,8 +1166,29 @@
     {
       "type" : 1,
       "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/js\/dataviz\/raphael.js",
-      "baseFileAbbreviatedPath" : "\/js\/dataviz.js",
+      "linkedFileAbbreviatedPath" : "\/js\/models\/emoome-settings-model.js",
+      "baseFileAbbreviatedPath" : "\/js\/models-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/js\/models\/ui-messages-model.js",
+      "baseFileAbbreviatedPath" : "\/js\/models-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/js\/models\/feeling-model.js",
+      "baseFileAbbreviatedPath" : "\/js\/models-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 3,
+      "linkedFileAbbreviatedPath" : "\/js\/models\/visualize-model.js",
+      "baseFileAbbreviatedPath" : "\/js\/models-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
@@ -1112,132 +1252,6 @@
       "position" : 8,
       "linkedFileAbbreviatedPath" : "\/js\/views\/settings-view.js",
       "baseFileAbbreviatedPath" : "\/js\/views-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/js\/models\/emoome-settings-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/models-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/js\/models\/ui-messages-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/models-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/js\/models\/feeling-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/models-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 3,
-      "linkedFileAbbreviatedPath" : "\/js\/models\/visualize-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/models-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/lightbox-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/navigation-mobile-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/content-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 3,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/auth-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 4,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/record-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 5,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/settings-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 6,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/visualize-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/js\/plugins\/auth.js",
-      "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.jkey.js",
-      "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.qtip.js",
-      "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 3,
-      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.timers.js",
-      "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 4,
-      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.url.js",
-      "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 5,
-      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.validator.js",
-      "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 6,
-      "linkedFileAbbreviatedPath" : "\/js\/plugins\/functions.js",
-      "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
       "followForSyntaxChecking" : 1
     }
   ],

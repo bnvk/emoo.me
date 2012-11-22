@@ -1,7 +1,10 @@
 <script type="text/javascript" src="<?= $site_assets ?>js/libs/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="<?= $site_assets ?>js/libs-min.js"></script>
 <script type="text/javascript" src="<?= $site_assets ?>js/plugins-<?= $user_source ?>-min.js"></script>
-<script type="text/javascript" src="<?= $site_assets ?>js/dataviz-min.js"></script>
+<script type="text/javascript" src="<?= $site_assets ?>js/dataviz/raphael.js"></script>
+<script type="text/javascript" src="<?= $site_assets ?>js/dataviz/g.raphael.js"></script>
+<script type="text/javascript" src="<?= $site_assets ?>js/dataviz/g.pie.js"></script>
+
 <script type="text/javascript" src="<?= $site_assets ?>js/models-<?= $user_source ?>-min.js"></script>
 <script type="text/javascript" src="<?= $site_assets ?>js/views-<?= $user_source ?>-min.js"></script>
 <script type="text/javascript" src="<?= $site_assets ?>js/routers-<?= $user_source ?>-min.js"></script>
@@ -44,8 +47,13 @@ $(document).ready(function()
 {
 	// Create Router
 	var Router = new ApplicationRouter($('#content'));
+	<?php if (!$this->agent->is_mobile()): ?>
+	var ExtraRouter = new VisualizeRouter($('#content'));
+	<?php endif; ?>
 
 	// History
 	Backbone.history.start();
+
+	console.log("In da kine stuffs " + UserData.get('source'));
 });
 </script>

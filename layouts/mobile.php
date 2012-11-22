@@ -7,6 +7,11 @@
 <?= $head ?>
 </head>
 <body>
+<header>
+	<div id="header">
+		<div class="clear"></div>
+	</div>	
+</header>
 
 <!-- Where The Magic Happens -->
 <div id="container">
@@ -31,8 +36,6 @@
 <?= $template_record ?>
 <?= $template_visualize ?>
 <?= $template_settings ?>
-
 <?= $javascripts ?>
-<?php if (!$this->uri->segment(1)) echo $google_analytics; ?>
 </body>
 </html>

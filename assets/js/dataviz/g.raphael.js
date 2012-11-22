@@ -1,7 +1,7 @@
 /*!
- * g.Raphael 0.5 - Charting library, based on Raphaël
+ * g.Raphael 0.51 - Charting library, based on Raphaël
  *
- * Copyright (c) 2009 Dmitry Baranovskiy (http://g.raphaeljs.com)
+ * Copyright (c) 2009-2012 Dmitry Baranovskiy (http://g.raphaeljs.com)
  * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
  */
 
@@ -22,17 +22,14 @@
  - y (number) y coordinate of the popup's tail [default: Element's `y` or `cy`]
  **
  = (object) path element of the popup
- > Usage
- | paper.circle(50, 50, 5).attr({
- |     stroke: "#fff",
- |     fill: "0-#c9de96-#8ab66b:44-#398235"
- | }).popup();
  \*/
 Raphael.el.popup = function (dir, size, x, y) {
     var paper = this.paper || this[0].paper,
         bb, xy, center, cw, ch;
 
-    if (!paper) return;
+	if (!paper) {
+		return;
+	}
 
     switch (this.type) {
         case 'text':
@@ -41,12 +38,12 @@ Raphael.el.popup = function (dir, size, x, y) {
         default: center = false;
     }
 
-    dir = dir == null ? 'up' : dir;
+    dir = dir === null ? 'up' : dir;
     size = size || 5;
     bb = this.getBBox();
 
-    x = typeof x == 'number' ? x : (center ? bb.x + bb.width / 2 : bb.x);
-    y = typeof y == 'number' ? y : (center ? bb.y + bb.height / 2 : bb.y);
+    x = typeof x === 'number' ? x : (center ? bb.x + bb.width / 2 : bb.x);
+    y = typeof y === 'number' ? y : (center ? bb.y + bb.height / 2 : bb.y);
     cw = Math.max(bb.width / 2 - size, 0);
     ch = Math.max(bb.height / 2 - size, 0);
 
@@ -133,17 +130,14 @@ Raphael.el.popup = function (dir, size, x, y) {
  - y (number) y coordinate of the center of the tag loop [default: Element's `x` or `cx`]
  **
  = (object) path element of the tag
- > Usage
- | paper.circle(50, 50, 15).attr({
- |     stroke: "#fff",
- |     fill: "0-#c9de96-#8ab66b:44-#398235"
- | }).tag(60);
  \*/
 Raphael.el.tag = function (angle, r, x, y) {
     var d = 3,
         paper = this.paper || this[0].paper;
 
-    if (!paper) return;
+	if (!paper) {
+		return;
+	}
 
     var p = paper.path().attr({ fill: '#000', stroke: '#000' }),
         bb = this.getBBox(),
@@ -157,8 +151,8 @@ Raphael.el.tag = function (angle, r, x, y) {
     }
 
     angle = angle || 0;
-    x = typeof x == 'number' ? x : (center ? bb.x + bb.width / 2 : bb.x);
-    y = typeof y == 'number' ? y : (center ? bb.y + bb.height / 2 : bb.y);
+    x = typeof x === 'number' ? x : (center ? bb.x + bb.width / 2 : bb.x);
+    y = typeof y === 'number' ? y : (center ? bb.y + bb.height / 2 : bb.y);
     r = r == null ? 5 : r;
     R = .5522 * r;
 
@@ -203,7 +197,7 @@ Raphael.el.tag = function (angle, r, x, y) {
             this.rotate(angle - 180, bb.x + bb.width + r + d, bb.y + bb.height / 2);
         } else {
             this.translate(x - bb.x + r + d, y - bb.y - bb.height / 2);
-            this.rotate(angle, bb.x - r - d, bb.y + bb.height / 2); 
+            this.rotate(angle, bb.x - r - d, bb.y + bb.height / 2);
         }
     }
 
@@ -223,11 +217,6 @@ Raphael.el.tag = function (angle, r, x, y) {
  - y (number) y coordinate of the drop's point [default: Element's `x` or `cx`]
  **
  = (object) path element of the drop
- > Usage
- | paper.circle(50, 50, 8).attr({
- |     stroke: "#fff",
- |     fill: "0-#c9de96-#8ab66b:44-#398235"
- | }).drop(60);
  \*/
 Raphael.el.drop = function (angle, x, y) {
     var bb = this.getBBox(),
@@ -245,8 +234,8 @@ Raphael.el.drop = function (angle, x, y) {
 
     angle = angle || 0;
 
-    x = typeof x == 'number' ? x : (center ? bb.x + bb.width / 2 : bb.x);
-    y = typeof y == 'number' ? y : (center ? bb.y + bb.height / 2 : bb.y);
+    x = typeof x === 'number' ? x : (center ? bb.x + bb.width / 2 : bb.x);
+    y = typeof y === 'number' ? y : (center ? bb.y + bb.height / 2 : bb.y);
     size = Math.max(bb.width, bb.height) + Math.min(bb.width, bb.height);
     p = paper.path([
         "M", x, y,
@@ -279,11 +268,6 @@ Raphael.el.drop = function (angle, x, y) {
  - y (number) y coordinate of the flag's point [default: Element's `x` or `cx`]
  **
  = (object) path element of the flag
- > Usage
- | paper.circle(50, 50, 10).attr({
- |     stroke: "#fff",
- |     fill: "0-#c9de96-#8ab66b:44-#398235"
- | }).flag(60);
  \*/
 Raphael.el.flag = function (angle, x, y) {
     var d = 3,
@@ -320,7 +304,7 @@ Raphael.el.flag = function (angle, x, y) {
 
     if (this.attrs) {
         //elements
-        this.attr(this.attrs.x ? 'x' : 'cx', x + h + d + (!center ? this.type == 'text' ? bb.width : 0 : bb.width / 2)).attr('y', center ? y : y - bb.height / 2);
+        this.attr(this.attrs.x ? 'x' : 'cx', x + h + d + (!center ? this.type === 'text' ? bb.width : 0 : bb.width / 2)).attr('y', center ? y : y - bb.height / 2);
         this.rotate(angle, x, y);
         angle > 90 && angle < 270 && this.attr(this.attrs.x ? 'x' : 'cx', x - h - d - (!center ? bb.width : bb.width / 2)).rotate(180, x, y);
     } else {
@@ -344,11 +328,6 @@ Raphael.el.flag = function (angle, x, y) {
  * Puts the context Element in a 'label' tooltip. Can also be used on sets.
  **
  = (object) path element of the label.
- > Usage
- | paper.circle(50, 50, 10).attr({
- |     stroke: "#fff",
- |     fill: "0-#c9de96-#8ab66b:44-#398235"
- | }).label();
  \*/
 Raphael.el.label = function () {
     var bb = this.getBBox(),
@@ -373,11 +352,6 @@ Raphael.el.label = function () {
  - y (number) y coordinate of the blob's tail [default: Element's `x` or `cx`]
  **
  = (object) path element of the blob
- > Usage
- | paper.circle(50, 50, 8).attr({
- |     stroke: "#fff",
- |     fill: "0-#c9de96-#8ab66b:44-#398235"
- | }).blob(60);
  \*/
 Raphael.el.blob = function (angle, x, y) {
     var bb = this.getBBox(),
@@ -397,8 +371,8 @@ Raphael.el.blob = function (angle, x, y) {
     p = paper.path().attr({ fill: "#000", stroke: "none" });
     angle = (+angle + 1 ? angle : 45) + 90;
     size = Math.min(bb.height, bb.width);
-    x = typeof x == 'number' ? x : (center ? bb.x + bb.width / 2 : bb.x);
-    y = typeof y == 'number' ? y : (center ? bb.y + bb.height / 2 : bb.y);
+    x = typeof x === 'number' ? x : (center ? bb.x + bb.width / 2 : bb.x);
+    y = typeof y === 'number' ? y : (center ? bb.y + bb.height / 2 : bb.y);
 
     var w = Math.max(bb.width + size, size * 25 / 12),
         h = Math.max(bb.height + size, size * 25 / 12),
@@ -720,7 +694,7 @@ Raphael.g = {
      **
      > Default value
      | { font: '12px Arial, sans-serif', fill: '#fff' }
-     \*/  
+     \*/
     txtattr: { font: '12px Arial, sans-serif', fill: '#fff' },
 
     /*\
@@ -749,7 +723,7 @@ Raphael.g = {
         var f = from,
             t = to;
 
-        if (f == t) {
+        if (f === t) {
             return {from: f, to: t, power: 0};
         }
 
@@ -770,10 +744,14 @@ Raphael.g = {
 
             i ++;
         } else {
-            while (!r) {
-                i = i || 1;
-                r = ~~(d * Math.pow(10, i)) / Math.pow(10, i);
-                i++;
+            if(d === 0 || !isFinite(d)) {
+                i = 1;
+            } else {
+                while (!r) {
+                    i = i || 1;
+                    r = ~~(d * Math.pow(10, i)) / Math.pow(10, i);
+                    i++;
+                }
             }
 
             i && i--;
@@ -790,12 +768,12 @@ Raphael.g = {
     },
 
     axis: function (x, y, length, from, to, steps, orientation, labels, type, dashsize, paper) {
-        dashsize = dashsize == null ? 2 : dashsize;
+        dashsize = dashsize === null ? 2 : dashsize;
         type = type || "t";
         steps = steps || 10;
-        paper = arguments[arguments.length-1] //paper is always last argument
+        paper = arguments[arguments.length-1]; //paper is always last argument
 
-        var path = type == "|" || type == " " ? ["M", x + .5, y, "l", 0, .001] : orientation == 1 || orientation == 3 ? ["M", x + .5, y, "l", 0, -length] : ["M", x, y + .5, "l", length, 0],
+        var path = type === "|" || type === " " ? ["M", x + .5, y, "l", 0, .001] : orientation === 1 || orientation === 3 ? ["M", x + .5, y, "l", 0, -length] : ["M", x, y + .5, "l", length, 0],
             ends = this.snapEnds(from, to, steps),
             f = ends.from,
             t = ends.to,
@@ -811,20 +789,20 @@ Raphael.g = {
             rnd = i > 0 ? i : 0;
             dx = length / steps;
 
-        if (+orientation == 1 || +orientation == 3) {
+        if (+orientation === 1 || +orientation === 3) {
             var Y = y,
                 addon = (orientation - 1 ? 1 : -1) * (dashsize + 3 + !!(orientation - 1));
 
             while (Y >= y - length) {
-                type != "-" && type != " " && (path = path.concat(["M", x - (type == "+" || type == "|" ? dashsize : !(orientation - 1) * dashsize * 2), Y + .5, "l", dashsize * 2 + 1, 0]));
-                text.push(paper.text(x + addon, Y, (labels && labels[j++]) || (Math.round(label) == label ? label : +label.toFixed(rnd))).attr(txtattr).attr({ "text-anchor": orientation - 1 ? "start" : "end" }));
+                type !== "-" && type !== " " && (path = path.concat(["M", x - (type === "+" || type === "|" ? dashsize : !(orientation - 1) * dashsize * 2), Y + .5, "l", dashsize * 2 + 1, 0]));
+                text.push(paper.text(x + addon, Y, (labels && labels[j++]) || (Math.round(label) === label ? label : +label.toFixed(rnd))).attr(txtattr).attr({ "text-anchor": orientation - 1 ? "start" : "end" }));
                 label += d;
                 Y -= dx;
             }
 
             if (Math.round(Y + dx - (y - length))) {
-                type != "-" && type != " " && (path = path.concat(["M", x - (type == "+" || type == "|" ? dashsize : !(orientation - 1) * dashsize * 2), y - length + .5, "l", dashsize * 2 + 1, 0]));
-                text.push(paper.text(x + addon, y - length, (labels && labels[j]) || (Math.round(label) == label ? label : +label.toFixed(rnd))).attr(txtattr).attr({ "text-anchor": orientation - 1 ? "start" : "end" }));
+                type !== "-" && type !== " " && (path = path.concat(["M", x - (type === "+" || type === "|" ? dashsize : !(orientation - 1) * dashsize * 2), y - length + .5, "l", dashsize * 2 + 1, 0]));
+                text.push(paper.text(x + addon, y - length, (labels && labels[j]) || (Math.round(label) === label ? label : +label.toFixed(rnd))).attr(txtattr).attr({ "text-anchor": orientation - 1 ? "start" : "end" }));
             }
         } else {
             label = f;
@@ -837,8 +815,8 @@ Raphael.g = {
                 prev = 0;
 
             while (X <= x + length) {
-                type != "-" && type != " " && (path = path.concat(["M", X + .5, y - (type == "+" ? dashsize : !!orientation * dashsize * 2), "l", 0, dashsize * 2 + 1]));
-                text.push(txt = paper.text(X, y + addon, (labels && labels[j++]) || (Math.round(label) == label ? label : +label.toFixed(rnd))).attr(txtattr));
+                type !== "-" && type !== " " && (path = path.concat(["M", X + .5, y - (type === "+" ? dashsize : !!orientation * dashsize * 2), "l", 0, dashsize * 2 + 1]));
+                text.push(txt = paper.text(X, y + addon, (labels && labels[j++]) || (Math.round(label) === label ? label : +label.toFixed(rnd))).attr(txtattr));
 
                 var bb = txt.getBBox();
 
@@ -853,8 +831,8 @@ Raphael.g = {
             }
 
             if (Math.round(X - dx - x - length)) {
-                type != "-" && type != " " && (path = path.concat(["M", x + length + .5, y - (type == "+" ? dashsize : !!orientation * dashsize * 2), "l", 0, dashsize * 2 + 1]));
-                text.push(paper.text(x + length, y + addon, (labels && labels[j]) || (Math.round(label) == label ? label : +label.toFixed(rnd))).attr(txtattr));
+                type !== "-" && type !== " " && (path = path.concat(["M", x + length + .5, y - (type === "+" ? dashsize : !!orientation * dashsize * 2), "l", 0, dashsize * 2 + 1]));
+                text.push(paper.text(x + length, y + addon, (labels && labels[j]) || (Math.round(label) === label ? label : +label.toFixed(rnd))).attr(txtattr));
             }
         }
 
@@ -884,4 +862,4 @@ Raphael.g = {
             return (+val).toFixed(0);
         }
     }
-}
+};

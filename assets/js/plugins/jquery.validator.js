@@ -4,9 +4,9 @@
 	License: http://unlicense.org/ (i.e. do what you want with it!)
 	Code: https://github.com/brennannovak/jquery-validator.js
 	Settings:
-	 - element	: Array of elements, contains: selector, rule, field, action (label, border, element)
-	 - styles	: Styles for labels and input fields
-	 - message	: Is appended to the start of invalid elements 'Please enter a _________'
+	- element	: Array of elements, contains: selector, rule, field, action (label, border, element)
+	- styles	: Styles for labels and input fields
+	- message	: Is appended to the start of invalid elements 'Please enter a _________'
 */
 (function($)
 {
@@ -18,12 +18,11 @@
 			styles		: { valid : 'form_valid', error : 'form_error' },
 			message		: '',
 			success		: function(){},
-			failed		: function(error_messages){}
+			failed		: function(){}
 		};
 
 		var settings		= $.extend(defaults, options);
 		var valid_count		= 0;
-		var invalid_count	= 0;
 		var element_count	= settings.elements.length;
 		var error_messages	= '';
 
@@ -35,14 +34,14 @@
 		}
 
 		function validateInteger(value)
-		{		
+		{
 			if (value > 0) { return true; }
 			return false;
 		}
 
 		function validateConfirm(source_value, confirm_selector)
 		{
-			var confirm_source	= confirm_selector.replace('_confirm', ''); 
+			var confirm_source	= confirm_selector.replace('_confirm', '');
 			var confirm_value	= $(confirm_source).val();
 			var confirm_state	= false;
 
@@ -54,7 +53,7 @@
 		
 		function validateEmailAddress(email)
 		{
-			var email_pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+			var email_pattern = new RegExp(/^(("[\w-\s]+")|([\w- ]+(?:\.[\w- ]+)*)|("[\w-\s]+")([\w- ]+(?:\.[\w- ]+)*))(@((?:[\w- ]+\.)*\w[\w- ]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
 			return email_pattern.test(email);
 		}
 		
@@ -66,35 +65,34 @@
 		
 		function validateCreditCard(creditcard)
 		{
-		    if (getCreditCardTypeByNumber(creditcard) === '?') { return false; }
-		    else { return true; }
+			if (getCreditCardTypeByNumber(creditcard) === '?') { return false; }
+			else { return true; }
 		}
 		
 		// Credit Card
 		function getCreditCardTypeByNumber(ccnumber) {
-		    var cc = (ccnumber + '').replace(/\s/g, ''); //remove space
-		 
-		    if ((/^(34|37)/).test(cc) && cc.length === 15) {
-		        return 'AMEX'; //AMEX begins with 34 or 37, and length is 15.
-		    } else if ((/^(51|52|53|54|55)/).test(cc) && cc.length === 16) {
-		        return 'MasterCard'; //MasterCard beigins with 51-55, and length is 16.
-		    } else if ((/^(4)/).test(cc) && (cc.length === 13 || cc.length === 16)) {
-		        return 'Visa'; //VISA begins with 4, and length is 13 or 16.
-		    } else if ((/^(300|301|302|303|304|305|36|38)/).test(cc) && cc.length === 14) {
-		        return 'DinersClub'; //Diners Club begins with 300-305 or 36 or 38, and length is 14.
-		    } else if ((/^(2014|2149)/).test(cc) && cc.length === 15) {
-		        return 'enRoute'; //enRoute begins with 2014 or 2149, and length is 15.
-		    } else if ((/^(6011)/).test(cc) && cc.length === 16) {
-		        return 'Discover'; //Discover begins with 6011, and length is 16.
-		    } else if ((/^(3)/).test(cc) && cc.length === 16) {
-		        return 'JCB';  //JCB begins with 3, and length is 16.
-		    } else if ((/^(2131|1800)/).test(cc) && cc.length === 15) {
-		        return 'JCB';  //JCB begins with 2131 or 1800, and length is 15.
-		    }
-		    return '?';
+			var cc = (ccnumber + '').replace(/\s/g, ''); //remove space
+			
+			if ((/^(34|37)/).test(cc) && cc.length === 15){
+				return 'AMEX';
+			} else if ((/^(51|52|53|54|55)/).test(cc) && cc.length === 16){
+				return 'MasterCard';
+			} else if ((/^(4)/).test(cc) && (cc.length === 13 || cc.length === 16)){
+				return 'Visa';
+			} else if ((/^(300|301|302|303|304|305|36|38)/).test(cc) && cc.length === 14){
+				return 'DinersClub';
+			} else if ((/^(2014|2149)/).test(cc) && cc.length === 15){
+				return 'enRoute';
+			} else if ((/^(6011)/).test(cc) && cc.length === 16){
+				return 'Discover';
+			} else if ((/^(3)/).test(cc) && cc.length === 16){
+				return 'JCB';
+			} else if ((/^(2131|1800)/).test(cc) && cc.length === 15){
+				return 'JCB';
+			}
+			
+			return '?';
 		}
-				
-		
 
 		// Message Types
 		function messageLabel(valid, element)
