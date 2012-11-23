@@ -1,7 +1,7 @@
 <script type="text/template" id="header_public">
 	<div id="header_not_logged">
 		<div id="header_logo"></div>
-		<h1><a id="header_home" href="<?= base_url() ?>#">emo<span class="name_ome">ome</span></a></h1>
+		<h1><a id="header_home" href="<?= base_url() ?>#/">emo<span class="name_ome">ome</span></a></h1>
 		<ul id="header_links_public" class="header_links">
 			<li class="header_text">Have<br>Account</li>
 			<li><a href="<?= base_url() ?>#/login"><span class="header_icons icon_login"></span>Login</a></li>

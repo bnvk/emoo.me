@@ -71,7 +71,7 @@ var AuthView = Backbone.View.extend(
 							UserData.set(result.user);
 							
 							// Update Header
-							var Navigation = new NavigationView({ el: $('#header') });
+							var Navigation = new NavigationView({ el: $('#navigation') });
 							Navigation.renderLogged();
 
 							// Update URL & View
@@ -131,7 +131,7 @@ var AuthView = Backbone.View.extend(
 							UserData.set(result.user);
 							
 							// Update Header
-							var Navigation = new NavigationView({ el: $('#header') });
+							var Navigation = new NavigationView({ el: $('#navigation') });
 							Navigation.renderLogged();
 
 							// Update URL & View

@@ -1,0 +1,11 @@
+h1	{ font-size: 48px; }
+h2	{ font-size: 36px; }
+h3	{ font-size: 30px; }  
+
+#lightbox_message 		{ width: 300px; text-align: center; position:absolute; font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; font-weight: 100; font-size: 36px; line-height: 48px; top: 20px; left: 50%; margin-top: 0px; margin-left: -150px; }
+
+div.content_left		{ width: 450px; margin-left: 20px; margin-right: auto; }
+div.content_center		{ width: 450px; margin-left: auto; margin-right: auto; }
+div.text_center			{ text-align: center; }
+div.text_left			{ text-align: left; }
+div.text_right			{ text-align: right; }

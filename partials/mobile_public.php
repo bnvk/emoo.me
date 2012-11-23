@@ -1,5 +1,9 @@
 <script type="text/template" id="index">
 	<div id="content_index">
+
+		<h1>emoome</h1>
+		<div id="header_logo"></div>
+
 		<div class="info_bubble_container">
 			<div class="info_bubble">
 				<span class="icons icon_record_hover"></span>

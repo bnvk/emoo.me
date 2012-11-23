@@ -8,7 +8,7 @@
 </head>
 <body>
 <header>
-	<div id="header">
+	<div id="navigation">
 		<div class="clear"></div>
 	</div>	
 </header>
@@ -39,12 +39,15 @@
 	<p>Apologies, but we could not find what you were looking for</p>
 </script>
 
+<!-- Web Templates -->
 <?= $template_navigation ?>
 <?= $template_public ?>
 <?= $template_auth ?>
 <?= $template_record ?>
 <?= $template_visualize ?>
 <?= $template_settings ?>
+
+<!-- Web Javascripts -->
 <?= $javascripts ?>
 <?php if (!$this->uri->segment(1)) echo $google_analytics; ?>
 </body>

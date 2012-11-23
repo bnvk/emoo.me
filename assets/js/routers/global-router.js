@@ -3,9 +3,9 @@ var ApplicationRouter = Backbone.Router.extend(
 	initialize: function(el)
 	{
 		this.el = el;
-		
+
 		// Instantiate Navigation
-		this.Navigation				= new NavigationView({ el: $('#header') });
+		this.Navigation				= new NavigationView({ el: $('#navigation') });
 
 		// Public Views
 		this.indexView				= new ContentView('#index');
@@ -66,18 +66,26 @@ var ApplicationRouter = Backbone.Router.extend(
 	},
 	index: function()
 	{
-		if (UserData.get('logged') == 'yes') Backbone.history.navigate('#/record/feeling', true);	
+		if (UserData.get('logged') === 'yes') {
+			Backbone.history.navigate('#/record/feeling', true);	
+		}
+
 		this.switchView(this.indexView);
-	},	
+	},
 	login: function()
 	{
-		if (UserData.get('logged') == 'yes') Backbone.history.navigate('#/record/feeling', true); 	
+		if (UserData.get('logged') === 'yes') {
+			Backbone.history.navigate('#/record/feeling', true);
+		}
+
 		this.authView.viewLogin();
-		//this.switchView(this.loginView);
 	},
 	signup: function()
 	{
-		if (UserData.get('logged') == 'yes') Backbone.history.navigate('#/record/feeling', true); 	
+		if (UserData.get('logged') === 'yes') {
+			Backbone.history.navigate('#/record/feeling', true);
+		}
+
 		this.authView.viewSignup();
 	},
 	forgotPassword: function()
@@ -87,36 +95,42 @@ var ApplicationRouter = Backbone.Router.extend(
 	logout: function()
 	{
 		UserData.set({ logged: 'no', user_id: '', username: '', name: '', user_level_id	: '', name : '', image : '', location : '', geo_enabled : '', language : '', privacy : '', consumer_key : '', consumer_secret : '', token : '', token_secret : '' });
-		this.Navigation.renderPublic(); 	
-	    this.switchView(this.logoutView);
+		this.Navigation.renderPublic();
+		this.switchView(this.logoutView);
 	},
 	notFound: function() {
 		this.switchView(this.notFoundView);
 	},
 	recordViews: function(view)
 	{
-		if (UserData.get('logged') != 'yes') Backbone.history.navigate('#/login', true); 
-		
+		if (UserData.get('logged') !== 'yes') {
+			Backbone.history.navigate('#/login', true);
+		}
+
+		console.log('here inside recordViews ' + view);
+
 		// View
-		if (view == undefined)
+		if (view === undefined)
 			this.switchView(this.recordIndex);
-		else if (view == 'feeling') 
+		else if (view === 'feeling')
 			this.recordFeeling.viewFeeling();
-		else if (view == 'experience') 
+		else if (view === 'experience')
 			this.recordFeeling.viewExperience();
-		else if (view == 'describe') 
+		else if (view === 'describe')
 			this.recordFeeling.viewDescribe();
-		else if (view == 'thanks') 
+		else if (view === 'thanks')
 			this.recordFeeling.viewThanks();
 		else
 			this.switchView(this.notFoundView);
 	},
 	visualize: function(view)
 	{
-		if (UserData.get('logged') != 'yes') Backbone.history.navigate('#/login', true);
+		if (UserData.get('logged') !== 'yes') {
+			Backbone.history.navigate('#/login', true);
+		}
 
 		// Get / Render Visualize
-		if (VisualizeModel.get('data') != 'updated')
+		if (VisualizeModel.get('data') !== 'updated')
 		{
 			$.oauthAjax(
 			{
@@ -127,7 +141,7 @@ var ApplicationRouter = Backbone.Router.extend(
 			  	success		: function(result)
 			  	{
 					// Is Saved
-					if (result.status == 'success')
+					if (result.status === 'success')
 					{
 						// Update Model
 						VisualizeModel.set(result);
@@ -136,28 +150,30 @@ var ApplicationRouter = Backbone.Router.extend(
 						// Render View
 						VisualizeViews = new VisualizeView({ el: $('#content')});
 					}
-			  	}			  			
+				}
 			});
 		}
 		else
 		{
-			VisualizeViews = new VisualizeView({ el: $('#content')});			
-		}	
+			VisualizeViews = new VisualizeView({ el: $('#content')});
+		}
 	},
 	settingsViews: function(view)
-	{	
-		if (UserData.get('logged') != 'yes') Backbone.history.navigate('#/login', true); 
+	{
+		if (UserData.get('logged') !== 'yes') {
+			Backbone.history.navigate('#/login', true);
+		}
 
 		// View
-		if (view == undefined)	
+		if (view === undefined)
 			this.switchView(this.settingsIndex);
-		else if (view == 'notifications') 
+		else if (view === 'notifications')
 			this.settingsViews.viewNotifications();
-		else if (view == 'account') 
+		else if (view === 'account')
 			this.settingsViews.viewAccount();
-		else if (view == 'password') 
+		else if (view === 'password')
 			this.settingsViews.viewPassword();
-		else if (view == 'logout')
+		else if (view === 'logout')
 			this.settingsViews.processLogout();
 		else
 			this.switchView(this.notFoundView);

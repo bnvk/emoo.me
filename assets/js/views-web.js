@@ -1,1 +1,0 @@
-console.log("DAS WEB SHITZ!!!!! The current value of myVariable is ");

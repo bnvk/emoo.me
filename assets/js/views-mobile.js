@@ -1,1 +1,0 @@
-console.log("MOBIEL SHITZ!!!!! The current value of myVariable is ");

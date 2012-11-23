@@ -52,36 +52,49 @@ input[type=submit]:hover, input[type=button]:hover, button:hover { border: 1px s
 .form_success							{ color: #479e45; }
 
 #header									{ width: 100%; background: #e9e8e8; margin: 0 0 15px 0; padding: 0px; text-align: center; }
-#header_logo							{ width: 285px; height: 25px; display: block; margin: 25px auto 0 auto; background: url(../images/sprite_index.png) 0 -810px no-repeat; }
-#header h1								{ margin: 25px auto 10px auto; font-size: 60px; }
-#header_logo							{ width: 128px; height: 12px; margin: 0 auto 0px auto; background: url(images/sprite.png) 0 -360px no-repeat; }
+#header h1								{ margin: 45px auto 15px auto; font-size: 60px; }
+#header_logo							{ width: 128px; height: 25px; margin: 15px auto 15px auto; background: url(../images/sprite.png) 0px 0px no-repeat; }
+
 #container								{ min-height: 380px; position: relative; top: 15px; left: 0px; }
+
 #footer									{ text-align: center; margin: 60px auto 115px auto; }
 #footer a								{ margin: 0 20px 0px 20px; }
-#toolbar								{ width: 100%; background: #000000; position: fixed; bottom: 0px; left: 0px; margin: 0px; padding: 0px; }
+
+#navigation								{ width: 100%; background: #000000; position: fixed; bottom: 0px; left: 0px; margin: 0px; padding: 0px; }
 ul.toolbar_links						{ width: 100%; margin: 7px auto 10px auto; padding: 0; list-style: none; }
 ul.toolbar_links li						{ float: left; margin: 0 0 5px 0; padding: 0px; width: 33%; text-align: center; font-family: Helvetica, Arial, Sans-Serif; font-weight: normal; }
 ul.toolbar_links li.toolbar_selected	{ background: #e9e8e8; border-radius: 5px; }
 ul.toolbar_links a						{ color: #919191; font-size: 11px; line-height: 11px; font-weight: bold; text-decoration: none; }
 ul.toolbar_links a span.icons			{ margin: 0 auto; }
 
-span.icons						{ width: 44px; height: 38px; display: block; background-image: url(/application/modules/emoome/assets/images/sprite.png); background-repeat: no-repeat; }
-span.icon_record				{ background-position: -15px 0px; }
-span.icon_record_hover			{ background-position: -61px 0px; }
-span.icon_signup				{ background-position: -15px -40px; }
-span.icon_signup_hover			{ background-position: -61px -40px; }
-span.icon_settings				{ background-position: -15px -120px; }
-span.icon_settings_hover		{ background-position: -61px -120px; }
-span.icon_login					{ background-position: -15px -160px; }
-span.icon_login_hover			{ background-position: -61px -160px; }
-span.icon_graphs				{ background-position: -15px -200px; }
-span.icon_graphs_hover			{ background-position: -61px -200px; }
-span.icon_home					{ background-position: -15px -240px; }
-span.icon_home_hover			{ background-position: -61px -240px; }
-span.icon_visualize				{ background-position: -15px -280px; }
-span.icon_visualize_hover		{ background-position: -61px -280px; }
-span.icon_discover				{ background-position: -15px -320px; }
-span.icon_discover_hover		{ background-position: -61px -320px; }
+.icon							{ width: 44px; height: 38px; display: block; background-image: url(../images/sprite.png); background-repeat: no-repeat; }
+.icon_home						{ background-position: -15px -325px; }
+.icon_home_hover				{ background-position: -61px -325px; }
+.icon_login_on					{ background-position: -61px -225px; }
+.icon_login						{ background-position: -15px -225px; }
+.icon_login_hover				{ background-position: -61px -225px; }
+.icon_login_on					{ background-position: -61px -225px; }
+.icon_signup					{ background-position: -15px -75px; }
+.icon_signup_hover				{ background-position: -61px -75px; }
+.icon_signup_on					{ background-position: -61px -75px; }
+.icon_record					{ background-position: -15px -25px; }
+.icon_record_hover				{ background-position: -61px -25px; }
+.icon_record_on					{ background-position: -61px -25px; }
+.icon_graphs					{ background-position: -15px -200px; }
+.icon_graphs_hover				{ background-position: -61px -200px; }
+.icon_graphs_on					{ background-position: -61px -200px; }
+.icon_settings					{ background-position: -15px -175px; }
+.icon_settings_hover			{ background-position: -61px -175px; }
+.icon_settings_on				{ background-position: -61px -175px; }
+.icon_visualize					{ background-position: -15px -372px; }
+.icon_visualize_hover			{ background-position: -61px -372px; }
+.icon_visualize_on				{ background-position: -61px -372px; }
+.icon_discover					{ background-position: -15px -275px; }
+.icon_discover_hover			{ background-position: -61px -275px; }
+.icon_discover_on				{ background-position: -61px -275px; }
+.icon_community					{ background-position: -15px -125px; }
+.icon_community_hover			{ background-position: -61px -125px; }
+.icon_community_on				{ background-position: -61px -125px; }
 
 
 /* Misc Global Things */
@@ -92,7 +105,7 @@ a.button:hover 					{ border: 1px solid #444444; background-color: #666666; back
 a.list_button					{ display: block; border: 1px solid #a3a3a3; color: #333333; border-radius: 15px; margin: 15px 0 25px 0; padding: 18px 15px 15px 15px; font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; font-size: 30px; line-height: 30px; text-decoration: none; background-color: #ffffff; background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff),to(#eeeeee)); background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee); background-image: -moz-linear-gradient(top, #ffffff, #eeeeee); background-image: -o-linear-gradient(top, #ffffff, #eeeeee); background-image: -ms-linear-gradient(top, #ffffff, #eeeeee); background-image: linear-gradient(top, #ffffff, #eeeeee); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#eeeeee'); }
 a.list_button:hover 			{ border: 1px solid #666666; background-color: #eeeeee; background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee),to(#ffffff)); background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff); background-image: -moz-linear-gradient(top, #eeeeee, #ffffff); background-image: -o-linear-gradient(top, #eeeeee, #ffffff); background-image: -ms-linear-gradient(top, #eeeeee, #ffffff); background-image: linear-gradient(top, #eeeeee, #ffffff); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#eeeeee', EndColorStr='#ffffff'); }
 
-span.list_icon					{ width: 32px; height: 32px; display: block; float: left; background-image: url(/application/modules/emoome/assets/images/sprite.png); background-repeat: no-repeat; }
+span.list_icon					{ width: 32px; height: 32px; display: block; float: left; background-image: url(../images/sprite.png); background-repeat: no-repeat; }
 span.list_icon_brain 			{ background-position: -106px -130px; }
 span.list_icon_profile 			{ background-position: -106px -160px; }
 span.list_icon_lightbulb		{ background-position: -106px -200px; }
@@ -118,8 +131,8 @@ div.message_success				{ padding: 12px 15px; background: #479e45; color: #fbedbd
 /* Index - Classes */
 div.info_bubble_container		{ max-width: 240px; margin: 0 auto; }
 div.info_bubble					{ background: #d9d9d9; border-radius: 10px; margin: 0 auto; padding: 15px; }
-div.info_bubble_arrow_left		{ width: 50px; height: 36px; position: relative; top: 0px; left: 50px; background: url(../images/sprite_index.png) 0px -770px no-repeat; }
-div.info_bubble_arrow_right		{ width: 50px; height: 36px; position: relative; top: 0px; left: 150px; background: url(../images/sprite_index.png) -50px -770px no-repeat; }
+div.info_bubble_arrow_left		{ width: 50px; height: 36px; position: relative; top: 0px; left: 50px; background: url(../images/mobile_sprite_index.png) 0px -770px no-repeat; }
+div.info_bubble_arrow_right		{ width: 50px; height: 36px; position: relative; top: 0px; left: 150px; background: url(../images/mobile_sprite_index.png) -50px -770px no-repeat; }
 div.info_bubble span.icons		{ float: left; margin: 3px 5px 0 0; }
 div.info_bubble h2				{ float: left; margin-left: 0px; line-height: 24px; }
 div.info_bubble p				{ float: left; margin: 0px; }
@@ -127,16 +140,17 @@ h2.info_header					{ margin: 0 auto 25px auto; }
 p.info_text						{ max-width: 280px; text-align: center; margin: 0 auto 25px auto; line-height: 21px; }
 
 /* Index IDs */
-#index_image_record				{ width: 258px; height: 222px; margin: 0 auto 20px auto; background: url(../images/sprite_index.png) 0 0 no-repeat; }
-#index_image_visualize			{ width: 260px; height: 315px; margin: 0 auto 40px auto; background: url(../images/sprite_index.png) 0 -220px no-repeat; }
-#index_image_discover			{ width: 280px; height: 132px; margin: 0 auto 40px auto; background: url(../images/sprite_index.png) 0 -535px no-repeat; }
+#content_index					{ text-align: center; }
+#index_image_record				{ width: 258px; height: 222px; margin: 0 auto 20px auto; background: url(../images/mobile_sprite_index.png) 0 0 no-repeat; }
+#index_image_visualize			{ width: 260px; height: 315px; margin: 0 auto 40px auto; background: url(../images/mobile_sprite_index.png) 0 -220px no-repeat; }
+#index_image_discover			{ width: 280px; height: 132px; margin: 0 auto 40px auto; background: url(../images/mobile_sprite_index.png) 0 -535px no-repeat; }
 #index_define					{ width: 275px; margin: 40px auto; font-size: 14px; line-height: 21px; }
 #index_quotes					{ width: 280px; margin: 0px auto 0 auto; text-align: center; }
 #index_quotes a					{ display: block; color: #333333; text-decoration: none; letter-spacing: -0.5px; margin-bottom: 45px; }
 span.quote_quote				{ display: block; margin: 10px 0px; font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 24px; }
 span.quote_image				{ display: block; margin: 15px auto; }
-span.quote_image_rww			{ width: 198px; height: 40px; background: url(../images/sprite_index.png) 0px -680px no-repeat; }
-span.quote_image_silicon		{ width: 202px; height: 40px; background: url(../images/sprite_index.png) 0px -720px no-repeat; }
+span.quote_image_rww			{ width: 198px; height: 40px; background: url(../images/mobile_sprite_index.png) 0px -680px no-repeat; }
+span.quote_image_silicon		{ width: 202px; height: 40px; background: url(../images/mobile_sprite_index.png) 0px -720px no-repeat; }
 
 /* Visualize - Your Language */
 #visualize_language				{ margin: 0 0 40px 20px; }
