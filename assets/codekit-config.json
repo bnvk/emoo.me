@@ -2,28 +2,6 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "7978",
   "files" : {
-    "\/js\/libs\/jquery-1.8.3.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/libs\/jquery-1.8.3.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/libs\/jquery-1.8.3.min-min.js",
-      "fileType" : 64
-    },
-    "\/js\/libs-min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/libs-min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/libs-min-min.js",
-      "fileType" : 64
-    },
     "\/js\/dataviz\/g.pie.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -33,6 +11,28 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/dataviz\/g.pie-min.js",
+      "fileType" : 64
+    },
+    "\/images\/large_no_profile.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/large_no_profile.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/large_no_profile.png",
+      "initialSize" : 4167,
+      "fileType" : 8192
+    },
+    "\/js\/models\/visualize-model.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/models\/visualize-model.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/models\/visualize-model-min.js",
       "fileType" : 64
     },
     "\/images\/topics_sprite.png" : {
@@ -46,160 +46,6 @@
       "initialSize" : 54859,
       "fileType" : 8192
     },
-    "\/js\/views\/visualize-view.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views\/visualize-view.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views\/visualize-view-min.js",
-      "fileType" : 64
-    },
-    "\/images\/title.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/title.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/title.png",
-      "initialSize" : 9539,
-      "fileType" : 8192
-    },
-    "\/js\/models\/user-model.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/models\/user-model.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/models\/user-model-min.js",
-      "fileType" : 64
-    },
-    "\/images\/large_no_photo.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/large_no_photo.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/large_no_photo.png",
-      "initialSize" : 3954,
-      "fileType" : 8192
-    },
-    "\/images\/emoome-name.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/emoome-name.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/emoome-name.png",
-      "initialSize" : 2598,
-      "fileType" : 8192
-    },
-    "\/js\/plugins\/jquery.jkey.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/jquery.jkey.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/plugins\/jquery.jkey-min.js",
-      "fileType" : 64
-    },
-    "\/js\/views\/lightbox-view.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views\/lightbox-view.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views\/lightbox-view-min.js",
-      "fileType" : 64
-    },
-    "\/images\/small_no_profile.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/small_no_profile.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/small_no_profile.png",
-      "initialSize" : 1709,
-      "fileType" : 8192
-    },
-    "\/js\/libs\/backbone.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/libs\/backbone.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/libs\/backbone-min.js",
-      "fileType" : 64
-    },
-    "\/images\/emoticons.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/emoticons.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/emoticons.png",
-      "initialSize" : 536568,
-      "fileType" : 8192
-    },
-    "\/js\/libs\/modernizr.custom.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/libs\/modernizr.custom.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/libs\/modernizr.custom-min.js",
-      "fileType" : 64
-    },
-    "\/icons\/apple-touch-icon-114x114-precomposed.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/icons\/apple-touch-icon-114x114-precomposed.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/icons\/apple-touch-icon-114x114-precomposed.png",
-      "initialSize" : 5578,
-      "fileType" : 8192
-    },
-    "\/js\/plugins\/jquery.url.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/jquery.url.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/plugins\/jquery.url-min.js",
-      "fileType" : 64
-    },
-    "\/js\/views-mobile-min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views-mobile-min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views-mobile-min-min.js",
-      "fileType" : 64
-    },
     "\/images\/website-logo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -211,297 +57,15 @@
       "initialSize" : 6054,
       "fileType" : 8192
     },
-    "\/images\/dataviz_type_colors_small_1.png" : {
+    "\/js\/emoome-web.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/dataviz_type_colors_small_1.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/dataviz_type_colors_small_1.png",
-      "initialSize" : 16396,
-      "fileType" : 8192
-    },
-    "\/icons\/apple-touch-icon.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/icons\/apple-touch-icon.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/icons\/apple-touch-icon.png",
-      "initialSize" : 3172,
-      "fileType" : 8192
-    },
-    "\/js\/models\/feeling-model.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/models\/feeling-model.js",
+      "inputAbbreviatedPath" : "\/js\/emoome-web.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/models\/feeling-model-min.js",
-      "fileType" : 64
-    },
-    "\/js\/models-web-min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/models-web-min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/models-web-min-min.js",
-      "fileType" : 64
-    },
-    "\/icons\/apple-touch-icon-57x57-precomposed.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/icons\/apple-touch-icon-57x57-precomposed.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/icons\/apple-touch-icon-57x57-precomposed.png",
-      "initialSize" : 3172,
-      "fileType" : 8192
-    },
-    "\/js\/plugins-mobile.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins-mobile.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/plugins-mobile-min.js",
-      "fileType" : 64
-    },
-    "\/js\/plugins\/auth.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/auth.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/plugins\/auth-min.js",
-      "fileType" : 64
-    },
-    "\/js\/plugins\/jquery.validator.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/jquery.validator.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/plugins\/jquery.validator-min.js",
-      "fileType" : 64
-    },
-    "\/js\/views-mobile.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views-mobile.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views-mobile-min.js",
-      "fileType" : 64
-    },
-    "\/css\/iphone-4.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/iphone-4.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/js\/plugins\/jquery.ui.map.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/jquery.ui.map.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/plugins\/jquery.ui.map-min.js",
-      "fileType" : 64
-    },
-    "\/js\/dataviz\/g.line.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/dataviz\/g.line.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/dataviz\/g.line-min.js",
-      "fileType" : 64
-    },
-    "\/images\/app-startup-320.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/app-startup-320.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/app-startup-320.png",
-      "initialSize" : 6253,
-      "fileType" : 8192
-    },
-    "\/js\/views\/auth-view.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views\/auth-view.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views\/auth-view-min.js",
-      "fileType" : 64
-    },
-    "\/js\/views\/settings-view.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views\/settings-view.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views\/settings-view-min.js",
-      "fileType" : 64
-    },
-    "\/images\/sprite.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/sprite.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/sprite.png",
-      "initialSize" : 16528,
-      "fileType" : 8192
-    },
-    "\/js\/views\/navigation-web-view.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views\/navigation-web-view.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views\/navigation-web-view-min.js",
-      "fileType" : 64
-    },
-    "\/js\/libs\/underscore.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/libs\/underscore.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/libs\/underscore-min.js",
-      "fileType" : 64
-    },
-    "\/images\/mobile_sprite_index.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/mobile_sprite_index.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/mobile_sprite_index.png",
-      "initialSize" : 74284,
-      "fileType" : 8192
-    },
-    "\/js\/views\/visualize-language-view.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views\/visualize-language-view.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views\/visualize-language-view-min.js",
-      "fileType" : 64
-    },
-    "\/css\/ipad.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/ipad.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/js\/routers\/visualize-router.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/routers\/visualize-router.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/routers\/visualize-router-min.js",
-      "fileType" : 64
-    },
-    "\/js\/routers-mobile.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/routers-mobile.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/routers-mobile-min.js",
-      "fileType" : 64
-    },
-    "\/js\/dataviz\/g.raphael.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/dataviz\/g.raphael.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/dataviz\/g.raphael-min.js",
-      "fileType" : 64
-    },
-    "\/images\/medium_no_profile.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/medium_no_profile.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/medium_no_profile.png",
-      "initialSize" : 2755,
-      "fileType" : 8192
-    },
-    "\/js\/views\/record-view.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views\/record-view.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views\/record-view-min.js",
-      "fileType" : 64
-    },
-    "\/js\/routers-web-min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/routers-web-min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/routers-web-min-min.js",
+      "outputAbbreviatedPath" : "\/js\/emoome-web-min.js",
       "fileType" : 64
     },
     "\/icons\/apple-touch-icon-72x72-precomposed.png" : {
@@ -515,104 +79,25 @@
       "initialSize" : 3949,
       "fileType" : 8192
     },
-    "\/js\/models\/ui-messages-model.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/models\/ui-messages-model.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/models\/ui-messages-model-min.js",
-      "fileType" : 64
-    },
-    "\/js\/models\/emoome-settings-model.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/models\/emoome-settings-model.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/models\/emoome-settings-model-min.js",
-      "fileType" : 64
-    },
-    "\/js\/dataviz.js" : {
+    "\/css\/iphone.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/dataviz.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/dataviz-min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/css\/iphone.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
-    "\/images\/emoticons-small@2x.png" : {
+    "\/icons\/apple-touch-icon.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/emoticons-small@2x.png",
+      "inputAbbreviatedPath" : "\/icons\/apple-touch-icon.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/emoticons-small@2x.png",
-      "initialSize" : 172228,
+      "outputAbbreviatedPath" : "\/icons\/apple-touch-icon.png",
+      "initialSize" : 3172,
       "fileType" : 8192
-    },
-    "\/images\/sprite@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/sprite@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/sprite@2x.png",
-      "initialSize" : 26356,
-      "fileType" : 8192
-    },
-    "\/js\/models-mobile.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/models-mobile.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/models-mobile-min.js",
-      "fileType" : 64
-    },
-    "\/js\/models-mobile-min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/models-mobile-min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/models-mobile-min-min.js",
-      "fileType" : 64
-    },
-    "\/js\/dataviz\/raphael.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/dataviz\/raphael.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/dataviz\/raphael-min.js",
-      "fileType" : 64
-    },
-    "\/js\/router.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/router.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/router-min.js",
-      "fileType" : 64
     },
     "\/images\/dataviz_behavior_type_1.png" : {
       "ignoreWasSetByUser" : 0,
@@ -625,81 +110,15 @@
       "initialSize" : 30328,
       "fileType" : 8192
     },
-    "\/js\/models-web.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/models-web.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/models-web-min.js",
-      "fileType" : 64
-    },
-    "\/js\/routers-web.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/routers-web.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/routers-web-min.js",
-      "fileType" : 64
-    },
-    "\/images\/small_no_photo.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/small_no_photo.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/small_no_photo.png",
-      "initialSize" : 2072,
-      "fileType" : 8192
-    },
-    "\/js\/plugins-web-min.js" : {
+    "\/js\/views\/lightbox-view.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins-web-min.js",
+      "inputAbbreviatedPath" : "\/js\/views\/lightbox-view.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/plugins-web-min-min.js",
-      "fileType" : 64
-    },
-    "\/js\/views\/navigation-mobile-view.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views\/navigation-mobile-view.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views\/navigation-mobile-view-min.js",
-      "fileType" : 64
-    },
-    "\/js\/models\/visualize-model.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/models\/visualize-model.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/models\/visualize-model-min.js",
-      "fileType" : 64
-    },
-    "\/js\/dataviz-min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/dataviz-min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/dataviz-min-min.js",
+      "outputAbbreviatedPath" : "\/js\/views\/lightbox-view-min.js",
       "fileType" : 64
     },
     "\/js\/models\/visualize-language-model.js" : {
@@ -713,38 +132,80 @@
       "outputAbbreviatedPath" : "\/js\/models\/visualize-language-model-min.js",
       "fileType" : 64
     },
-    "\/images\/medium_no_photo.png" : {
+    "\/js\/dataviz\/g.line.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/dataviz\/g.line.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/dataviz\/g.line-min.js",
+      "fileType" : 64
+    },
+    "\/js\/plugins\/jquery.url.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins\/jquery.url.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/plugins\/jquery.url-min.js",
+      "fileType" : 64
+    },
+    "\/images\/sprite@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/medium_no_photo.png",
+      "inputAbbreviatedPath" : "\/images\/sprite@2x.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/medium_no_photo.png",
-      "initialSize" : 2763,
+      "outputAbbreviatedPath" : "\/images\/sprite@2x.png",
+      "initialSize" : 26356,
       "fileType" : 8192
     },
-    "\/js\/plugins\/jquery.qtip.js" : {
+    "\/css\/ipad.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/ipad.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/js\/plugins\/jquery.timers.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/jquery.qtip.js",
+      "inputAbbreviatedPath" : "\/js\/plugins\/jquery.timers.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/plugins\/jquery.qtip-min.js",
+      "outputAbbreviatedPath" : "\/js\/plugins\/jquery.timers-min.js",
       "fileType" : 64
     },
-    "\/js\/plugins-mobile-min.js" : {
+    "\/js\/libs\/underscore.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins-mobile-min.js",
+      "inputAbbreviatedPath" : "\/js\/libs\/underscore.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/plugins-mobile-min-min.js",
+      "outputAbbreviatedPath" : "\/js\/libs\/underscore-min.js",
       "fileType" : 64
+    },
+    "\/icons\/apple-touch-icon-114x114-precomposed.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/icons\/apple-touch-icon-114x114-precomposed.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/icons\/apple-touch-icon-114x114-precomposed.png",
+      "initialSize" : 5578,
+      "fileType" : 8192
     },
     "\/images\/web_sprite_index.png" : {
       "ignoreWasSetByUser" : 0,
@@ -757,88 +218,26 @@
       "initialSize" : 138790,
       "fileType" : 8192
     },
-    "\/js\/views\/content-view.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views\/content-view.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views\/content-view-min.js",
-      "fileType" : 64
-    },
-    "\/icons\/apple-touch-icon-precomposed.png" : {
+    "\/images\/small_no_photo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/icons\/apple-touch-icon-precomposed.png",
+      "inputAbbreviatedPath" : "\/images\/small_no_photo.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/icons\/apple-touch-icon-precomposed.png",
-      "initialSize" : 3172,
+      "outputAbbreviatedPath" : "\/images\/small_no_photo.png",
+      "initialSize" : 2072,
       "fileType" : 8192
     },
-    "\/js\/views\/visualize-search-view.js" : {
+    "\/js\/dataviz\/g.dot.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views\/visualize-search-view.js",
+      "inputAbbreviatedPath" : "\/js\/dataviz\/g.dot.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views\/visualize-search-view-min.js",
-      "fileType" : 64
-    },
-    "\/js\/plugins-web.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins-web.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/plugins-web-min.js",
-      "fileType" : 64
-    },
-    "\/css\/iphone.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/iphone.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/css\/web.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/web.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/js\/libs.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/libs.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/libs-min.js",
-      "fileType" : 64
-    },
-    "\/js\/plugins\/iscroll.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/iscroll.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/plugins\/iscroll-min.js",
+      "outputAbbreviatedPath" : "\/js\/dataviz\/g.dot-min.js",
       "fileType" : 64
     },
     "\/js\/dataviz\/g.bar.js" : {
@@ -852,6 +251,418 @@
       "outputAbbreviatedPath" : "\/js\/dataviz\/g.bar-min.js",
       "fileType" : 64
     },
+    "\/js\/emoome-mobile-min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/emoome-mobile-min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/emoome-mobile-min-min.js",
+      "fileType" : 64
+    },
+    "\/css\/iphone-4.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/iphone-4.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/css\/web.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/web.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/js\/views\/navigation-web-view.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/views\/navigation-web-view.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/views\/navigation-web-view-min.js",
+      "fileType" : 64
+    },
+    "\/js\/emoome-web-min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/emoome-web-min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/emoome-web-min-min.js",
+      "fileType" : 64
+    },
+    "\/js\/views\/visualize-view.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/views\/visualize-view.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/views\/visualize-view-min.js",
+      "fileType" : 64
+    },
+    "\/js\/views\/content-view.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/views\/content-view.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/views\/content-view-min.js",
+      "fileType" : 64
+    },
+    "\/js\/views\/visualize-search-view.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/views\/visualize-search-view.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/views\/visualize-search-view-min.js",
+      "fileType" : 64
+    },
+    "\/js\/dataviz-min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/dataviz-min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/dataviz-min-min.js",
+      "fileType" : 64
+    },
+    "\/images\/mobile_sprite_index.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/mobile_sprite_index.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/mobile_sprite_index.png",
+      "initialSize" : 74284,
+      "fileType" : 8192
+    },
+    "\/images\/title.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/title.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/title.png",
+      "initialSize" : 9539,
+      "fileType" : 8192
+    },
+    "\/js\/dataviz.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/dataviz.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/dataviz-min.js",
+      "fileType" : 64
+    },
+    "\/css\/mobile.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/mobile.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/js\/plugins-web-min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins-web-min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/plugins-web-min-min.js",
+      "fileType" : 64
+    },
+    "\/js\/models\/emoome-settings-model.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/models\/emoome-settings-model.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/models\/emoome-settings-model-min.js",
+      "fileType" : 64
+    },
+    "\/js\/plugins\/jquery.ui.map.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins\/jquery.ui.map.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/plugins\/jquery.ui.map-min.js",
+      "fileType" : 64
+    },
+    "\/js\/views\/visualize-language-view.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/views\/visualize-language-view.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/views\/visualize-language-view-min.js",
+      "fileType" : 64
+    },
+    "\/js\/models\/user-model.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/models\/user-model.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/models\/user-model-min.js",
+      "fileType" : 64
+    },
+    "\/images\/noise.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/noise.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/noise.png",
+      "initialSize" : 3979,
+      "fileType" : 8192
+    },
+    "\/js\/views\/record-view.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/views\/record-view.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/views\/record-view-min.js",
+      "fileType" : 64
+    },
+    "\/images\/large_no_photo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/large_no_photo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/large_no_photo.png",
+      "initialSize" : 3954,
+      "fileType" : 8192
+    },
+    "\/js\/views\/navigation-mobile-view.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/views\/navigation-mobile-view.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/views\/navigation-mobile-view-min.js",
+      "fileType" : 64
+    },
+    "\/js\/plugins\/iscroll.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins\/iscroll.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/plugins\/iscroll-min.js",
+      "fileType" : 64
+    },
+    "\/images\/emoticons-small@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/emoticons-small@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/emoticons-small@2x.png",
+      "initialSize" : 172228,
+      "fileType" : 8192
+    },
+    "\/icons\/apple-touch-icon-precomposed.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/icons\/apple-touch-icon-precomposed.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/icons\/apple-touch-icon-precomposed.png",
+      "initialSize" : 3172,
+      "fileType" : 8192
+    },
+    "\/icons\/icon-32.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/icons\/icon-32.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/icons\/icon-32.png",
+      "initialSize" : 1490,
+      "fileType" : 8192
+    },
+    "\/js\/libs\/backbone.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/libs\/backbone.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/libs\/backbone-min.js",
+      "fileType" : 64
+    },
+    "\/images\/medium_no_profile.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/medium_no_profile.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/medium_no_profile.png",
+      "initialSize" : 2755,
+      "fileType" : 8192
+    },
+    "\/js\/routers\/visualize-router.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/routers\/visualize-router.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/routers\/visualize-router-min.js",
+      "fileType" : 64
+    },
+    "\/images\/emoticons.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/emoticons.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/emoticons.png",
+      "initialSize" : 536568,
+      "fileType" : 8192
+    },
+    "\/js\/plugins\/auth.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins\/auth.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/plugins\/auth-min.js",
+      "fileType" : 64
+    },
+    "\/images\/dataviz_type_colors_small_1.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/dataviz_type_colors_small_1.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/dataviz_type_colors_small_1.png",
+      "initialSize" : 16396,
+      "fileType" : 8192
+    },
+    "\/js\/views\/settings-view.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/views\/settings-view.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/views\/settings-view-min.js",
+      "fileType" : 64
+    },
+    "\/js\/emoome-mobile.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/emoome-mobile-min.js",
+      "fileType" : 64
+    },
+    "\/js\/libs\/modernizr.custom.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/libs\/modernizr.custom.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/libs\/modernizr.custom-min.js",
+      "fileType" : 64
+    },
+    "\/js\/views\/auth-view.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/views\/auth-view.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/views\/auth-view-min.js",
+      "fileType" : 64
+    },
+    "\/images\/emoome-name.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/emoome-name.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/emoome-name.png",
+      "initialSize" : 2598,
+      "fileType" : 8192
+    },
+    "\/js\/plugins-mobile-min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins-mobile-min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/plugins-mobile-min-min.js",
+      "fileType" : 64
+    },
     "\/js\/routers\/global-router.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -861,6 +672,94 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/routers\/global-router-min.js",
+      "fileType" : 64
+    },
+    "\/images\/app-startup-320.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/app-startup-320.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/app-startup-320.png",
+      "initialSize" : 6253,
+      "fileType" : 8192
+    },
+    "\/js\/plugins\/jquery.jkey.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins\/jquery.jkey.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/plugins\/jquery.jkey-min.js",
+      "fileType" : 64
+    },
+    "\/js\/plugins\/jquery.qtip.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins\/jquery.qtip.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/plugins\/jquery.qtip-min.js",
+      "fileType" : 64
+    },
+    "\/js\/libs.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/libs.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/libs-min.js",
+      "fileType" : 64
+    },
+    "\/images\/sprite.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/sprite.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/sprite.png",
+      "initialSize" : 16528,
+      "fileType" : 8192
+    },
+    "\/js\/plugins\/jquery.validator.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins\/jquery.validator.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/plugins\/jquery.validator-min.js",
+      "fileType" : 64
+    },
+    "\/js\/plugins-mobile.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/plugins-mobile.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/plugins-mobile-min.js",
+      "fileType" : 64
+    },
+    "\/js\/dataviz\/raphael.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/dataviz\/raphael.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/dataviz\/raphael-min.js",
       "fileType" : 64
     },
     "\/images\/dataviz_type_colors_small_2.png" : {
@@ -874,37 +773,37 @@
       "initialSize" : 16541,
       "fileType" : 8192
     },
-    "\/js\/views-web-min.js" : {
+    "\/js\/models\/feeling-model.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views-web-min.js",
+      "inputAbbreviatedPath" : "\/js\/models\/feeling-model.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views-web-min-min.js",
+      "outputAbbreviatedPath" : "\/js\/models\/feeling-model-min.js",
       "fileType" : 64
     },
-    "\/js\/routers-mobile-min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/routers-mobile-min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/routers-mobile-min-min.js",
-      "fileType" : 64
-    },
-    "\/icons\/icon-32.png" : {
+    "\/icons\/apple-touch-icon-57x57-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/icons\/icon-32.png",
+      "inputAbbreviatedPath" : "\/icons\/apple-touch-icon-57x57-precomposed.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/icons\/icon-32.png",
-      "initialSize" : 1490,
+      "outputAbbreviatedPath" : "\/icons\/apple-touch-icon-57x57-precomposed.png",
+      "initialSize" : 3172,
+      "fileType" : 8192
+    },
+    "\/images\/emoticons-small.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/emoticons-small.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/emoticons-small.png",
+      "initialSize" : 85847,
       "fileType" : 8192
     },
     "\/js\/plugins\/functions.js" : {
@@ -918,80 +817,82 @@
       "outputAbbreviatedPath" : "\/js\/plugins\/functions-min.js",
       "fileType" : 64
     },
-    "\/images\/emoticons-small.png" : {
+    "\/images\/small_no_profile.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/emoticons-small.png",
+      "inputAbbreviatedPath" : "\/images\/small_no_profile.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/emoticons-small.png",
-      "initialSize" : 85847,
+      "outputAbbreviatedPath" : "\/images\/small_no_profile.png",
+      "initialSize" : 1709,
       "fileType" : 8192
     },
-    "\/js\/plugins\/jquery.timers.js" : {
+    "\/js\/libs\/jquery-1.8.3.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/libs\/jquery-1.8.3.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/libs\/jquery-1.8.3.min-min.js",
+      "fileType" : 64
+    },
+    "\/images\/medium_no_photo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/medium_no_photo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/medium_no_photo.png",
+      "initialSize" : 2763,
+      "fileType" : 8192
+    },
+    "\/js\/libs-min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/plugins\/jquery.timers.js",
+      "inputAbbreviatedPath" : "\/js\/libs-min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/plugins\/jquery.timers-min.js",
+      "outputAbbreviatedPath" : "\/js\/libs-min-min.js",
       "fileType" : 64
     },
-    "\/css\/mobile.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/mobile.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/images\/large_no_profile.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/large_no_profile.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/large_no_profile.png",
-      "initialSize" : 4167,
-      "fileType" : 8192
-    },
-    "\/js\/views-web.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views-web.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views-web-min.js",
-      "fileType" : 64
-    },
-    "\/js\/dataviz\/g.dot.js" : {
+    "\/js\/dataviz\/g.raphael.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/dataviz\/g.dot.js",
+      "inputAbbreviatedPath" : "\/js\/dataviz\/g.raphael.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/dataviz\/g.dot-min.js",
+      "outputAbbreviatedPath" : "\/js\/dataviz\/g.raphael-min.js",
       "fileType" : 64
     },
-    "\/images\/noise.png" : {
+    "\/js\/plugins-web.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/noise.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/noise.png",
-      "initialSize" : 3979,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/js\/plugins-web.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/plugins-web-min.js",
+      "fileType" : 64
+    },
+    "\/js\/models\/ui-messages-model.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/models\/ui-messages-model.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/models\/ui-messages-model-min.js",
+      "fileType" : 64
     }
   },
   "manualImportLinks" : [
@@ -999,105 +900,84 @@
       "type" : 1,
       "position" : 0,
       "linkedFileAbbreviatedPath" : "\/js\/models\/emoome-settings-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/models-mobile.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 1,
       "linkedFileAbbreviatedPath" : "\/js\/models\/ui-messages-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/models-mobile.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 2,
       "linkedFileAbbreviatedPath" : "\/js\/models\/feeling-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/models-mobile.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 3,
       "linkedFileAbbreviatedPath" : "\/js\/models\/visualize-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/models-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/lightbox-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/navigation-web-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/content-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 3,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/auth-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-web.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 4,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/record-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-web.js",
+      "linkedFileAbbreviatedPath" : "\/js\/views\/lightbox-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 5,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/visualize-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-web.js",
+      "linkedFileAbbreviatedPath" : "\/js\/views\/navigation-mobile-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 6,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/visualize-language-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-web.js",
+      "linkedFileAbbreviatedPath" : "\/js\/views\/content-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 7,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/visualize-search-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-web.js",
+      "linkedFileAbbreviatedPath" : "\/js\/views\/auth-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 8,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/record-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 9,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/visualize-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 10,
       "linkedFileAbbreviatedPath" : "\/js\/views\/settings-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-web.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
-      "position" : 0,
+      "position" : 11,
       "linkedFileAbbreviatedPath" : "\/js\/routers\/global-router.js",
-      "baseFileAbbreviatedPath" : "\/js\/routers-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/js\/routers\/visualize-router.js",
-      "baseFileAbbreviatedPath" : "\/js\/routers-web.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
@@ -1140,6 +1020,125 @@
       "position" : 5,
       "linkedFileAbbreviatedPath" : "\/js\/plugins\/functions.js",
       "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 6,
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/iscroll.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/js\/models\/emoome-settings-model.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/js\/models\/ui-messages-model.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/js\/models\/feeling-model.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 3,
+      "linkedFileAbbreviatedPath" : "\/js\/models\/visualize-model.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 4,
+      "linkedFileAbbreviatedPath" : "\/js\/models\/visualize-language-model.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 5,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/lightbox-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 6,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/navigation-web-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 7,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/content-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 8,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/auth-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 9,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/record-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 10,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/visualize-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 11,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/visualize-language-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 12,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/visualize-search-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 13,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/settings-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 14,
+      "linkedFileAbbreviatedPath" : "\/js\/routers\/global-router.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 15,
+      "linkedFileAbbreviatedPath" : "\/js\/routers\/visualize-router.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-web.js",
       "followForSyntaxChecking" : 1
     },
     {
@@ -1210,97 +1209,6 @@
       "position" : 6,
       "linkedFileAbbreviatedPath" : "\/js\/plugins\/functions.js",
       "baseFileAbbreviatedPath" : "\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/lightbox-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/navigation-mobile-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/content-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 3,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/auth-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 4,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/record-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 5,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/settings-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 6,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/visualize-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/views-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/js\/routers\/global-router.js",
-      "baseFileAbbreviatedPath" : "\/js\/routers-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/js\/models\/emoome-settings-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/models-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/js\/models\/ui-messages-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/models-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/js\/models\/feeling-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/models-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 3,
-      "linkedFileAbbreviatedPath" : "\/js\/models\/visualize-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/models-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 4,
-      "linkedFileAbbreviatedPath" : "\/js\/models\/visualize-language-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/models-web.js",
       "followForSyntaxChecking" : 1
     }
   ],

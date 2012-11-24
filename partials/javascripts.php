@@ -2,9 +2,7 @@
 <script type="text/javascript" src="<?= $site_assets ?>js/libs-min.js"></script>
 <script type="text/javascript" src="<?= $site_assets ?>js/plugins-<?= $user_source ?>-min.js"></script>
 <script type="text/javascript" src="<?= $site_assets ?>js/dataviz-min.js"></script>
-<script type="text/javascript" src="<?= $site_assets ?>js/models-<?= $user_source ?>-min.js"></script>
-<script type="text/javascript" src="<?= $site_assets ?>js/views-<?= $user_source ?>-min.js"></script>
-<script type="text/javascript" src="<?= $site_assets ?>js/routers-<?= $user_source ?>-min.js"></script>
+<script type="text/javascript" src="<?= $site_assets ?>js/emoome-<?= $user_source ?>-min.js"></script>
 <script type="text/javascript">
 //Global User Data:
 var UserData = Backbone.Model.extend(

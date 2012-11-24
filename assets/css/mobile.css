@@ -65,7 +65,7 @@ ul.toolbar_links						{ width: 100%; margin: 7px auto 10px auto; padding: 0; lis
 ul.toolbar_links li						{ float: left; margin: 0 0 5px 0; padding: 0px; width: 33%; text-align: center; font-family: Helvetica, Arial, Sans-Serif; font-weight: normal; }
 ul.toolbar_links li.toolbar_selected	{ background: #e9e8e8; border-radius: 5px; }
 ul.toolbar_links a						{ color: #919191; font-size: 11px; line-height: 11px; font-weight: bold; text-decoration: none; }
-ul.toolbar_links a span.icons			{ margin: 0 auto; }
+ul.toolbar_links a span.icon			{ margin: 0 auto; }
 
 .icon							{ width: 44px; height: 38px; display: block; background-image: url(../images/sprite.png); background-repeat: no-repeat; }
 .icon_home						{ background-position: -15px -325px; }
