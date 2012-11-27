@@ -11,11 +11,7 @@ var VisualizeView = Backbone.View.extend(
 		var template	= _.template($("#visualize").html(), view_data);
 		this.$el.html(template).hide().delay(250).fadeIn();
 
-		// Display Title
-		if (VisualizeModel.get('logs_count') > 5 && UserData.get('source') !== 'mobile')
-		{
-			$('#visualize_title').fadeIn();
-		}
+		console.log('insider visualize render()');
 
 		// Less or More than 5
 		if (VisualizeModel.get('logs_count') < 5)
@@ -25,7 +21,6 @@ var VisualizeView = Backbone.View.extend(
 		}
 		else
 		{
-			$('#visualize_summary').fadeIn();
 			this.renderLastFive();
 		}
 
@@ -78,17 +73,15 @@ var VisualizeView = Backbone.View.extend(
 		}
 
 		this.renderPieChart(word_values, word_percents, types_colors);
-		
+
 		// Mood & Topics
 		this.renderMoodTopics();
 		
+		// Show Summary
+		$('#visualize_summary').fadeIn();
 	},
 	renderPieChart: function(word_values, word_percents, types_colors)
 	{
-		console.log(word_values);
-		console.log(word_percents);
-		console.log(types_colors);
-	
 		// Piechart
 		var pie_container	= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types_container;
 		var pie_size		= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types;
@@ -100,12 +93,10 @@ var VisualizeView = Backbone.View.extend(
 			colors : types_colors
 	    });
 	    /*
-		pie.hover(function()
-		{
+		pie.hover(function() {
 			this.sector.stop();
 			this.sector.scale(1.1, 1.1, this.cx, this.cy);
-		}, function()
-		{
+		}, function() {
 			this.sector.animate({ transform: 's1 1 ' + this.cx + ' ' + this.cy }, 1000, "bounce");
 		});
 		*/

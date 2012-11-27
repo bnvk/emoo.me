@@ -1,5 +1,5 @@
 <!-- Web Visualize Views -->
-<script type="text/template" id="visualize_language">
+<script type="text/template" id="visualize_language_map">
 	<h1>Language Map</h1>	
 	<div id="user_word_container">
 		<div id="user_word_map"><div id="user_word_colors"></div></div>

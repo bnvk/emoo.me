@@ -7,11 +7,13 @@
 </script>
 
 <script type="text/template" id="record_feeling">
+	<!-- 
 	<div class="left_control_container">
 		<div id="log_feeling_use_text" class="left_control_links icon_small icon_small_text"></div>
 		<div id="log_feeling_use_emoticons" class="left_control_links icon_small icon_small_emoticons"></div>
-		<!-- <div id="log_feeling_use_audio" class="left_control_links icon_small icon_small_audio"></div> -->
+		<div id="log_feeling_use_audio" class="left_control_links icon_small icon_small_audio"></div>
 	</div>
+	-->
 	<div class="right_control_container">
 		<!-- Text -->
 		<div id="record_feeling_text" class="content_center text_center">

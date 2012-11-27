@@ -125,6 +125,8 @@ var ApplicationRouter = Backbone.Router.extend(
 	},
 	visualize: function(view)
 	{
+		console.log('inside router visualize');
+	
 		if (UserData.get('logged') !== 'yes') {
 			Backbone.history.navigate('#/login', true);
 		}
@@ -148,6 +150,10 @@ var ApplicationRouter = Backbone.Router.extend(
 						VisualizeModel.set({ data : 'updated' });
 	
 						// Render View
+						VisualizeViews = new VisualizeView({ el: $('#content')});
+					}
+					else
+					{
 						VisualizeViews = new VisualizeView({ el: $('#content')});
 					}
 				}
@@ -179,5 +185,3 @@ var ApplicationRouter = Backbone.Router.extend(
 			this.switchView(this.notFoundView);
 	}
 });
-
-

@@ -7,7 +7,7 @@ var VisualizeLanguageView = Backbone.View.extend(
 	},
 	render: function()
 	{	
-        var template = _.template($("#visualize_language").html());
+        var template = _.template($("#visualize_language_map").html());
         this.$el.html(template).hide().delay(250).fadeIn();		
 	},
 	renderLanguage: function()
@@ -109,7 +109,7 @@ var VisualizeLanguageView = Backbone.View.extend(
 								paper.circle(40, circle_y, size).attr({fill: color, opacity: 0, 'stroke-width': 1, 'stroke': '#c3c3c3'}).animate({opacity: 1}, 1500);				        
 							}
 						}
-					}					
+					}
 				}
 			}
   		});

@@ -12,7 +12,7 @@ var RecordFeelingView = Backbone.View.extend(
 		"click #log_feeling_use_emoticons"	: "viewFeelingEmoticons",
 		"click #log_feeling_use_audio"		: "viewFeelingAudio",
 		"click a.log_save_feeling"			: "processFeeling",
-		"click div.emoticon_item"			: "processFeelingEmoticons",
+		//"click div.emoticon_item"			: "processFeelingEmoticons",
 		"click #log_feel_next"				: "processFeelingText",
 		"click #log_experience_next"		: "processExperience",
 		"click #log_describe_next"			: "processDescribe"
@@ -64,6 +64,7 @@ var RecordFeelingView = Backbone.View.extend(
 		this.$el.html(template).hide().delay(250).fadeIn();
 
 		// Emoticons
+		/*
 		var emoticons		= '';
 		var emoticons_width	= 765;
 
@@ -88,6 +89,9 @@ var RecordFeelingView = Backbone.View.extend(
 		else {
 			this.viewFeelingText();
 		}
+		*/
+		this.viewFeelingText();
+
     },
     viewFeelingText: function()
     {
