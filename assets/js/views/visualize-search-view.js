@@ -94,11 +94,11 @@ ResultSearch = Backbone.View.extend(
 		    		{
 		    			if ((topics_count > 6) && (topics_data[topic] > 1))
 		    			{
-		    				topics += '<div class="search_topic_container"><div class="icons_topics icons_topics_' + topic + '"></div><span class="search_topic_count">' + topics_data[topic] + '</span> <span class="search_topic_text">' + topic + '</span></div>';
+		    				topics += '<div class="topic_container"><div class="icons_topics icons_topics_' + topic + '"></div><span class="topic_count">' + topics_data[topic] + '</span> <span class="topic_text">' + topic + '</span></div>';
 		    			}
 		    			else if (topics_count < 6)
 		    			{
-		    				topics += '<div class="search_topic_container"><div class="icons_topics icons_topics_' + topic + '"></div><span class="search_topic_count">' + topics_data[topic] + '</span> <span class="search_topic_text">' + topic + '</span></div>';
+		    				topics += '<div class="topic_container"><div class="icons_topics icons_topics_' + topic + '"></div><span class="topic_count">' + topics_data[topic] + '</span> <span class="topic_text">' + topic + '</span></div>';
 		    			}
 		    					
 		    		}

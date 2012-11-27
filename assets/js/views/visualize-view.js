@@ -51,10 +51,18 @@ var VisualizeView = Backbone.View.extend(
 	{
 		// Create Pie Chart
 		var types			= VisualizeModel.get('last_five').language;
-		var types_total		= VisualizeModel.get('last_five').language_total - types['undecided'];
 		var types_colors	= [];
 		var word_values		= [];
 		var word_percents	= [];
+
+		if (types['undecided'] !== undefined)
+		{
+			var types_total	= VisualizeModel.get('last_five').language_total - types['undecided'];
+		}
+		else
+		{
+			var types_total	= VisualizeModel.get('last_five').language_total;
+		}
 
 		// Build Data Values
 		for (var type in types)
@@ -69,68 +77,67 @@ var VisualizeView = Backbone.View.extend(
 			}
 		}
 
-		this.renderPieChart('last_five', word_values, word_percents, types_colors);
+		this.renderPieChart(word_values, word_percents, types_colors);
 		
 		// Mood & Topics
 		this.renderMoodTopics();
 		
 	},
-	renderPieChart: function(element, word_values, word_percents, types_colors)
+	renderPieChart: function(word_values, word_percents, types_colors)
 	{
+		console.log(word_values);
+		console.log(word_percents);
+		console.log(types_colors);
+	
+		// Piechart
 		var pie_container	= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types_container;
 		var pie_size		= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types;
-		var pie_placement	= pie_size + 25;
-		var r = Raphael(element +  '_pie', pie_container, pie_container);
+		var pie_placement	= pie_size;
+		var paperpie = Raphael('visualize_language_pie', pie_container, pie_container);
 
-		pie = r.piechart(pie_placement, pie_placement, pie_size, word_values,
+		pie = paperpie.piechart(pie_placement, pie_placement, pie_size, word_values,
 		{
 			colors : types_colors
 	    });
-
+	    /*
 		pie.hover(function()
 		{
 			this.sector.stop();
 			this.sector.scale(1.1, 1.1, this.cx, this.cy);
-			
-			console.log(this.sector)
-			console.log(this.sector.attrs.fill)
-
 		}, function()
 		{
 			this.sector.animate({ transform: 's1 1 ' + this.cx + ' ' + this.cy }, 1000, "bounce");
 		});
+		*/
 
-
-		var paper = new Raphael(document.getElementById(element + '_legend'), 200, 500);
-		var circle_y = 15;
-		var text_y = 10;
+		// Piechart Legend
+		var paper = new Raphael(document.getElementById('visualize_language_pie_legend'), 200, 225);
+		var circle_y = 10;
+		var text_y = 8;
 
 		$.each(word_percents, function(key, percent)
 		{
-			circle_y = circle_y + 45;
-			text_y = text_y + 22.5;
-
 			paper.circle(10, circle_y, 10).attr({fill: types_colors[key], opacity: 1, 'stroke-width': 1, 'stroke': '#c3c3c3'});
-			paper.text(110, text_y, percent).attr({"color": "#333333", "font-family": "'Ralway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif", "font-size": 18, "font-weight": 100, "letter-spacing": 2});
+			paper.text(35, text_y, percent).attr({"text-anchor": "start", "color": "#333333", "font-family": "'Ralway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif", "font-size": 18, "line-height": 18, "font-weight": 100, "letter-spacing": 2});
 
+			circle_y = circle_y + 50;
+			text_y = text_y + 25;
 		});
 	},
 	renderMoodTopics: function()
 	{
+		// Mood
 		var sentiment = Math.round(VisualizeModel.get('last_five').sentiment / 5);
-	
-		console.log(sentiment);
+		$('#visualize_mood_emoticon').append('<span class="language-map-emoticons emoticons-' + EmoomeSettings.core_emotions[sentiment] + '"></span>');
 
+		// Topics
 		$.each(VisualizeModel.get('last_five').topics, function(key, topic)
 		{
-
-			 $('#visualize_mood_topics').append('<div class="topic_container"><div class="icons_topics icons_topics_' + key + '"></div><span class="search_topic_count">' + topic + '</span> <span class="search_topic_text">' + key + '</span></div>');		
-		});
-		
-		
-		// Add Mood
-		$('#visualize_mood_emoticon').append('<span class="language-map-emoticons emoticons-' + EmoomeSettings.core_emotions[sentiment] + '"></span>');
-		
+			if (key !== 'undecided')
+			{
+				$('#visualize_mood_topics').append('<div class="topic_container"><div class="icons_topics icons_topics_' + key + '"></div><span class="topic_count">' + topic + '</span> <span class="topic_text">' + key + '</span></div>');		
+			}
+		});		
 	},
 	renderCommonWords: function()
 	{

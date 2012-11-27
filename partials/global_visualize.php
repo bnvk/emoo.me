@@ -13,8 +13,8 @@
 	
 		<div id="visualize_language">
 			<h2>Language</h2>
-			<div id="last_five_pie" class="visualize_pie"></div>
-			<div id="last_five_legend" class="visualize_pie_legend"></div>
+			<div id="visualize_language_pie"></div>
+			<div id="visualize_language_pie_legend"></div>
 		</div>
 		<div id="visualize_mood">
 			<h2>Mood & Topics</h2>

@@ -70,8 +70,8 @@ var EmoomeSettings = Backbone.Model.extend({
 			"circle_strong_experiences" : 10
 		},
 		"web" : {
-			"pie_word_types_container" : 375,
-			"pie_word_types"	: 150,
+			"pie_word_types_container" : 325,
+			"pie_word_types"	: 162,
 			"circle_strong_experiences" : 10
 		}
 	}
