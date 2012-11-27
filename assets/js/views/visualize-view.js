@@ -38,7 +38,6 @@ var VisualizeView = Backbone.View.extend(
 				$('#your_language_map').fadeIn();
 			}
 		
-			this.renderAllTime();
 			this.renderCommonWords();
 		}
 
@@ -52,6 +51,7 @@ var VisualizeView = Backbone.View.extend(
 	{
 		// Create Pie Chart
 		var types			= VisualizeModel.get('last_five').language;
+		var types_total		= VisualizeModel.get('last_five').language_total - types['undecided'];
 		var types_colors	= [];
 		var word_values		= [];
 		var word_percents	= [];
@@ -61,62 +61,76 @@ var VisualizeView = Backbone.View.extend(
 		{
 			if (type !== 'undecided')
 			{
+				var type_percent = types[type] / types_total,
+				type_percent = Math.round(type_percent * 100);
 				word_values.push(types[type]);
-				word_percents.push("%% " + type);
+				word_percents.push(type_percent + '% ' + type);
 				types_colors.push(EmoomeSettings.type_colors[type]);
 			}
 		}
 
-		this.renderPieChart("last_five", word_values, word_percents, types_colors);
-	},
-	renderAllTime: function()
-	{
-		// Create Pie Chart
-		var types			= VisualizeModel.get('all_time').language;
-		var types_colors	= [];
-		var word_values		= [];
-		var word_percents	= [];
-
-		// Build Data Values
-		for (var type in types)
-		{
-			if (type !== 'undecided')
-			{
-				word_values.push(types[type]);
-				word_percents.push("%% " + type);
-				types_colors.push(EmoomeSettings.type_colors[type]);
-			}
-		}
-
-		this.renderPieChart("all_time", word_values, word_percents, types_colors);
+		this.renderPieChart('last_five', word_values, word_percents, types_colors);
+		
+		// Mood & Topics
+		this.renderMoodTopics();
+		
 	},
 	renderPieChart: function(element, word_values, word_percents, types_colors)
 	{
-		var r = Raphael(element, 575, 375);
-		pie = r.piechart(175, 175, 150, word_values,
+		var pie_container	= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types_container;
+		var pie_size		= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types;
+		var pie_placement	= pie_size + 25;
+		var r = Raphael(element +  '_pie', pie_container, pie_container);
+
+		pie = r.piechart(pie_placement, pie_placement, pie_size, word_values,
 		{
 			colors : types_colors
-		});//.attr({"font": "24px 'Ralway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif", "font-family": "'Ralway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif", "font-size": 24, "font-weight": 100, "letter-spacing": 2});
+	    });
 
 		pie.hover(function()
 		{
 			this.sector.stop();
 			this.sector.scale(1.1, 1.1, this.cx, this.cy);
 			
-			if (this.label) {
-				this.label[0].stop();
-				this.label[0].attr({ r : 15 });
-			}
+			console.log(this.sector)
+			console.log(this.sector.attrs.fill)
+
 		}, function()
 		{
 			this.sector.animate({ transform: 's1 1 ' + this.cx + ' ' + this.cy }, 1000, "bounce");
-
-			if (this.label){
-				this.label[0].animate({ r : 10 }, 750, "bounce");
-			}
 		});
 
-		return true;
+
+		var paper = new Raphael(document.getElementById(element + '_legend'), 200, 500);
+		var circle_y = 15;
+		var text_y = 10;
+
+		$.each(word_percents, function(key, percent)
+		{
+			circle_y = circle_y + 45;
+			text_y = text_y + 22.5;
+
+			paper.circle(10, circle_y, 10).attr({fill: types_colors[key], opacity: 1, 'stroke-width': 1, 'stroke': '#c3c3c3'});
+			paper.text(110, text_y, percent).attr({"color": "#333333", "font-family": "'Ralway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif", "font-size": 18, "font-weight": 100, "letter-spacing": 2});
+
+		});
+	},
+	renderMoodTopics: function()
+	{
+		var sentiment = Math.round(VisualizeModel.get('last_five').sentiment / 5);
+	
+		console.log(sentiment);
+
+		$.each(VisualizeModel.get('last_five').topics, function(key, topic)
+		{
+
+			 $('#visualize_mood_topics').append('<div class="topic_container"><div class="icons_topics icons_topics_' + key + '"></div><span class="search_topic_count">' + topic + '</span> <span class="search_topic_text">' + key + '</span></div>');		
+		});
+		
+		
+		// Add Mood
+		$('#visualize_mood_emoticon').append('<span class="language-map-emoticons emoticons-' + EmoomeSettings.core_emotions[sentiment] + '"></span>');
+		
 	},
 	renderCommonWords: function()
 	{
@@ -158,8 +172,8 @@ var VisualizeView = Backbone.View.extend(
 		$.each(VisualizeModel.get('strong_experiences'), function(key, experience)
 		{
 			var color		= EmoomeSettings.type_colors[experience.type];
-			var size		= experience.count * 10;
-			var svg_size	= 8 * 10;
+			var size		= experience.count * EmoomeSettings.visualization_sizes[UserData.get('source')].circle_strong_experiences;
+			var svg_size	= 8 * EmoomeSettings.visualization_sizes[UserData.get('source')].circle_strong_experiences;
 			var position	= svg_size / 2;
 
 			// Create HTML Row

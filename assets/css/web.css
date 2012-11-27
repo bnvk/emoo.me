@@ -342,12 +342,18 @@ div.memory_map_bot				{ width: 100%; border-bottom: 1px dashed #c3c3c3; }
 #logs_needed p					{ margin: 0; font-size: 14px; text-transform: capitalize; line-height: 21px; }
 #logs_needed_count				{ margin: 25px 0; padding: 0; font-family: Times, serif; font-size: 60px; line-height: 60px; font-style: italic; font-weight: bold; color: #333333; }
 
-/* Visualize - Summary */
-#visualize_language				{ margin: 0 0 60px 0; }
 #person_circles					{ width: 100%; min-height: 225px; margin-bottom: 45px; }
 div.person_circles_circle		{ height: 225px; float: left; margin-right: 20px; margin-bottom: 20px; font-size: 12px; text-align: center; }
-#visualize_last_five 			{ width: 575px; height: 435px; float: left; margin-right: 25px; }
-#visualize_all_time 			{ width: 575px; height: 435px; float: left; }
+
+#visualize_language				{ width: 575px; height: 435px; float: left; border: 1px solid red; margin-right: 25px; }
+#visualize_mood 				{ width: 575px; height: 435px; float: left; border: 1px solid green; }
+
+#visualize_mood_emoticon		{ width: 326px; height: 324px; float: left; }
+#visualize_mood_topics			{ width: 226px; height: 324px; float: left; }
+
+div.visualize_pie				{ float: left; }
+div.visualize_pie_legend		{ float: left; }
+
 
 /* Visualize - Common Words */
 #visualize_common				{ margin: 0 0 60px 0; }

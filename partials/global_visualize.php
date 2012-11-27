@@ -8,18 +8,25 @@
 			<p>More feelings before you can visualize</p>
 		</div>
 	</div>
-	<div id="visualize_summary" class="hide">
-		<div id="visualize_last_five">
-			<h2>Last Five Entries</h2>
-			<div id="last_five"></div>
+	<div id="visualize_summary">
+	<h1>Your Last 5 Entries</h1>
+	
+		<div id="visualize_language">
+			<h2>Language</h2>
+			<div id="last_five_pie" class="visualize_pie"></div>
+			<div id="last_five_legend" class="visualize_pie_legend"></div>
 		</div>
-		<div id="visualize_all_time">
-			<h2>All Entries</h2>
-			<div id="all_time"></div>
+		<div id="visualize_mood">
+			<h2>Mood & Topics</h2>
+			<div id="visualize_mood_emoticon"></div>
+			<div id="visualize_mood_topics"></div>
 		</div>
-		<div class="clear"></div>
-		<p id="your_language_map" class="hide"><a href="#/visualize/language" class="button">Language</a> <a href="#/visualize/search" class="button">Search</a></p>
+		<div class="clear"></div>		
+		
+		<p id="your_language_map"><a href="#/visualize/language" class="button">Language</a> <a href="#/visualize/search" class="button">Search</a></p>
 	</div>
+	<div class="clear"></div>		
+
 	<div id="visualize_common" class="hide">
 		<h2>Common Words & Feelings</h2>
 		<div id="visualize_common_words"></div>

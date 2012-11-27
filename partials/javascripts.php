@@ -48,7 +48,5 @@ $(document).ready(function()
 
 	// History
 	Backbone.history.start();
-
-	console.log("LOADED site type: " + UserData.get('source'));
 });
 </script>

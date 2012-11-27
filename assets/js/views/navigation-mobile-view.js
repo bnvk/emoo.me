@@ -15,6 +15,11 @@ var NavigationView = Backbone.View.extend(
 		{
 			this.renderPublic();
 		}
+
+		var myScroll;
+		
+//		myScroll = new iScroll('container', { scrollbarClass: 'myScrollbar' });
+		
 	},
 	renderPublic: function()
 	{
