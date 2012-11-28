@@ -5,10 +5,10 @@
 	"updated":"2011-04-14",
 	"creator":"Brennan Novak",
 	"layouts":{
-		"wide":["content","wide"],
+		"sidebar":["content","sidebar","wide"],
 		"web":["wide"],
 		"mobile":["mobile"]
 	},
-	"default_layout":"web",
+	"default_layout":"sidebar",
 	"head_footer":"no"
 }

@@ -107,8 +107,6 @@ var ApplicationRouter = Backbone.Router.extend(
 			Backbone.history.navigate('#/login', true);
 		}
 
-		console.log('here inside recordViews ' + view);
-
 		// View
 		if (view === undefined)
 			this.switchView(this.recordIndex);
@@ -124,9 +122,7 @@ var ApplicationRouter = Backbone.Router.extend(
 			this.switchView(this.notFoundView);
 	},
 	visualize: function(view)
-	{
-		console.log('inside router visualize');
-	
+	{	
 		if (UserData.get('logged') !== 'yes') {
 			Backbone.history.navigate('#/login', true);
 		}

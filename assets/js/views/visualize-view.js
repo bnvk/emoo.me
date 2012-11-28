@@ -11,12 +11,10 @@ var VisualizeView = Backbone.View.extend(
 		var template	= _.template($("#visualize").html(), view_data);
 		this.$el.html(template).hide().delay(250).fadeIn();
 
-		console.log('insider visualize render()');
-
 		// Less or More than 5
 		if (VisualizeModel.get('logs_count') < 5)
 		{
-			$('#logs_needed_count').html(5 - VisualizeModel.get('logs_count'));
+			$('#visualize_logs_needed_count').html(5 - VisualizeModel.get('logs_count'));
 			$('#visualize_waiting').fadeIn('slow');
 		}
 		else
@@ -32,7 +30,7 @@ var VisualizeView = Backbone.View.extend(
 			{
 				$('#your_language_map').fadeIn();
 			}
-		
+
 			this.renderCommonWords();
 		}
 
@@ -76,9 +74,20 @@ var VisualizeView = Backbone.View.extend(
 
 		// Mood & Topics
 		this.renderMoodTopics();
-		
+
 		// Show Summary
 		$('#visualize_summary').fadeIn();
+
+		// Show Device (User Level Specific Navigation)
+		if (UserData.get('source') !== 'mobile')
+		{
+			$('#visualize_navigation_language').show();
+		
+			if (UserData.get('user_level_id') <= 3)
+			{
+				$('#visualize_navigation_search').show();
+			}
+		}
 	},
 	renderPieChart: function(word_values, word_percents, types_colors)
 	{

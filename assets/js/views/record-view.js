@@ -301,9 +301,9 @@ var RecordFeelingView = Backbone.View.extend(
     {
 		// Clear Data
 		this.clearInput();
-		
+
 		// Prep Template
-		var view_data	= { describe_this: _.shuffle(UIMessages.log_feeling_complete)[0] };
+		var view_data	= { complete_message: _.shuffle(UIMessages.log_feeling_complete)[0] };
 		var template	= _.template($("#record_thanks").html(), view_data);
 
 		// Render

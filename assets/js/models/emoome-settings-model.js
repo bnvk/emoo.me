@@ -60,8 +60,8 @@ var EmoomeSettings = Backbone.Model.extend({
 	},
 	visualization_sizes : {
 		"mobile" : {
-			"pie_word_types_container" : 175,
-			"pie_word_types" : 75,
+			"pie_word_types_container" : 250,
+			"pie_word_types" : 100,
 			"circle_strong_experiences" : 5
 		},
 		"tablet" : {

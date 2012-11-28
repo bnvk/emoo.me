@@ -56,7 +56,7 @@
 <script type="text/template" id="record_thanks">
 	<div id="log_thanks_view" class="content_center text_center">
 		<h1>Thanks :)</h1>
-		<h3 id="log_completion_message"></h3>
+		<h3 id="log_completion_message"><%= complete_message %></h3>
 		<p><a id="log_thanks_next" class="button" href="#">Another</a></p>
 	</div>
 </script>

@@ -1,0 +1,90 @@
+@import "config.less";
+@import "reset.less";
+@import "base.less";
+@import "icons.less";
+
+
+/* Mobile - Navigation */
+#navigation								{ width: 100%; background: #000000; position: fixed; bottom: 0px; left: 0px; margin: 0px; padding: 0px; }
+ul.toolbar_links						{ width: 100%; margin: 7px auto 10px auto; padding: 0; list-style: none; }
+ul.toolbar_links li						{ float: left; margin: 0 0 5px 0; padding: 0px; width: 33%; text-align: center; font-family: Helvetica, Arial, Sans-Serif; font-weight: normal; }
+ul.toolbar_links li.toolbar_selected	{ background: #e9e8e8; border-radius: 5px; }
+ul.toolbar_links a						{ color: #919191; font-size: 11px; line-height: 11px; font-weight: bold; text-decoration: none; }
+ul.toolbar_links a span.icon			{ margin: 0 auto; }
+
+/* Mobile - Layout */
+#header									{ width: 100%; background: #e9e8e8; margin: 0 0 15px 0; padding: 0px; text-align: center; }
+#header h1								{ margin: 45px auto 15px auto; font-size: 60px; }
+#header_logo							{ width: 128px; height: 25px; margin: 15px auto 15px auto; background: url(../images/sprite.png) 0px 0px no-repeat; }
+
+#container								{ min-height: 380px; position: relative; top: 15px; left: 0px; }
+
+#footer									{ text-align: center; margin: 60px auto 115px auto; }
+#footer a								{ margin: 0 20px 0px 20px; }
+
+
+/* Misc Global Things */
+span.name_ome					{ color: #818181; }
+
+a.button 						{ padding: 10px 15px; color: #eeeeee; text-decoration: none; text-shadow: 1px 1px 1px #333333; border-radius: 10px; border: 1px solid #555555; background-color: #999999; background-image: -webkit-gradient(linear, left top, left bottom, from(#999999),to(#666666)); background-image: -webkit-linear-gradient(top, #999999, #666666); background-image: -moz-linear-gradient(top, #999999, #666666); background-image: -o-linear-gradient(top, #999999, #666666); background-image: -ms-linear-gradient(top, #999999, #666666); background-image: linear-gradient(top, #999999, #666666); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#999999', EndColorStr='#666666'); }
+a.button:hover 					{ border: 1px solid #444444; background-color: #666666; background-image: -webkit-gradient(linear, left top, left bottom, from(#666666),to(#888888)); background-image: -webkit-linear-gradient(top, #666666, #888888); background-image: -moz-linear-gradient(top, #666666, #888888); background-image: -o-linear-gradient(top, #666666, #888888); background-image: -ms-linear-gradient(top, #666666, #888888); background-image: linear-gradient(top, #666666, #888888); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#666666', EndColorStr='#888888'); }
+a.list_button					{ display: block; border: 1px solid #a3a3a3; color: #333333; border-radius: 15px; margin: 15px 0 25px 0; padding: 18px 15px 15px 15px; font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; font-size: 30px; line-height: 30px; text-decoration: none; background-color: #ffffff; background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff),to(#eeeeee)); background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee); background-image: -moz-linear-gradient(top, #ffffff, #eeeeee); background-image: -o-linear-gradient(top, #ffffff, #eeeeee); background-image: -ms-linear-gradient(top, #ffffff, #eeeeee); background-image: linear-gradient(top, #ffffff, #eeeeee); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#eeeeee'); }
+a.list_button:hover 			{ border: 1px solid #666666; background-color: #eeeeee; background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee),to(#ffffff)); background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff); background-image: -moz-linear-gradient(top, #eeeeee, #ffffff); background-image: -o-linear-gradient(top, #eeeeee, #ffffff); background-image: -ms-linear-gradient(top, #eeeeee, #ffffff); background-image: linear-gradient(top, #eeeeee, #ffffff); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#eeeeee', EndColorStr='#ffffff'); }
+
+span.list_icon					{ width: 32px; height: 32px; display: block; float: left; background-image: url(../images/sprite.png); background-repeat: no-repeat; }
+span.list_icon_brain 			{ background-position: -106px -130px; }
+span.list_icon_profile 			{ background-position: -106px -160px; }
+span.list_icon_lightbulb		{ background-position: -106px -200px; }
+span.list_icon_password 		{ background-position: -106px  0; }
+span.list_icon_notifications	{ background-position: -106px -32px; }
+span.list_icon_account 			{ background-position: -106px -64px; }
+span.list_icon_login 			{ background-position: -106px -96px; }
+
+/* Request Lightbox Message */
+#request_lightbox 				{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 200; background: #000000; filter: alpha(opacity=90); -moz-opacity: 0.95; opacity: .95; display: none; text-align: center; }
+.lightbox_message_normal 		{ color: #eeeeee !important; }
+.lightbox_message_success 		{ color: #eeeeee !important; }
+.lightbox_message_error 		{ color: #b20a0a !important; }
+
+/* Index - Classes */
+div.info_bubble_container		{ max-width: 240px; margin: 0 auto; }
+div.info_bubble					{ background: #d9d9d9; border-radius: 10px; margin: 0 auto; padding: 15px; }
+div.info_bubble_arrow_left		{ width: 50px; height: 36px; position: relative; top: 0px; left: 50px; background: url(../images/mobile_sprite_index.png) 0px -770px no-repeat; }
+div.info_bubble_arrow_right		{ width: 50px; height: 36px; position: relative; top: 0px; left: 150px; background: url(../images/mobile_sprite_index.png) -50px -770px no-repeat; }
+div.info_bubble span.icons		{ float: left; margin: 3px 5px 0 0; }
+div.info_bubble h2				{ float: left; margin-left: 0px; line-height: 24px; }
+div.info_bubble p				{ float: left; margin: 0px; }
+h2.info_header					{ margin: 0 auto 25px auto; }
+p.info_text						{ max-width: 280px; text-align: center; margin: 0 auto 25px auto; line-height: 21px; }
+
+/* Index IDs */
+#content_index					{ text-align: center; }
+#index_image_record				{ width: 258px; height: 222px; margin: 0 auto 20px auto; background: url(../images/mobile_sprite_index.png) 0 0 no-repeat; }
+#index_image_visualize			{ width: 260px; height: 315px; margin: 0 auto 40px auto; background: url(../images/mobile_sprite_index.png) 0 -220px no-repeat; }
+#index_image_discover			{ width: 280px; height: 132px; margin: 0 auto 40px auto; background: url(../images/mobile_sprite_index.png) 0 -535px no-repeat; }
+#index_define					{ width: 275px; margin: 40px auto; font-size: 14px; line-height: 21px; }
+#index_quotes					{ width: 280px; margin: 0px auto 0 auto; text-align: center; }
+#index_quotes a					{ display: block; color: #333333; text-decoration: none; letter-spacing: -0.5px; margin-bottom: 45px; }
+span.quote_quote				{ display: block; margin: 10px 0px; font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 24px; }
+span.quote_image				{ display: block; margin: 15px auto; }
+span.quote_image_rww			{ width: 198px; height: 40px; background: url(../images/mobile_sprite_index.png) 0px -680px no-repeat; }
+span.quote_image_silicon		{ width: 202px; height: 40px; background: url(../images/mobile_sprite_index.png) 0px -720px no-repeat; }
+
+/* Visualize - Your Language */
+#visualize_language				{ margin: 0 0 40px 20px; }
+#person_circles					{ width: 100%; min-height: 100px; margin: 0px 0 0 0; }
+div.person_circles_circle		{ height: 100px; float: left; margin: 20px 20px 20px 0; font-size: 12px; text-align: center; }
+
+/* Visualize - Common Words */
+#visualize_common				{ margin: 0 20px 40px 20px; }
+div.common_words				{ width: 100%; margin: 10px 0; padding: 5px 0px; }
+div.common_words_line			{ width: 100%; height: 1px; background: #999999; }
+div.common_words_count			{ width: 50px; height: 100%; margin-right: 10px; text-align: center; float: left; font-size: 24px; border-right: 1px solid #333333; }
+div.common_words_words			{ margin-top: 2px; font-style: italic; font-size: 18px; line-height: 21px; color: #888888; text-transform: capitalize; }
+
+/* Visualize - Strong Experiences */
+#visualize_experiences			{ margin: 0 0 40px 20px; }
+div.strong_experience			{ margin: 15px 0 15px 0; }
+div.strong_experience_circle	{ width: 40; float: left; }
+div.strong_experience_experience{ width: 240px; float: left; margin-top: 0px; margin-left: 8px; font-style: italic; font-size: 14px; line-height: 18px; color: #888888; }
+span.strong_experience_date		{ display: block; margin-left: 0px; font-size: 11px; font-weight: bold; font-style: normal; color: #333333; }
