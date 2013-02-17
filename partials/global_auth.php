@@ -12,8 +12,7 @@
 			<span id="login_password_error"></span>			
 		</p>
 		<p>
-			<label>Remember</label> <?= form_checkbox('remember', '1', TRUE, 'id="login_remember"');?> 
-			<a href="<?= base_url() ?>#/forgot_password">Forgot password?</a>
+			<a href="<?= base_url() ?>#/forgot_password">Forgot your password?</a>
 		</p>
 		<p>
 			<input type="button" name="submit" id="button_login" value="Login">

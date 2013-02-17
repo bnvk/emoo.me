@@ -1,0 +1,145 @@
+/* =============== Web Style =============== */
+
+@media only screen and (min-width: 1025px) {
+
+	/* Navigation */	
+	#navigation 						{ width: 100%; height: 72px; position: fixed; left: 0px; top: 0px; }
+
+	#navigation h1						{ margin-top: 0.4em; font-size: 2em; }
+	#navigation h1 a					{ text-decoration: none; }
+	#navigation a img					{ width: 48px; height: 48px; border-radius: 5px; }
+	
+	#navigation_info					{ width: 350px; }
+	#navigation_avatar					{ margin-right: 0.5em; }
+	#navigation_logo 					{ width: 150px; height: 25px; cursor: pointer; margin: 0.65em auto 0 auto; }
+
+	#navigation_menu								{ float: right; position: relative; top: 0px; right: 25px; margin: 0; padding: 0; list-style: none; }
+	#navigation_menu ul li							{ float: left; margin: 0 0 0 30px; padding: 0px; text-align: center; font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; font-weight: 100; }
+	#navigation_menu a								{ font-size: 1.25em; }
+	#navigation_menu a span.navigation_icons		{ position: relative; top: 6px; left: 0px; font-size: 1.25em; line-height: 1.25em; }
+	#navigation_menu a:hover span.navigation_icons	{ color: @navigation-text-hover; }
+	#navigation_menu a.selected 					{ background: @navigation-text; color: @navigation-background; padding: 0.35em; border-radius: 10px; }
+	#navigation_menu a.selected:hover 				{ cursor: default; }
+	#navigation_menu a.selected:hover span.navigation_icons { color: @navigation-background; }
+
+
+	/* Content */
+	#container {
+		width: 100%;
+		height: 100% - 72px;
+		position: absolute; 
+		top: 73px; bottom: 0px; left: 0px;
+		margin: 0;
+		padding: 2px 1px;
+	}
+
+	#content {
+		position: relative;
+		width:100%;	
+		margin: 0;
+	}
+
+
+	div.topic_container 			{ width: 110px; min-height: 120px; text-align: center; }
+	span.topic_count 				{ width: 15px; display: block; text-align: center; background-color: #c9c9c9; padding: 5px; border-radius: 7px; color: #333; font-size: 12px; font-weight: bold; float: left; }
+	span.topic_text  				{ display: block; float: left; font-size: 12px; font-weight: bold; text-align: center; margin-top: 5px; margin-left: 5px; }	
+
+	div.content_left	{ width: 450px; }
+	div.content_center	{ width: 450px; }
+
+
+
+	/* Index */
+	#content_index				{ width: 900px; margin: 0 auto; }
+	
+	#index_define				{ width: 900px; margin-bottom: 45px; font-size: 14px; line-height: 21px; }
+	#index_define p 			{ width: 450px; display: block; float: left; }
+	
+	#index_content_1			{ width: 872px; height: 440px; background: url(../images/web_sprite_index.png) 0 0 no-repeat; }
+	#index_content_2			{ width: 475px; height: 477px; background: url(../images/web_sprite_index.png) 0 -440px no-repeat; float: left; margin-right: 20px; }
+	#index_signup				{ width: 355px; float: left; margin-top: 30px; }
+	#index_signup h2			{ font-size: 48px; margin: 0; }
+	#index_signup h3			{ font-size: 18px; margin: 0 0 25px 0; }
+	#index_quotes				{ width: 900px; margin-top: 40px; text-align: center; }
+	
+	.index_container			{ width: 900px; margin: 0 auto; }
+	.index_content				{ margin-bottom: 45px; }
+	.index_content h1 			{ width: 90%; font-size: 72px; border-bottom: 1px solid #999999; padding: 5px 0px; line-height: 72px; margin: 0px auto; }
+	.index_content h2 			{ display: none; }
+	
+	div.quote_container			{ width: 440px; float: left; margin: 30px 10px 0 0; text-align: center; }
+	div.quote_container a		{ color: #333333; text-decoration: none; letter-spacing: -0.5px; }
+	div.quote_container a:hover { color: #666666; }
+	span.quote_title			{ display: block; font-family: Helvetica, Arial, sans-serif; font-size: 24px; line-height: 24px; }
+	span.quote_quote			{ display: block; margin: 10px 25px; font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 24px; }
+	span.quote_image			{ display: block; margin: 15px auto; background-image: url(../images/web_sprite_index.png); background-repeat: no-repeat; }
+	span.quote_image_rww		{ width: 255px; height: 50px; background-position: -500px -440px; }
+	span.quote_image_silicon	{ width: 328px; height: 50px; background-position: -500px -500px; }
+	
+
+
+	/* Reused Interface Controls */
+	div.left_control_container		{ width: 34px; min-height: 34px; position: absolute; top: 250px; left: 25px; float: left; }
+	div.left_control_links			{ margin: 25px 0px; }
+	div.right_control_container		{ width: 90%; float: left; position: absolute; top: 0px; left: 75px; }
+
+
+	
+	/* Record - Feeling - Text */
+	#log_describe_this				{ font-family: Times, serif; font-size: 24px; font-style: italic; font-weight: bold; color: #999999; } 
+	
+	/* Record - Feeling - Emoticons */
+	#record_feeling_emoticons 		{ width: 90%; min-width: 465px; height: 450px; overflow: scroll; margin: 0 auto; }
+	#emoticons 						{ height: 425px; }
+	div.emoticon_item 				{ width: 365px; height: 425px; margin: 0px 25px; display: block; float: left; border-radius: 60px; color: #999; font-size: 18px; text-align: center; }
+	div.emoticon_item:hover 		{ cursor: pointer; text-decoration: none; }
+	div.record_feeling_emoticon		{ height: 360px; margin-top: 25px; }
+	
+	/* Record - Feeling - Audio */
+	#record_feeling_audio			{ width: 450px; margin: 0 auto; text-align: center; }
+	
+	/* Record - Thanks */	
+	#log_thanks_view h3				{ margin: 1em 0px; }
+
+
+
+
+	/* Visualize - Waiting */
+	#visualize_waiting a.button 	{ margin-top: 3em; }
+	#visualize_logs_needed			{ width: 150px; margin: 35px auto; background: #d3d3d3; border-radius: 15px; padding: 25px 35px; }
+	#visualize_logs_needed p		{ margin: 0; font-size: 16px; text-transform: capitalize; line-height: 21px; }
+	#visualize_logs_needed_count	{ margin: 25px 0; padding: 0; font-family: Helvetica, Arial, Sans-Serif; font-size: 60px; line-height: 60px; font-weight: bold; color: #333333; }
+	
+	/* Visualize - Summary */
+	#visualize_summary h1			{ display: inline-block; }
+	#visualize_navigation			{ float: right; margin: 1em 0 0 0; }
+	
+	#visualize_language				{ min-width: 335px; width: 45%; min-height: 435px; float: left; margin: 2em 2em 2em 0; }
+	#visualize_language_pie			{ width: 326px; height: 326px; float: left; }
+	#visualize_language_pie_legend	{ width: 200px; min-height: 125px; float: left; margin: 2em 0 0 2.5em; }
+	
+	#visualize_mood 				{ min-width: 326px; width: 50%; min-height: 435px; float: left; margin: 2em 0 2em 0; }
+	#visualize_mood_emoticon		{ width: 326px; height: 324px; float: left; }
+	#visualize_mood_topics			{ width: 270px; min-height: 100px; float: left; margin: 2em 0 0 2.25em; }
+	#visualize_mood_topics div.topic_container { float: left; margin: 0 1.5em 2.5em 0; }
+
+
+	/* Visualize - Common Words */
+	#visualize_common				{ margin: 0 0 60px 0; }
+	div.common_words				{ width: 100%; margin: 15px 0; padding: 10px 20px; }
+	div.common_words_line			{ width: 100%; height: 1px; background: #999999; }
+	div.common_words_count			{ width: 80px; height: 100%; margin-right: 20px; text-align: center; float: left; font-size: 36px; border-right: 1px solid #333333; }
+	div.common_words_words			{ margin-top: 6px; font-style: italic; font-size: 24px; line-height: 30px; color: #888888; text-transform: capitalize; }
+
+
+
+	/* Visualize - Strong Experiences */
+	#visualize_experiences			{ margin: 0 0 60px 0; }
+	#strong_experiences				{ margin-bottom: 45px; }
+	div.strong_experience			{ margin-bottom: 25px; }
+	div.strong_experience_circle	{ float: left; }
+	div.strong_experience_experience{ float: left; margin-top: 12px; margin-left: 20px; font-style: italic; font-size: 24px; line-height: 30px; color: #888888; }
+	span.strong_experience_date		{ display: block; margin-left: 10px; font-size: 14px; font-weight: bold; font-style: normal; color: #333333; }
+
+
+}

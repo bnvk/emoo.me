@@ -21,13 +21,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 <?php endif; ?>
 
-<link rel="stylesheet" media="screen" href="<?= $site_assets ?>css/<?= $user_source ?>.css" type="text/css" />
-
-<?php if ($this->agent->is_mobile()): ?>
-<!-- Mobile Resolution Dependent -->
-<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="<?= $site_assets ?>css/ipad.css" type="text/css" />		
-<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="<?= $site_assets ?>css/iphone.css" type="text/css" />
-<?php endif; ?>
+<link rel="stylesheet" media="screen" href="<?= $site_assets ?>css/style.css" type="text/css" />
 
 <!-- Apple Icons -->
 <link rel="apple-touch-icon-precomposed" href="<?= $site_assets ?>icons/apple-touch-icon-precomposed.png" />

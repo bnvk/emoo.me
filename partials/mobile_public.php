@@ -6,7 +6,7 @@
 
 		<div class="info_bubble_container">
 			<div class="info_bubble">
-				<span class="icons icon_record_hover"></span>
+				<span class="icons icon-pencil"></span>
 				<h2>Record</h2>
 				<p>Your experiences & feelings..</p>
 				<br class="clear">
@@ -18,7 +18,7 @@
 		
 		<div class="info_bubble_container">
 			<div class="info_bubble">
-				<span class="icons icon_visualize_hover"></span>
+				<span class="icons icon-eye"></span>
 				<h2>Visualize</h2>
 				<p>Moments from your life</p>
 				<br class="clear">
@@ -31,7 +31,7 @@
 	
 		<div class="info_bubble_container">
 			<div class="info_bubble">
-				<span class="icons icon_discover_hover"></span>
+				<span class="icons icon-lightbulb"></span>
 				<h2>Discover</h2>
 				<p>Patterns in your thinking</p>	
 				<br class="clear">

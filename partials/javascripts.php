@@ -34,19 +34,35 @@ var UserData = Backbone.Model.extend(
     initialize: function() {}
 });
 
-// Instantiate Models
-var UserData = new UserData();
-var base_url = '<?= base_url() ?>';
+var App = (function ($, Backbone, global)
+{
+    var init = function()
+    {
+    	// iScroll
+        //global.myScroll = new iScroll('container', { scrollbarClass: 'myScrollbar' });
+
+        // URL
+        global.base_url = '<?= base_url() ?>';
+
+        // Model
+        global.UserData = new UserData();
+
+		// Create Router
+		global.Router = new ApplicationRouter($('#content'));
+		<?php if (!$this->agent->is_mobile()): ?>
+		global.ExtraRouter = new VisualizeRouter($('#content'));
+		<?php endif; ?>
+
+        // Start Backbone History
+        Backbone.history.start();
+    };
+
+    return { init: init };
+
+} (jQuery, Backbone, window));
 
 $(document).ready(function()
 {
-	// Create Router
-	var Router = new ApplicationRouter($('#content'));
-	<?php if (!$this->agent->is_mobile()): ?>
-	var ExtraRouter = new VisualizeRouter($('#content'));
-	<?php endif; ?>
-
-	// History
-	Backbone.history.start();
+	App.init();
 });
 </script>

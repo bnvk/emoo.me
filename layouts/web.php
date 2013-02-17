@@ -7,25 +7,22 @@
 <?= $head ?>
 </head>
 <body>
-<header>
-	<div id="navigation">
-		<div class="clear"></div>
-	</div>	
-</header>
+<div id="navigation">
+	<div id="navigation_info"></div>
+	<div id="navigation_menu_toggle" class="icon-menu"></div>
+	<div id="navigation_menu">
+		<ul id="navigation_menu_links"></ul>
+	</div>
+	<div id="navigation_logo"></div>
+	<div class="clear"></div>
+</div>	
 
 <!-- Where The Magic Happens -->
 <div id="container">
 	<div id="content"></div>
 </div>
 
-<!-- Footer -->
-<footer>
-	<div class="clear"></div>
-	<div id="footer">
-		<p><a href="<?= base_url() ?>">Home</a> <a href="<?= base_url() ?>blog">Blog</a> <a href="<?= base_url() ?>privacy">Privacy</a> <a href="mailto:info@emoo.me">Contact</a></p>
-		<p>&copy;<?= date('Y').' '.$site_title ?></p>
-	</div>
-</footer>
+<div class="clear"></div>
 
 <!-- Partials -->
 <script type="text/template" id="ligthbox_template">
@@ -40,7 +37,6 @@
 </script>
 
 <!-- Web Templates -->
-<?= $template_navigation ?>
 <?= $template_public ?>
 <?= $template_auth ?>
 <?= $template_record ?>

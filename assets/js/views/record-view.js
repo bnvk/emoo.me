@@ -12,7 +12,7 @@ var RecordFeelingView = Backbone.View.extend(
 		"click #log_feeling_use_emoticons"	: "viewFeelingEmoticons",
 		"click #log_feeling_use_audio"		: "viewFeelingAudio",
 		"click a.log_save_feeling"			: "processFeeling",
-		//"click div.emoticon_item"			: "processFeelingEmoticons",
+		"click div.emoticon_item"			: "processFeelingEmoticons",
 		"click #log_feel_next"				: "processFeelingText",
 		"click #log_experience_next"		: "processExperience",
 		"click #log_describe_next"			: "processDescribe"
@@ -42,6 +42,21 @@ var RecordFeelingView = Backbone.View.extend(
 		// Do Control Buttons
 		$('div.left_control_links').removeClass('icon_small_text_select icon_small_emoticons_select icon_small_audio_select');
 		$('#log_feeling_use_' + type).removeClass('icon_small_' + type).addClass('icon_small_' +  type + '_select');
+
+
+
+		// Refresh
+		/*
+		setTimeout(function() {
+
+			console.log('inside myScroll');		
+			console.log(myScroll);
+		
+			myScroll.refresh();
+			myScroll.scrollTo(0, 0, 0) 			
+		}, 500);
+		*/
+
     },
     viewFeeling: function()
     {
@@ -91,7 +106,6 @@ var RecordFeelingView = Backbone.View.extend(
 		}
 		*/
 		this.viewFeelingText();
-
     },
     viewFeelingText: function()
     {
@@ -102,6 +116,12 @@ var RecordFeelingView = Backbone.View.extend(
 		$('#log_feeling_value').jkey('space, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0', function(key)
 		{
 			Lightbox.printUserMessage('Enter only a single word (no spaces or numbers)');
+		});
+
+		// Enter Key
+		$('#log_feeling_value').jkey('enter', function(key)
+		{
+			Backbone.history.navigate('#/record/experience', true);
 		});
     },
     viewFeelingEmoticons: function()
@@ -242,10 +262,12 @@ var RecordFeelingView = Backbone.View.extend(
 		$('#log_describe_1_value, #log_describe_2_value, #log_describe_3_value').jkey('space, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0', function()
 		{
 			Lightbox.printUserMessage('Enter only a single word (no spaces or numbers)');
-		});
+		});	
 	},
 	processDescribe: function()
     {
+    	console.log('inside processDescribe()')
+    
 		$.validator(
 		{
 			elements :

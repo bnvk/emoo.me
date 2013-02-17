@@ -39,6 +39,8 @@ var VisualizeView = Backbone.View.extend(
 		{
 			this.renderStrongExperiences();
 		}
+		
+		
 	},
 	renderLastFive: function()
 	{
@@ -101,14 +103,6 @@ var VisualizeView = Backbone.View.extend(
 		{
 			colors : types_colors
 	    });
-	    /*
-		pie.hover(function() {
-			this.sector.stop();
-			this.sector.scale(1.1, 1.1, this.cx, this.cy);
-		}, function() {
-			this.sector.animate({ transform: 's1 1 ' + this.cx + ' ' + this.cy }, 1000, "bounce");
-		});
-		*/
 
 		// Piechart Legend
 		var paper = new Raphael(document.getElementById('visualize_language_pie_legend'), 200, 225);
@@ -135,9 +129,9 @@ var VisualizeView = Backbone.View.extend(
 		{
 			if (key !== 'undecided')
 			{
-				$('#visualize_mood_topics').append('<div class="topic_container"><div class="icons_topics icons_topics_' + key + '"></div><span class="topic_count">' + topic + '</span> <span class="topic_text">' + key + '</span></div>');		
+				$('#visualize_mood_topics').append('<div class="topic_container"><div class="icons_topics icons_topics_' + key + '"></div><span class="topic_count">' + topic + '</span> <span class="topic_text">' + key + '</span></div>');
 			}
-		});		
+		});
 	},
 	renderCommonWords: function()
 	{

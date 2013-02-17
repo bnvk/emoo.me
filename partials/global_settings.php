@@ -1,30 +1,28 @@
 <!-- Settings Views -->
 <script type="text/template" id="settings">
 	<div id="content_menu" class="content_center text_center">
-		<?php if (!$this->agent->is_mobile()): ?>
 		<h1>Settings</h1>
-		<?php endif; ?>
 		<p>
-			<a class="list_button" href="<?= base_url() ?>#/settings/notifications">
-				<span class="icon_small icon_small_notifications_on"></span> Notifications
+			<a class="list_button" href="/#/settings/notifications">
+				<span class="icon_small icon-antenna"></span> Notifications
 			    <br class="clear">
 			</a>
 		</p>
 		<p>
-			<a class="list_button" href="<?= base_url() ?>#/settings/account">
-				<span class="icon_small icon_small_account_on"></span> Account Info
+			<a class="list_button" href="/#/settings/account">
+				<span class="icon_small icon-person"></span> Account Info
 		 	    <br class="clear">
 			</a>
 		</p>
 		<p>
-			<a class="list_button" href="<?= base_url() ?>#/settings/password">
-				<span class="icon_small icon_small_password_on"></span>	Password
+			<a class="list_button" href="/#/settings/password">
+				<span class="icon_small icon-key"></span> Password
 		  		<br class="clear">
 			</a>
 		</p>
 		<p>
-			<a id="settings_button_logout" class="list_button" href="<?= base_url() ?>#/settings/logout">
-				<span class="icon_small icon_small_login_on"></span> Logout
+			<a id="settings_button_logout" class="list_button" href="/#/settings/logout">
+				<span class="icon_small icon-keyhole"></span> Logout
 		  		<br class="clear">
 			</a>
 		</p>
