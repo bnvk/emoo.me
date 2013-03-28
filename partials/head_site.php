@@ -10,17 +10,16 @@
 <meta property="og:title" content="<?= $site_title ?>"/>
 <meta property="og:type" content="website" />
 <meta property="og:image" content="<?= $site_assets ?>apple-touch-icon-114x114-precomposed.png"/>
-<meta property="og:url" content="<?= base_url() ?>"/>
+<meta property="og:url" content="<?= current_url() ?>"/>
 <meta property="og:site_name" content="<?= $site_title ?>"/>
 <meta property="og:description" content="<?= $site_description ?>">
 
-<?php if ($this->agent->is_mobile()): ?>
 <!-- Mobile Scale Things -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<?php endif; ?>
 
+<!-- CSS Style -->
 <link rel="stylesheet" media="screen" href="<?= $site_assets ?>css/style.css" type="text/css" />
 
 <!-- Apple Icons -->
@@ -28,9 +27,8 @@
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?= $site_assets ?>icons/apple-touch-icon-57x57-precomposed.png" />
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?= $site_assets ?>icons/apple-touch-icon-72x72-precomposed.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?= $site_assets ?>icons/apple-touch-icon-114x114-precomposed.png" />
+<link rel="apple-touch-startup-image" href="<?= $site_assets ?>images/app-startup-320.png">
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="<?= $site_assets ?>icons/favicon.ico" />
 <link rel="icon" type="image/png" href="<?= $site_assets ?>icons/icon-32.png" />
-
-<link rel="apple-touch-startup-image" href="<?= $site_assets ?>images/app-startup-320.png">

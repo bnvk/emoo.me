@@ -29,7 +29,7 @@ var NavigationView = Backbone.View.extend(
 	showPublic: function()
 	{    
 		// Show Info    
-        $('#navigation_info').html('<h1><a href="/#/">emo<span class="name_ome">ome</span></a></h1>');
+        $('#navigation_info').html('<h1 class="navigation_title"><a href="/#/">emo<span class="name_ome">ome</span></a></h1>');
 
         var navigation_links = [
         	'<li><a href="/#/login" class="navigation_link"><span class="navigation_icons icon-keyhole"></span> Login</a></li>',
@@ -41,7 +41,7 @@ var NavigationView = Backbone.View.extend(
 	showLogged: function()
 	{
 		// Show Info
-        $('#navigation_info').html('<a href="/#/" id="navigation_avatar"><img src="' + UserData.get('image') + '"></a><h1><a href="/#/">' + UserData.get('name') + '</a></h1>');
+        $('#navigation_info').html('<a href="/#/" class="navigation_avatar"><img src="' + UserData.get('image') + '"></a><h1 class="navigation_name"><a href="/#/">' + UserData.get('name') + '</a></h1>');
 
         // Show Links
         var navigation_links = [
@@ -54,6 +54,8 @@ var NavigationView = Backbone.View.extend(
 	},
 	showNavigation: function(links)
 	{
+		$('#navigation_menu_links').html('');
+	
         $.each(links, function(key, link) {
 	    	$('#navigation_menu_links').append(link);
         });
@@ -92,15 +94,15 @@ var NavigationView = Backbone.View.extend(
 	{
 		if($('#navigation_menu').css('display') == 'none')
 		{ 
-		   $('#navigation_menu').slideDown('slow');
+		   $('#navigation_menu').slideDown();
 		} else {
-		   $('#navigation_menu').slideUp('slow');
+		   $('#navigation_menu').slideUp();
 		}
 	},
 	toggleLinkSelected: function(e)
 	{
 		setInterval(function() {
-			$(e.target).addClass('selected');
+			//$(e.target).addClass('selected');
 		}, 250);
 	},
 	goToIndex: function()

@@ -1,6 +1,6 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "8248",
+  "creatorBuild" : "8283",
   "files" : {
     "\/js\/libs-min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -316,17 +316,6 @@
       "outputAbbreviatedPath" : "\/js\/plugins\/jquery.ui.map-min.js",
       "fileType" : 64
     },
-    "\/images\/app-startup-320.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/app-startup-320.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/app-startup-320.png",
-      "initialSize" : 6253,
-      "fileType" : 8192
-    },
     "\/js\/dataviz\/g.line.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -338,6 +327,17 @@
       "outputAbbreviatedPath" : "\/js\/dataviz\/g.line-min.js",
       "fileType" : 64
     },
+    "\/images\/app-startup-320.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/app-startup-320.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/app-startup-320.png",
+      "initialSize" : 6253,
+      "fileType" : 8192
+    },
     "\/js\/views\/auth-view.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -347,17 +347,6 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/views\/auth-view-min.js",
-      "fileType" : 64
-    },
-    "\/js\/views\/settings-view.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/views\/settings-view.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/views\/settings-view-min.js",
       "fileType" : 64
     },
     "\/js\/emoome-mobile.js" : {
@@ -381,6 +370,17 @@
       "outputAbbreviatedPath" : "\/images\/sprite.png",
       "initialSize" : 16528,
       "fileType" : 8192
+    },
+    "\/js\/views\/settings-view.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/views\/settings-view.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/views\/settings-view-min.js",
+      "fileType" : 64
     },
     "\/js\/libs\/underscore.js" : {
       "ignoreWasSetByUser" : 0,
@@ -665,17 +665,6 @@
       "outputAbbreviatedPath" : "\/js\/dataviz-min-min.js",
       "fileType" : 64
     },
-    "\/js\/models\/visualize-language-model.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/models\/visualize-language-model.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/models\/visualize-language-model-min.js",
-      "fileType" : 64
-    },
     "\/images\/medium_no_photo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -686,6 +675,17 @@
       "outputAbbreviatedPath" : "\/images\/medium_no_photo.png",
       "initialSize" : 2763,
       "fileType" : 8192
+    },
+    "\/js\/models\/visualize-language-model.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/models\/visualize-language-model.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/models\/visualize-language-model-min.js",
+      "fileType" : 64
     },
     "\/js\/plugins\/jquery.qtip.js" : {
       "ignoreWasSetByUser" : 0,
@@ -719,6 +719,19 @@
       "outputAbbreviatedPath" : "\/images\/web_sprite_index.png",
       "initialSize" : 138790,
       "fileType" : 8192
+    },
+    "\/less\/buttons.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/less\/buttons.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/buttons.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/js\/views\/content-view.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1008,85 +1021,50 @@
     {
       "type" : 1,
       "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/js\/models\/emoome-settings-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/auth.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/js\/models\/ui-messages-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.jkey.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/js\/models\/feeling-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.timers.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 3,
-      "linkedFileAbbreviatedPath" : "\/js\/models\/visualize-model.js",
-      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.url.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 4,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/lightbox-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.validator.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 5,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/navigation-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/iscroll.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 1,
       "position" : 6,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/content-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 7,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/auth-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 8,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/record-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 9,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/visualize-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 10,
-      "linkedFileAbbreviatedPath" : "\/js\/views\/settings-view.js",
-      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 11,
-      "linkedFileAbbreviatedPath" : "\/js\/routers\/global-router.js",
-      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "linkedFileAbbreviatedPath" : "\/js\/plugins\/functions.js",
+      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
       "followForSyntaxChecking" : 1
     },
     {
@@ -1260,6 +1238,90 @@
     {
       "type" : 1,
       "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/js\/models\/emoome-settings-model.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/js\/models\/ui-messages-model.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/js\/models\/feeling-model.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 3,
+      "linkedFileAbbreviatedPath" : "\/js\/models\/visualize-model.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 4,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/lightbox-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 5,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/navigation-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 6,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/content-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 7,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/auth-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 8,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/record-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 9,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/visualize-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 10,
+      "linkedFileAbbreviatedPath" : "\/js\/views\/settings-view.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 11,
+      "linkedFileAbbreviatedPath" : "\/js\/routers\/global-router.js",
+      "baseFileAbbreviatedPath" : "\/js\/emoome-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 0,
       "linkedFileAbbreviatedPath" : "\/js\/dataviz\/raphael.js",
       "baseFileAbbreviatedPath" : "\/js\/dataviz.js",
       "followForSyntaxChecking" : 1
@@ -1276,55 +1338,6 @@
       "position" : 2,
       "linkedFileAbbreviatedPath" : "\/js\/dataviz\/g.pie.js",
       "baseFileAbbreviatedPath" : "\/js\/dataviz.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/js\/plugins\/auth.js",
-      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.jkey.js",
-      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.timers.js",
-      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 3,
-      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.url.js",
-      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 4,
-      "linkedFileAbbreviatedPath" : "\/js\/plugins\/jquery.validator.js",
-      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 5,
-      "linkedFileAbbreviatedPath" : "\/js\/plugins\/iscroll.js",
-      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 6,
-      "linkedFileAbbreviatedPath" : "\/js\/plugins\/functions.js",
-      "baseFileAbbreviatedPath" : "\/js\/plugins-mobile.js",
       "followForSyntaxChecking" : 1
     }
   ],
