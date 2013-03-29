@@ -22,9 +22,8 @@ var NavigationView = Backbone.View.extend(
 	},
     events:
     {
-    	"click #navigation_logo"		: "goToIndex",
-		"click #navigation_menu_toggle"	: "toggleMenu",
-		"click .navigation_link"		: "toggleLinkSelected"
+    	"click #navigation_logo"	: "goToIndex",
+		"click .navigation_link"	: "toggleLinkSelected"
 	},
 	showPublic: function()
 	{    
@@ -32,8 +31,8 @@ var NavigationView = Backbone.View.extend(
         $('#navigation_info').html('<h1 class="navigation_title"><a href="/#/">emo<span class="name_ome">ome</span></a></h1>');
 
         var navigation_links = [
-        	'<li><a href="/#/login" class="navigation_link"><span class="navigation_icons icon-keyhole"></span> Login</a></li>',
-        	'<li><a href="/#/signup" class="navigation_link"><span class="navigation_icons icon-person"></span> Signup</a></li>'
+        	'<li><a href="/#/login" class="navigation_link"><span class="icon-keyhole"></span> Login</a></li>',
+        	'<li><a href="/#/signup" class="navigation_link"><span class="icon-person"></span> Signup</a></li>'
         ];
 
         this.showNavigation(navigation_links);
@@ -45,9 +44,9 @@ var NavigationView = Backbone.View.extend(
 
         // Show Links
         var navigation_links = [
-        	'<li><a href="/#/record/feeling" class="navigation_link"><span class="navigation_icons icon-pencil"></span> Record</a></li>',
-        	'<li><a href="/#/visualize" class="navigation_link"><span class="navigation_icons icon-eye"></span> Visualize</a></li>',
-        	'<li><a href="/#/settings" class="navigation_link"><span class="navigation_icons icon-gears"></span> Settings</a></li>'
+        	'<li><a href="/#/record/feeling" class="navigation_link"><span class="icon-pencil"></span> Record</a></li>',
+        	'<li><a href="/#/visualize" class="navigation_link"><span class="icon-eye"></span> Visualize</a></li>',
+        	'<li><a href="/#/settings" class="navigation_link"><span class="icon-gears"></span> Settings</a></li>'
         ];
 
         this.showNavigation(navigation_links);
@@ -89,15 +88,6 @@ var NavigationView = Backbone.View.extend(
 				i++;
 			}
 		});		
-	},
-	toggleMenu: function()
-	{
-		if($('#navigation_menu').css('display') == 'none')
-		{ 
-		   $('#navigation_menu').slideDown();
-		} else {
-		   $('#navigation_menu').slideUp();
-		}
 	},
 	toggleLinkSelected: function(e)
 	{

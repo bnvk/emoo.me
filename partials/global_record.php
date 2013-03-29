@@ -1,36 +1,40 @@
 <!-- Record Views -->
 <script type="text/template" id="record">
-	<div id="content_test" class="content_center text_center">
-		<p><a id="button_cat_feeling" class="list_button" href="<?= base_url() ?>#/record/feeling"><span class="list_icon list_icon_profile"></span>How You Feel</a></p>
-		<p><a id="button_cat_memory" class="list_button" href="<?= base_url() ?>#/record/thought"><span class="list_icon list_icon_brain"></span>Group Thought</a></p>
+	<div class="six columns">Three</div>
+	<div id="content_test" class="six columns text_center">
+		<p><a id="button_cat_feeling" class="list_button" href="#/record/feeling"><span class="list_icon list_icon_profile"></span>How You Feel</a></p>
+		<p><a id="button_cat_memory" class="list_button" href="#/record/thought"><span class="list_icon list_icon_brain"></span>Group Thought</a></p>
 	</div>
+	<div class="six columns omega">Three</div>
 </script>
 
 <script type="text/template" id="record_feeling">
-	<!-- 
-	<div class="left_control_container">
-		<div id="log_feeling_use_text" class="left_control_links icon_small icon_small_text"></div>
-		<div id="log_feeling_use_emoticons" class="left_control_links icon_small icon_small_emoticons"></div>
-		<div id="log_feeling_use_audio" class="left_control_links icon_small icon_small_audio"></div>
+	<div class="four columns alpha">
+		<div id="log_feeling_use_text" class="left_control_links icon-text"></div>
+		<div id="log_feeling_use_emoticons" class="left_control_links icon-smile"></div>
+		<!-- <div id="log_feeling_use_audio" class="left_control_links icon-microphone"></div> -->
 	</div>
-	-->
-	<div class="right_control_container">
-		<!-- Text -->
-		<div id="record_feeling_text" class="content_center text_center">
-			<h1>How do you feel right now?</h1>
-			<p><input type="text" name="log_feeling" id="log_feeling_value" placeholder="Good" value=""></p>
-			<p><button id="log_feel_next">Next</button></p>
-			<!-- <p><a href="#" class="log_save_feeling">Finish</a></p> --> 
-		</div>
-		<!--  Emoticons -->
-		<div id="record_feeling_emoticons">
-			<div id="emoticons"></div>
-		</div>
-		<!-- Audio -->
-		<div id="record_feeling_audio">
-			<h2>Record / Stop</h2>
-		</div>		
+
+	<!-- Text -->
+	<div id="record_feeling_text" class="eight columns text_center">
+		<h1>How do you feel right now?</h1>
+		<input type="text" name="log_feeling" id="log_feeling_value" class="center" placeholder="Good" value="">
+		<button id="log_feel_next" class="button-secondary">Next</button>
+		<!-- <a href="#" class="button-primary" id="log_save_feeling" >Finish</a> -->
 	</div>
+
+	<div class="four columns omega"></div>
+
+	<!--  Emoticons
+	<div id="record_feeling_emoticons" class="eight columns text_center">
+		<div id="emoticons"></div>
+	</div>
+	
+	Audio
+	<div id="record_feeling_audio">
+		<h2>Record / Stop</h2>
+	</div>
+	-->		
 </script>
 
 <script type="text/template" id="record_experience">
@@ -57,6 +61,6 @@
 	<div id="log_thanks_view" class="content_center text_center">
 		<h1>Thanks :)</h1>
 		<h3 id="log_completion_message"><%= complete_message %></h3>
-		<p><a id="log_thanks_next" class="button" href="#">Another</a></p>
+		<p><a id="log_thanks_next" class="button-secondary" href="#">Another</a></p>
 	</div>
 </script>

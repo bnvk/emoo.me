@@ -1,85 +1,38 @@
-@import "config.less";
-@import "reset.less";
-
-/* Base Styles (is in both web & mobile) */
-@font-face 			{ font-family: 'Raleway'; src: url('raleway_thin-webfont.eot'); src: url('raleway_thin-webfont.eot?#iefix') format('embedded-opentype'), url('raleway_thin-webfont.woff') format('woff'), url('raleway_thin-webfont.ttf') format('truetype'), url('raleway_thin-webfont.svg#Helvetica Neue') format('svg'); }
-
-h1, h2, h3			{ font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; font-weight: 100; margin: 0; padding: 0; }
-p					{ font-size: 1em; line-height: 1.75em; margin: 1.5em 0; }
-
-::-moz-selection 	{ background: #d5d5d5; color: #eeeeee; text-shadow: none;}
-::selection 		{ background: #d5d5d5; color: #eeeeee; text-shadow: none;} 
-
-
-/* Global - Form Fields */
-input[type=text], input[type=password], input[type=email], input[type=url] { height: 32px; font-size: 18px; font-family: Helvetica, sans-serif; margin: 5px 10px 15px 0px; padding: 2px 10px; border-radius: 8px;  -webkit-border-radius: 8px; border: 1px solid #999999; }
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus { height: 32px; border-radius: 8px; -webkit-border-radius: 8px; border: 1px solid #999999; }
-::-webkit-input-placeholder { color: #dddddd; }
-:-moz-placeholder { color: #dddddd; }
+@import "base/_config.less";
+@import "base/_fonts.less";
+@import "base/_base.less";
+@import "base/_elements.less";
+@import "base/_shapes.less";
+@import "base/_typography.less";
+@import "base/_links.less";
+@import "base/_lists.less";
+@import "base/_images.less";
+@import "base/_buttons.less";
+@import "base/_forms.less";
+@import "base/_navbar.less";
+@import "base/_skeleton.less";
 
 
-textarea 		{ min-height: 32px; font-size: 18px; font-family: Helvetica, sans-serif; line-height: 24px; margin: 5px 10px 15px 0px; padding: 10px; border-radius: 8px;  -webkit-border-radius: 8px; border: 1px solid #999999; }
-textarea:focus 	{ min-height: 32px; border-radius: 8px; -webkit-border-radius: 8px; border: 1px solid #999999; }
-select 			{ margin: 10px 10px 25px 0px; }
-
-input[type=submit], input[type=button], button { padding: 10px 15px; color: #eeeeee; text-decoration: none; text-shadow: 1px 1px 1px #333333; border-radius: 10px; border: 1px solid #555555; background-color: #999999; background-image: -webkit-gradient(linear, left top, left bottom, from(#999999),to(#666666)); background-image: -webkit-linear-gradient(top, #999999, #666666); background-image: -moz-linear-gradient(top, #999999, #666666); background-image: -o-linear-gradient(top, #999999, #666666); background-image: -ms-linear-gradient(top, #999999, #666666); background-image: linear-gradient(top, #999999, #666666); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#999999', EndColorStr='#666666'); }
-input[type=submit]:hover, input[type=button]:hover, button:hover { border: 1px solid #444444; background-color: #666666; background-image: -webkit-gradient(linear, left top, left bottom, from(#666666),to(#888888)); background-image: -webkit-linear-gradient(top, #666666, #888888); background-image: -moz-linear-gradient(top, #666666, #888888); background-image: -o-linear-gradient(top, #666666, #888888); background-image: -ms-linear-gradient(top, #666666, #888888); background-image: linear-gradient(top, #666666, #888888); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#666666', EndColorStr='#888888'); }
-
-
-/* Global - LESS Mixins */
-.mobile-no-select { -moz-user-select: none; -webkit-user-select: none; }
-
-
-/* Global - Classes */
-.clear				{ clear: both; }
-.content_center		{ margin-left: auto; margin-right: auto; }
-.content_left		{ margin-right: auto; float: left; }
-.content_right		{ margin-left: auto; float: right; }
-.text_center		{ text-align: center; }
-.text_left			{ text-align: left; }
-.text_right			{ text-align: right; }
-.name_ome			{ color: #818181; }
-
-
-/* Global - Icons & Buttons */
-@import "icons.less";
-@import "buttons.less";
-
-
-/* Global - Lightbox */
-#request_lightbox 				{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 200; background: #000000; filter: alpha(opacity=90); -moz-opacity: 0.95; opacity: .95; display: none; text-align: center; }
-#lightbox_message 				{ width: 400px; text-align: center; position:absolute; font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; font-weight: 100; font-size: 36px; line-height: 48px; top: 100px; left: 50%; margin-top: 0px; margin-left: -200px; }
-
-.lightbox_message_normal		{ color: #eeeeee !important; }
-.lightbox_message_success		{ color: #eeeeee !important; }
-.lightbox_message_error 		{ color: #b20a0a !important; }
-
-
-/* Globa - Navigation */
-#navigation 					{ background: @navigation-background; margin: 0; padding: 0; z-index: 10; color: @navigation-text; font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif; font-weight: 100; }
-
-#navigation a					{ color: @navigation-text; text-decoration: none; }
-#navigation a:hover 			{ color: @navigation-text-hover; }
-#navigation span.name_ome		{ color: #818181; }
-
-#navigation_info				{ float: left; margin: 1em; }
-#navigation_avatar				{ float: left; }
-
-#navigation_menu 				{  }
-#navigation_menu ul 			{ display: none; list-style: none; }
-#navigation_menu_toggle 		{ display: none; }
-
-
-/* Device Specific */
-@import "size_mobile.less";
-@import "size_tablet.less";
-@import "size_web.less";
+@import "layout.less";
+@import "layout_web.less";
+@import "layout_tablet.less";
+@import "layout_mobile.less";
 
 
 /* Web Only */
 @media only screen and (min-width: 1025px) {
+	@import "blog.less";
+
 	@import "web/visualize-language.less";
 	@import "web/visualize-search.less";
-	@import "blog.less";
-	@import "qtip2.less";
+	@import "web/qtip2.less";
+}
+
+
+/*
+	Anything smaller than standard 960 on a device 
+	USE LATER for SUPER conditional
+*/
+@media only screen and (max-width: 959px) and (max-device-width: 1000px) {
+	.resize { display: none; }
 }

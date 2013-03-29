@@ -1,4 +1,5 @@
 <script type="text/template" id="index">
+
 	<div id="content_index">
 		<div id="index_content_1" class="index_content">
 			<h2>record your experiences & feelings</h2>

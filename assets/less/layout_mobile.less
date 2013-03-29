@@ -1,0 +1,70 @@
+/* Mobile - All Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	
+
+}
+
+
+/* Mobile - Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+
+
+}
+
+
+/* Mobile - Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+
+	/* Navigation */
+	#navigation							{ width: 100%; height: 70px; position: fixed; left: 0px; bottom: 0px; }
+
+	// Hide things
+	#navigation_info					{ display: none; }
+	#navigation_logo 					{ display: none; }
+
+	// Make links non selectable for mobile
+	#navigation_menu					{ width: 100%; margin: 0 auto; }
+	#navigation_menu ul 				{ width: 100%; display: table; margin: 10px auto 0 auto; padding: 0; }
+	#navigation_menu ul li				{ display: table-cell; margin: 0; }
+	#navigation_menu ul li a			{ display: block; text-align: center; }
+	#navigation_menu ul li a span		{ display: block; font-size: 36px; line-height: 36px; }
+
+
+	/* Index - Classes */
+	div.info_bubble_container		{ max-width: 240px; margin: 0 auto; }
+	div.info_bubble					{ background: #d9d9d9; border-radius: 10px; margin: 0 auto; padding: 15px; }
+	div.info_bubble_arrow_left		{ width: 50px; height: 36px; position: relative; top: 0px; left: 50px; background: url(../images/mobile_sprite_index.png) 0px -770px no-repeat; }
+	div.info_bubble_arrow_right		{ width: 50px; height: 36px; position: relative; top: 0px; left: 150px; background: url(../images/mobile_sprite_index.png) -50px -770px no-repeat; }
+	div.info_bubble span.icons		{ float: left; margin: 3px 5px 0 0; }
+	div.info_bubble h2				{ float: left; margin-left: 0px; line-height: 24px; }
+	div.info_bubble p				{ float: left; margin: 0px; }
+	h2.info_header					{ margin: 0 auto 25px auto; }
+	p.info_text						{ max-width: 280px; text-align: center; margin: 0 auto 25px auto; line-height: 21px; }
+
+
+
+	/* Visualize - Your Language */
+	#visualize_language				{ margin: 0 0 40px 20px; }
+	#person_circles					{ width: 100%; min-height: 100px; margin: 0px 0 0 0; }
+	div.person_circles_circle		{ height: 100px; float: left; margin: 20px 20px 20px 0; font-size: 12px; text-align: center; }
+
+
+	/* Visualize - Common Words */
+	#visualize_common				{ margin: 0 20px 40px 20px; }
+	div.common_words				{ width: 100%; margin: 10px 0; padding: 5px 0px; }
+	div.common_words_line			{ width: 100%; height: 1px; background: #999999; }
+	div.common_words_count			{ width: 50px; height: 100%; margin-right: 10px; text-align: center; float: left; font-size: 24px; border-right: 1px solid #333333; }
+	div.common_words_words			{ margin-top: 2px; font-style: italic; font-size: 18px; line-height: 21px; color: #888888; text-transform: capitalize; }
+
+
+	/* Visualize - Strong Experiences */
+	#visualize_experiences			{ margin: 0 0 40px 20px; }
+	div.strong_experience			{ margin: 15px 0 15px 0; }
+	div.strong_experience_circle	{ width: 40; float: left; }
+	div.strong_experience_experience{ width: 240px; float: left; margin-top: 0px; margin-left: 8px; font-style: italic; font-size: 14px; line-height: 18px; color: #888888; }
+	span.strong_experience_date		{ display: block; margin-left: 0px; font-size: 11px; font-weight: bold; font-style: normal; color: #333333; }
+
+}

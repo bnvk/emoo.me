@@ -9,7 +9,6 @@
 <body>
 <div id="navigation">
 	<div id="navigation_info"></div>
-	<div id="navigation_menu_toggle" class="icon-menu"></div>
 	<div id="navigation_menu">
 		<ul id="navigation_menu_links"></ul>
 	</div>
@@ -18,10 +17,7 @@
 </div>	
 
 <!-- Where The Magic Happens -->
-<div id="container">
-	<div id="content"></div>
-</div>
-
+<div class="container" id="content"></div>
 <div class="clear"></div>
 
 <!-- Partials -->
@@ -32,7 +28,7 @@
 </script>
 
 <script type="text/template" id="not_found">
-	<h1>Ooops</h1>
+	<h1>Oops</h1>
 	<p>Apologies, but we could not find what you were looking for</p>
 </script>
 
@@ -84,9 +80,6 @@ var App = (function ($, Backbone, global)
 {
     var init = function()
     {
-    	// iScroll
-        //global.myScroll = new iScroll('container', { scrollbarClass: 'myScrollbar' });
-
         // URL
         global.base_url = '<?= base_url() ?>';
 

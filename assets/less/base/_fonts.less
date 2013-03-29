@@ -1,11 +1,23 @@
-/* Global - Icons */
+/* Font - Raleway */
+@font-face 	{ 
+	font-family: "Raleway"; 
+	src: url("../fonts/raleway_thin-webfont.eot"); 
+	src: url("../fonts/raleway_thin-webfont.eot?#iefix") format("embedded-opentype"), 
+	url("../fonts/raleway_thin-webfont.woff") format("woff"), 
+	url("../fonts/raleway_thin-webfont.ttf") format("truetype"), 
+	url("../fonts/raleway_thin-webfont.svg#Helvetica Neue") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Font - Icons */
 @font-face {
 	font-family: 'Icons-Interface';
-	src:url('fonts/Icons-Interface.eot');
-	src:url('fonts/Icons-Interface.eot?#iefix') format('embedded-opentype'),
-		url('fonts/Icons-Interface.svg#Icons-Interface') format('svg'),
-		url('fonts/Icons-Interface.woff') format('woff'),
-		url('fonts/Icons-Interface.ttf') format('truetype');
+	src:url('../fonts/Icons-Interface.eot');
+	src:url('../fonts/Icons-Interface.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Icons-Interface.woff') format('woff'),
+		url('../fonts/Icons-Interface.ttf') format('truetype'),
+		url('../fonts/Icons-Interface.svg#Icons-Interface') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -16,6 +28,8 @@
 	content: attr(data-icon);
 	speak: none;
 	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
@@ -24,37 +38,82 @@
 /*
 Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
-[class*="icon-"]:before {
+[class*="icon-"] {
 */
-.icon-menu:before, .icon-woman:before, .icon-text:before, .icon-smile:before, .icon-community:before, .icon-brain:before, .icon-antenna:before, .icon-search:before, .icon-profile:before, .icon-pie_graph:before, .icon-person:before, .icon-pencil:before, .icon-navigation:before, .icon-man:before, .icon-location:before, .icon-lightbulb:before, .icon-keyhole:before, .icon-key:before, .icon-home:before, .icon-gears:before, .icon-eye:before {
+.icon-menu, .icon-woman, .icon-text, .icon-smile, .icon-community, .icon-brain, .icon-antenna, .icon-profile, .icon-pie_graph, .icon-person, .icon-pencil, .icon-navigation, .icon-man, .icon-location, .icon-lightbulb, .icon-keyhole, .icon-key, .icon-home, .icon-gears, .icon-eye, .icon-search {
 	font-family: 'Icons-Interface';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
-.icon-menu:before      { content: "\e00f" }
-.icon-woman:before     { content: "\e000" }
-.icon-text:before      { content: "\e001" }
-.icon-smile:before     { content: "\e002" }
-.icon-community:before { content: "\e003" }
-.icon-brain:before     { content: "\e004" }
-.icon-antenna:before   { content: "\e005" }
-.icon-search:before    { content: "\e006" }
-.icon-profile:before   { content: "\e007" }
-.icon-pie_graph:before { content: "\e008" }
-.icon-person:before    { content: "\e009" }
-.icon-pencil:before    { content: "\e00a" }
-.icon-navigation:before{ content: "\e00b" }
-.icon-man:before       { content: "\e00c" }
-.icon-location:before  { content: "\e00d" }
-.icon-lightbulb:before { content: "\e00e" }
-.icon-keyhole:before   { content: "\e010" }
-.icon-key:before       { content: "\e011" }
-.icon-home:before      { content: "\e012" }
-.icon-gears:before     { content: "\e013" }
-.icon-eye:before       { content: "\e014" }
+.icon-menu:before {
+	content: "\e00f";
+}
+.icon-woman:before {
+	content: "\e000";
+}
+.icon-text:before {
+	content: "\e001";
+}
+.icon-smile:before {
+	content: "\e002";
+}
+.icon-community:before {
+	content: "\e003";
+}
+.icon-brain:before {
+	content: "\e004";
+}
+.icon-antenna:before {
+	content: "\e005";
+}
+.icon-profile:before {
+	content: "\e007";
+}
+.icon-pie_graph:before {
+	content: "\e008";
+}
+.icon-person:before {
+	content: "\e009";
+}
+.icon-pencil:before {
+	content: "\e00a";
+}
+.icon-navigation:before {
+	content: "\e00b";
+}
+.icon-man:before {
+	content: "\e00c";
+}
+.icon-location:before {
+	content: "\e00d";
+}
+.icon-lightbulb:before {
+	content: "\e00e";
+}
+.icon-keyhole:before {
+	content: "\e010";
+}
+.icon-key:before {
+	content: "\e011";
+}
+.icon-home:before {
+	content: "\e012";
+}
+.icon-gears:before {
+	content: "\e013";
+}
+.icon-eye:before {
+	content: "\e014";
+}
+.icon-search:before {
+	content: "\e006";
+}
+
 
 
 

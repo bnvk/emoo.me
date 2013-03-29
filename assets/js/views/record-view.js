@@ -43,20 +43,6 @@ var RecordFeelingView = Backbone.View.extend(
 		$('div.left_control_links').removeClass('icon_small_text_select icon_small_emoticons_select icon_small_audio_select');
 		$('#log_feeling_use_' + type).removeClass('icon_small_' + type).addClass('icon_small_' +  type + '_select');
 
-
-
-		// Refresh
-		/*
-		setTimeout(function() {
-
-			console.log('inside myScroll');		
-			console.log(myScroll);
-		
-			myScroll.refresh();
-			myScroll.scrollTo(0, 0, 0) 			
-		}, 500);
-		*/
-
     },
     viewFeeling: function()
     {
