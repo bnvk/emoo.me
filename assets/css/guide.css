@@ -50,6 +50,9 @@
 		color: #999;
 	}
 
+	/* Buttons */
+	#buttons a { margin-right: 20px; }
+
 	#icons li { margin-bottom: 20px; }
 	#icons span { font-size: 30px; line-height: 30px; position: relative; top: 7px; left: 0px; margin-right: 10px; }
 

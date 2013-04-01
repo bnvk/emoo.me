@@ -31,8 +31,9 @@ var NavigationView = Backbone.View.extend(
         $('#navigation_info').html('<h1 class="navigation_title"><a href="/#/">emo<span class="name_ome">ome</span></a></h1>');
 
         var navigation_links = [
-        	'<li><a href="/#/login" class="navigation_link"><span class="icon-keyhole"></span> Login</a></li>',
-        	'<li><a href="/#/signup" class="navigation_link"><span class="icon-person"></span> Signup</a></li>'
+        	'<li id="navigation_link_home"><a href="/#" class="navigation_link"><span class="icon-home"></span> Home</a></li>',
+        	'<li><a href="/#login" class="navigation_link"><span class="icon-keyhole"></span> Login</a></li>',
+        	'<li><a href="/#signup" class="navigation_link"><span class="icon-person"></span> Signup</a></li>'
         ];
 
         this.showNavigation(navigation_links);
@@ -40,13 +41,13 @@ var NavigationView = Backbone.View.extend(
 	showLogged: function()
 	{
 		// Show Info
-        $('#navigation_info').html('<a href="/#/" class="navigation_avatar"><img src="' + UserData.get('image') + '"></a><h1 class="navigation_name"><a href="/#/">' + UserData.get('name') + '</a></h1>');
+        $('#navigation_info').html('<img src="' + UserData.get('image') + '"> <h1>' + UserData.get('name') + '</h1>');
 
         // Show Links
         var navigation_links = [
-        	'<li><a href="/#/record/feeling" class="navigation_link"><span class="icon-pencil"></span> Record</a></li>',
-        	'<li><a href="/#/visualize" class="navigation_link"><span class="icon-eye"></span> Visualize</a></li>',
-        	'<li><a href="/#/settings" class="navigation_link"><span class="icon-gears"></span> Settings</a></li>'
+        	'<li><a href="/#record/feeling" class="navigation_link"><span class="icon-pencil"></span> Record</a></li>',
+        	'<li><a href="/#visualize" class="navigation_link"><span class="icon-eye"></span> Visualize</a></li>',
+        	'<li><a href="/#settings" class="navigation_link"><span class="icon-gears"></span> Settings</a></li>'
         ];
 
         this.showNavigation(navigation_links);

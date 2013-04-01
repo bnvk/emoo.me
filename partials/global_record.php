@@ -9,10 +9,15 @@
 </script>
 
 <script type="text/template" id="record_feeling">
+
 	<div class="four columns alpha">
-		<div id="log_feeling_use_text" class="left_control_links icon-text"></div>
-		<div id="log_feeling_use_emoticons" class="left_control_links icon-smile"></div>
-		<!-- <div id="log_feeling_use_audio" class="left_control_links icon-microphone"></div> -->
+		<!--
+		<div id="record-sub-controls">
+			<a id="log_feeling_use_text" class="icon-text"></a>
+			<a id="log_feeling_use_emoticons" class="icon-smile"></a>
+			<a id="log_feeling_use_audio" class="left_control_links icon-microphone"></a>
+		</div>
+		-->
 	</div>
 
 	<!-- Text -->
@@ -25,12 +30,10 @@
 
 	<div class="four columns omega"></div>
 
-	<!--  Emoticons
+	<!--  Emoticons & Audio
 	<div id="record_feeling_emoticons" class="eight columns text_center">
 		<div id="emoticons"></div>
 	</div>
-	
-	Audio
 	<div id="record_feeling_audio">
 		<h2>Record / Stop</h2>
 	</div>

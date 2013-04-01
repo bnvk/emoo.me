@@ -23,15 +23,13 @@ var RecordFeelingView = Backbone.View.extend(
 		UserData.set({ default_feeling_type : type });
 
 		// Loop Types
-		$.each(['text', 'emoticons', 'audio'], function(key, value)
-		{
-			if (value === type)
-			{
+		$.each(['text', 'emoticons', 'audio'], function(key, value) {
+
+			if (value === type) {
 				// Show View
 				$('#record_feeling_' + value).fadeIn();
 			}
-			else
-			{
+			else {
 				// Hide Views
 				$('#record_feeling_' + value).hide();
 			}
@@ -50,10 +48,9 @@ var RecordFeelingView = Backbone.View.extend(
 		LogFeelingModel.startFeeling();
 
 		// GeoLocation
-		if (navigator.geolocation)
-		{
-			function geoSuccess(position)
-			{
+		if (navigator.geolocation) {
+
+			function geoSuccess(position) {
 				LogFeelingModel.set({ geo_lat: position.coords.latitude, geo_lon: position.coords.longitude });
 			}
 
@@ -69,8 +66,7 @@ var RecordFeelingView = Backbone.View.extend(
 		var emoticons		= '';
 		var emoticons_width	= 765;
 
-		$.each(EmoomeSettings.core_emotions, function(key, value)
-		{
+		$.each(EmoomeSettings.core_emotions, function(key, value) {
 			emoticons += '<div class="emoticon_item"><div class="record_feeling_emoticon"><span data-feeling="' + value + '" class="emoticons-' + value + '"></span></div><div class="record_feeling_emoticon_text">' + value + '</div></div>';
 			emoticons_width += 395;
 		});

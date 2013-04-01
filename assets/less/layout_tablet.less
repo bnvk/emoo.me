@@ -1,20 +1,17 @@
-/* =============== Tablet Style OOLDDDDD =============== */
+/* =============== Tablet Style =============== */
 	
 @media only screen and (max-width: 1024px) {
 
 	/* Navigation */
-	#navigation							{ width: 100%; height: 70px; position: fixed; left: 0px; bottom: 0px; }	
+	#navigation				{ width: 100%; height: 70px; position: fixed; left: 0px; bottom: 0px; }	
+	#navigation_info		{ display: none; }
 
-	// Hide things
-	#navigation_info					{ display: none; }
-	#navigation_logo 					{ display: none; }
+	#navigation_link_home	{ display: block; }
 
-	// 
-	#navigation_menu					{ width: 100%; margin: 0 auto; }
-	#navigation_menu ul 				{ width: 100%; display: table; margin: 10px auto 0 auto; padding: 0; }
-	#navigation_menu ul li				{ display: table-cell; margin: 0; }
-	#navigation_menu ul li a			{ display: block; text-align: center; }
-	#navigation_menu ul li a span		{ display: block; font-size: 36px; line-height: 36px; }
+	#navigation_menu		{ width: 100%; margin: 0 auto; }
+	#navigation_menu		{ 
+		.navigation-menu-devices;
+	}	
 	
 		
 }
@@ -29,6 +26,10 @@
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
+
+	/* Record */
+	#record-sub-controls 	{ width: 100px; margin: 0 auto; }
+	#record-sub-controls a 	{ float: left; }
 
 
 }

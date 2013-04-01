@@ -17,57 +17,61 @@
 			<h2>Ready to begin?</h2>
 			<h3>Get Started Now</h3>
 			<form method="post" name="user_signup_short" id="user_signup_short">
-				<p>
-					<label>Name</label><br>
-					<input type="text" name="name" id="signup_name_short" placeholder="Joe Smith" autocorrect="off" value=""><br>
-					<span id="signup_name_short_error"></span>
-				</p>
-				<p>
-					<label>Email</label><br>
-					<input type="text" name="email" id="signup_email_short" placeholder="your@email.com" autocorrect="off" value=""><br>
-					<span id="signup_email_short_error"></span>
-				</p>		
-				<p>
-					<label>Password</label><br>
-					<input type="password" name="password" id="signup_password_short" placeholder="********" autocorrect="off" value=""><br>
-					<span id="signup_password_short_error"></span>
-				</p>
-				<p>
-					<label>Language</lable><br>
-					<select name="language" id="">
-						<option value="" selected="selected">--select--</option>
-						<option value="en">English</option>
-						<option value="fr">French</option>
-						<option value="de">German</option>
-						<option value="es">Spanish</option>
-						<option value="it">Italian</option>
-						<option value="ru">Russian</option>
-						<option value="cn">Chinese</option>
-						<option value="ot">Other</option>
-					</select>					
-				</p>
-				<p>
-					<input type="button" name="submit" id="button_signup_short" value="Signup">
-				</p>
+				<label>Name</label>
+				<input type="text" name="name" id="signup_name_short" placeholder="Joe Smith" autocorrect="off" value=""><br>
+				<span id="signup_name_short_error"></span>
+				<label>Email</label>
+				<input type="text" name="email" id="signup_email_short" placeholder="your@email.com" autocorrect="off" value=""><br>
+				<span id="signup_email_short_error"></span>
+				<label>Password</label>
+				<input type="password" name="password" id="signup_password_short" placeholder="********" autocorrect="off" value=""><br>
+				<span id="signup_password_short_error"></span>
+				<label>Language</lable>
+				<select name="language" id="">
+					<option value="" selected="selected">--select--</option>
+					<option value="en">English</option>
+					<option value="fr">French</option>
+					<option value="de">German</option>
+					<option value="es">Spanish</option>
+					<option value="it">Italian</option>
+					<option value="ru">Russian</option>
+					<option value="cn">Chinese</option>
+					<option value="ot">Other</option>
+				</select>
+				<input type="button" name="submit" id="button_signup_short" value="Signup">
 			</form>
 		</div>
 		<div class="clear"></div>
-		<div id="index_quotes">
-			<h1>Read about emo<span class="name_ome">ome...</span></h1>
-			<div class="quote_container">
-				<a href="http://www.readwriteweb.com/archives/how-well-get-beyond-the-emoticon.php" target="_blank">
-					<span class="quote_title">How We'll Get Beyond the Emoticon</span>
-					<span class="quote_quote">"[Emoome] reveals shifts around major life events, which is powerful to look back on after the fact"</span>
-					<span class="quote_image quote_image_rww"></span>
-				</a>
-			</div>
-			<div class="quote_container">
-				<a href="http://siliconflorist.com/2012/05/01/emoome-emotional/" target="_blank">
-					<span class="quote_title">Are you trying to get all emotional on me?</span>
-					<span class="quote_quote">"The site is addictive. And the visualizations are beautiful, even in this early iteration."</span>
-					<span class="quote_image quote_image_silicon"></span>
-				</a>
-			</div>
-		</div>
 	</div>
+	
+	
+	<h1>Read about emo<span class="name_ome">ome...</span></h1>
+
+	<div class="one-third column center">
+		<!--<div class="quote_container">-->
+		<a href="http://www.readwriteweb.com/archives/how-well-get-beyond-the-emoticon.php" target="_blank">
+			<span class="quote_title">How We'll Get Beyond the Emoticon</span>
+			<span class="quote_quote">"[Emoome] reveals shifts around major life events, which is powerful to look back on after the fact"</span>
+			<span class="quote_image quote_image_rww"></span>
+		</a>
+	</div>
+
+	<div class="one-third column center">
+		<a href="http://www.informationisbeautifulawards.com/shortlist-2/web-tools-shortlist-2/" target="_blank">
+			<span class="quote_title">Information is Beautiful Awards 2012</span>
+			<span class="quote_quote">Emoome was honored to be shortlisted in the "Tool or Website" category of last years competition!</span>
+			<span class="quote_image quote_image_info_beautiful"></span>
+		</a>
+	</div>
+
+	<div class="one-third column center">
+		<a href="http://siliconflorist.com/2012/05/01/emoome-emotional/" target="_blank">
+			<span class="quote_title">Are you trying to get all emotional on me?</span>
+			<span class="quote_quote">"The site is addictive. And the visualizations are beautiful, even in this early iteration."</span>
+			<span class="quote_image quote_image_silicon"></span>
+		</a>
+	</div>
+
+	</div>	
+	
 </script>

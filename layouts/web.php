@@ -76,10 +76,9 @@ var UserData = Backbone.Model.extend(
     initialize: function() {}
 });
 
-var App = (function ($, Backbone, global)
-{
-    var init = function()
-    {
+var App = (function ($, Backbone, global) {
+
+    var init = function() { 
         // URL
         global.base_url = '<?= base_url() ?>';
 
@@ -108,4 +107,3 @@ $(document).ready(function()
 <?php if (!$this->uri->segment(1)) echo $google_analytics; ?>
 </body>
 </html>
-

@@ -3,10 +3,10 @@
 	<div class="five columns"></div>
 	<div class="six columns text_center">
 		<h1>Settings</h1>
-		<a class="button-secondary full-width" href="/#/settings/notifications"><span class="icon-antenna"></span> Notifications</a>
-		<a class="button-secondary full-width" href="/#/settings/account"><span class="icon-person"></span> Account</a>
-		<a class="button-secondary full-width" href="/#/settings/password"><span class="icon-key"></span> Password</a>
-		<a class="button-secondary full-width" href="/#/settings/logout"><span class="icon-keyhole"></span> Logout</a>
+		<a class="button-big-secondary full-width" href="/#/settings/notifications"><span class="icon-antenna"></span> Notifications</a>
+		<a class="button-big-secondary full-width" href="/#/settings/account"><span class="icon-person"></span> Account</a>
+		<a class="button-big-secondary full-width" href="/#/settings/password"><span class="icon-key"></span> Password</a>
+		<a class="button-big-secondary full-width" href="/#/settings/logout"><span class="icon-keyhole"></span> Logout</a>
 	</div>
 	<div class="five columns"></div>
 </script>
@@ -33,18 +33,14 @@
 <script type="text/template" id="settings_account">
 	<h1>Account</h1>
 	<form name="settings_account" id="settings_account">	
-
 		<label>Name</label>
 		<input type="text" name="name" id="profile_name" placeholder="Your Name" value="<%= name %>">
 		<span id="profile_name_error"></span>
-
 		<label>Email</label>
 		<input type="email" name="email" id="profile_email" placeholder="you@email.com" value="<%= email %>">
 		<span id="profile_email_error"></span>
-
 		<label>Phone (for reminders)</label>
 		<input type="text" name="phone_number" id="profile_phone" placeholder="503-111-2222" value="<%= phone_number %>">
-
 		<label>Language</lable>
 		<select name="language" id="profile_language">
 			<option value="">--select--</option>
@@ -56,8 +52,7 @@
 			<option value="ru">Russian</option>
 			<option value="cn">Chinese</option>
 			<option value="ot">Other</option>
-		</select>			
-
+		</select>
 		<label>Timezone</lable>	
 		<select name="time_zone" id="profile_time_zone">
 			<option value=''>---select---</option>
@@ -77,13 +72,10 @@
 			<option value='UP95'>Australian Central</option>
 			<option value='UP10'>Australian Eastern</option>
 		</select>
-		
 		<fieldset>
 			<input type="checkbox" name="geo_enabled" id="profile_geo_enabled" value="" title="Add Location to Logs"> &nbsp;Add Location
 		</fieldset>
-
 		<input type="button" id="settings_button_account" value="Save"> &nbsp;&nbsp; <input type="button" class="center settings_button_cancel" value="Cancel">
-
 	</form>
 </script>
 
@@ -93,15 +85,12 @@
 		<label>Old Password</label>
 		<input type="password" id="old_password" name="old_password" value="">
 		<span id="old_password_error"></span>
-
 		<label>New Password</label>
 		<input type="password" id="new_password" name="new_password" value="">
 		<span id="new_password_error"></span>
-
 		<label>New Password Confirm</label>
 		<input type="password" id="new_password_confirm" name="new_password_confirm" value="">
 		<span id="new_password_confirm_error"></span>
-
 		<input type="button" id="settings_button_password" class="center" value="Save"> &nbsp;&nbsp; <input type="button" class="center settings_button_cancel" value="Cancel">
 	</form>
 </script>
