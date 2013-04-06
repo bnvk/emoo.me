@@ -35,8 +35,7 @@ var SettingsView = Backbone.View.extend(
 		var notifications_data = $('#settings_notifications').serializeArray();
 		notifications_data.push({'name':'module','value':'notifications'});		
 
-		$.oauthAjax(
-		{
+		$.oauthAjax({
 			oauth 		: UserData,
 			url			: base_url + 'api/users/details/id/' + UserData.get('user_id'),
 			type		: 'POST',
@@ -51,8 +50,7 @@ var SettingsView = Backbone.View.extend(
     },
     processAccount: function()
     {
-		$.validator(
-		{
+		$.validator({
 			elements :		
 				[{
 					'selector' 	: '#profile_name', 
@@ -91,8 +89,7 @@ var SettingsView = Backbone.View.extend(
     },
     processPassword: function()
     {
-		$.validator(
-		{
+		$.validator({
 			elements :		
 				[{
 					'selector' 	: '#old_password', 
@@ -113,8 +110,7 @@ var SettingsView = Backbone.View.extend(
 			message : '',
 			success	: function()
 			{
-				$.oauthAjax(
-				{
+				$.oauthAjax({
 					oauth 		: UserData,
 					url			: base_url + 'api/users/password',
 					type		: 'POST',
@@ -137,8 +133,7 @@ var SettingsView = Backbone.View.extend(
     processLogout: function()
     {
 		// Save To API
-		$.oauthAjax(
-		{
+		$.oauthAjax({
 			oauth 		: UserData,
 			url			: base_url + 'api/users/logout',
 			type		: 'GET',
@@ -150,13 +145,13 @@ var SettingsView = Backbone.View.extend(
 	  			Lightbox.closeFast();
 
 				// Update URL & View
-				Backbone.history.navigate('#/logout', true); 
+				Backbone.history.navigate('#logout', true); 
 	  		}
 	  	});	    
     },
     processCancel: function(e)
     {
 		e.preventDefault();
-		Backbone.history.navigate('#/settings', true); 
+		Backbone.history.navigate('#settings', true); 
     }
 });

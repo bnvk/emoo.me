@@ -59,7 +59,7 @@ var RecordFeelingView = Backbone.View.extend(
 
 		// Load View
 		var template = _.template($("#record_feeling").html());
-		this.$el.html(template).hide().delay(250).fadeIn();
+		this.$el.html(template);
 
 		// Emoticons
 		/*
@@ -207,7 +207,7 @@ var RecordFeelingView = Backbone.View.extend(
     viewExperience: function()
     {
         var template = _.template($("#record_experience").html());
-        this.$el.html(template).hide().delay(250).fadeIn();
+        this.$el.html(template);
     },
     processExperience: function()
     {
@@ -249,7 +249,7 @@ var RecordFeelingView = Backbone.View.extend(
 	processDescribe: function()
     {
     	console.log('inside processDescribe()')
-    
+
 		$.validator(
 		{
 			elements :
@@ -323,3 +323,5 @@ var RecordFeelingView = Backbone.View.extend(
 		this.$('#log_describe_this').html('');
     }
 });
+
+

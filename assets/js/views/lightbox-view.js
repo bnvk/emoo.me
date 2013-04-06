@@ -20,12 +20,12 @@ var LightboxView = Backbone.View.extend(
 		if (UserData.get('source') === 'mobile')
 		{
 			$('#lightbox_message').css('top', $(window).scrollTop() + 50);
-			$('#request_lightbox').height($('body').height() + 150);
+			$('#request_lightbox').height($('body').height() + 250);
 		}
 		else
 		{
 			$('#lightbox_message').css('top', $(window).scrollTop() + 100);
-			$('#request_lightbox').height($('body').height() + 100);
+			$('#request_lightbox').height($('body').height() + 1000);
 		}
 	},
 	requestComplete: function(message, status)

@@ -1,6 +1,6 @@
 <!-- Visualize Views -->
 <script type="text/template" id="visualize-waiting">
-	<div id="visualize_waiting" class="text_center">
+	<div id="visualize_waiting" class="text-center">
 		<h1>We are computing your emotions</h1>
 		<div id="visualize_logs_needed">
 			<p>You need to record</p>
@@ -13,16 +13,13 @@
 
 <script type="text/template" id="visualize">
 
-	<h1>Recent Entries</h1>
-	<hr>
-
 	<div id="visualize_language" class="four columns alpha">
-		<h2>Your Language</h2>
+		<h1>Your Language</h1>
 		<div id="visualize_language_pie"></div>
 		<div id="visualize_language_pie_legend"></div>
 	</div>
 	<div id="visualize_mood" class="eight columns omega">
-		<h2>Mood & Topics</h2>
+		<h1>Mood & Topics</h1>
 		<div id="visualize_mood_emoticon"></div>
 		<div id="visualize_mood_topics"></div>
 	</div>

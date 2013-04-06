@@ -7,7 +7,7 @@
 <?= $head ?>
 </head>
 <body>
-<div id="navigation">
+<div id="navigation" class="animated fadeIn">
 	<div id="navigation_info"></div>
 	<div id="navigation_menu">
 		<ul id="navigation_menu_links"></ul>
@@ -17,7 +17,7 @@
 </div>	
 
 <!-- Where The Magic Happens -->
-<div class="container" id="content"></div>
+<div class="container animated" id="content"></div>
 <div class="clear"></div>
 
 <!-- Partials -->
@@ -44,7 +44,10 @@
 <script type="text/javascript" src="<?= $site_assets ?>js/libs-min.js"></script>
 <script type="text/javascript" src="<?= $site_assets ?>js/plugins-<?= $user_source ?>-min.js"></script>
 <script type="text/javascript" src="<?= $site_assets ?>js/dataviz-min.js"></script>
-<script type="text/javascript" src="<?= $site_assets ?>js/emoome-<?= $user_source ?>-min.js"></script>
+<script type="text/javascript" src="<?= $site_assets ?>js/emoome-min.js"></script>
+<?php if (!$this->agent->is_mobile()): ?>
+<script type="text/javascript" src="<?= $site_assets ?>js/visualize-min.js"></script>
+<?php endif; ?>
 <script type="text/javascript">
 //Global User Data:
 var UserData = Backbone.Model.extend(
@@ -78,7 +81,8 @@ var UserData = Backbone.Model.extend(
 
 var App = (function ($, Backbone, global) {
 
-    var init = function() { 
+    var init = function() {
+
         // URL
         global.base_url = '<?= base_url() ?>';
 

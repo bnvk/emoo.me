@@ -28,7 +28,7 @@ var NavigationView = Backbone.View.extend(
 	showPublic: function()
 	{    
 		// Show Info    
-        $('#navigation_info').html('<h1 class="navigation_title"><a href="/#/">emo<span class="name_ome">ome</span></a></h1>');
+        $('#navigation_info').html('<h1 class="navigation_title"><a href="/#">emo<span class="name_ome">ome</span></a></h1>');
 
         var navigation_links = [
         	'<li id="navigation_link_home"><a href="/#" class="navigation_link"><span class="icon-home"></span> Home</a></li>',
@@ -46,6 +46,7 @@ var NavigationView = Backbone.View.extend(
         // Show Links
         var navigation_links = [
         	'<li><a href="/#record/feeling" class="navigation_link"><span class="icon-pencil"></span> Record</a></li>',
+        	'<li><a href="/#insights" class="navigation_link"><span class="icon-lightbulb"></span> Insights</a></li>',
         	'<li><a href="/#visualize" class="navigation_link"><span class="icon-eye"></span> Visualize</a></li>',
         	'<li><a href="/#settings" class="navigation_link"><span class="icon-gears"></span> Settings</a></li>'
         ];
@@ -81,8 +82,7 @@ var NavigationView = Backbone.View.extend(
 				count_x = 0;
 				circle_x += sizes[i] * 2;
 
-				console.log('loop: ' + i + ' count_x: ' + count_x + ' circle_x: ' + circle_x + ' size: ' + sizes[i]);
-
+				//console.log('loop: ' + i + ' count_x: ' + count_x + ' circle_x: ' + circle_x + ' size: ' + sizes[i]);
 				circle = paper.circle(circle_x, 25, sizes[i]).attr({fill: color, opacity: 0, 'stroke-width': 0});
 				circle.animate({opacity: 1}, 1000);
 				circle_x += 10;

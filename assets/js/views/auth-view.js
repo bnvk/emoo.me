@@ -30,8 +30,7 @@ var AuthView = Backbone.View.extend(
     },
 	processLogin: function()
 	{	
-		$.validator(
-		{
+		$.validator({
 			elements :
 				[{
 					'selector' 	: '#login_email', 
@@ -72,7 +71,7 @@ var AuthView = Backbone.View.extend(
 							
 							// Update Header
 							var Navigation = new NavigationView({ el: $('#navigation') });
-							Navigation.renderLogged();
+							Navigation.showLogged();
 
 							// Update URL & View
 							Backbone.history.navigate('#/record/feeling', true); 
@@ -84,8 +83,7 @@ var AuthView = Backbone.View.extend(
 	},
 	processSignup: function()
 	{
-		$.validator(
-		{
+		$.validator({
 			elements :		
 				[{
 					'selector' 	: '#signup_name', 
@@ -132,7 +130,7 @@ var AuthView = Backbone.View.extend(
 							
 							// Update Header
 							var Navigation = new NavigationView({ el: $('#navigation') });
-							Navigation.renderLogged();
+							Navigation.showLogged();
 
 							// Update URL & View
 							Backbone.history.navigate('#/record/feeling', true); 
@@ -145,8 +143,7 @@ var AuthView = Backbone.View.extend(
 	processSignupShort: function(e)
 	{
 		e.preventDefault();	
-		$.validator(
-		{
+		$.validator({
 			elements :		
 				[{
 					'selector' 	: '#signup_name_short', 
@@ -193,7 +190,7 @@ var AuthView = Backbone.View.extend(
 							
 							// Update Header
 							var Navigation = new NavigationView({ el: $('#header') });
-							Navigation.renderLogged();
+							Navigation.showLogged();
 
 							// Update URL & View
 							Backbone.history.navigate('#/record/feeling', true); 
@@ -205,8 +202,7 @@ var AuthView = Backbone.View.extend(
 	},
 	processForgotPassword: function()
 	{
-		$.validator(
-		{
+		$.validator({
 			elements :		
 				[{
 					'selector' 	: '#forgot_email', 
@@ -217,8 +213,7 @@ var AuthView = Backbone.View.extend(
 			message : '',
 			success	: function()
 			{
-				$.ajax(
-				{
+				$.ajax({
 					url			: base_url + 'api/users/password_forgot',
 					type		: 'POST',
 					dataType	: 'json',
@@ -235,5 +230,20 @@ var AuthView = Backbone.View.extend(
 			  	});
 			}
 		});		
+	},
+	processLogout: function() {
+
+		$.ajax({
+			url			: base_url + 'api/users/logout',
+			type		: 'GET',
+			dataType	: 'json',
+			beforeSend	: Lightbox.requestMade('Logging you out'),
+	  		success		: function(result)
+	  		{
+				// Close Loading
+	  			Lightbox.requestComplete(result.message, result.status);			  			
+				Backbone.history.navigate('#logout', true); 
+	  		}
+	  	});		
 	}
 });

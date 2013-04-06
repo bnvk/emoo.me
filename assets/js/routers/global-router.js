@@ -27,7 +27,6 @@ var ApplicationRouter = Backbone.Router.extend(
 		"signup"				: "signup",
 		"forgot_password"		: "forgotPassword",
 		"logout"				: "logout",
-		"logged/:destination"	: "logged",
 		"record"				: "recordViews",
 		"record/:view"			: "recordViews",
 		"visualize"				: "visualize",
@@ -95,7 +94,7 @@ var ApplicationRouter = Backbone.Router.extend(
 	logout: function()
 	{
 		UserData.set({ logged: 'no', user_id: '', username: '', name: '', user_level_id	: '', name : '', image : '', location : '', geo_enabled : '', language : '', privacy : '', consumer_key : '', consumer_secret : '', token : '', token_secret : '' });
-		this.Navigation.renderPublic();
+		this.Navigation.showPublic();
 		this.switchView(this.logoutView);
 	},
 	notFound: function() {
@@ -139,8 +138,7 @@ var ApplicationRouter = Backbone.Router.extend(
 			  	success		: function(result)
 			  	{
 					// Is Saved
-					if (result.status === 'success')
-					{
+					if (result.status === 'success') {
 						// Update Model
 						VisualizeModel.set(result);
 						VisualizeModel.set({ data : 'updated' });
@@ -148,8 +146,7 @@ var ApplicationRouter = Backbone.Router.extend(
 						// Render View
 						VisualizeViews = new VisualizeView({ el: $('#content')});
 					}
-					else
-					{
+					else {
 						VisualizeViews = new VisualizeView({ el: $('#content')});
 					}
 				}
