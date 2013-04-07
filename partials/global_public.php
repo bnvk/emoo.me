@@ -1,6 +1,4 @@
 <script type="text/template" id="index">
-<!--		<img src="<?= $site_assets ?>emoticon-test.svg" width="100" height="100"> -->
-
 	<div class="row text-center">	
 		<h1 class="index-logo">emo<span class="name_ome">ome</span></h1>
 		<div id="index-logo-circles">
@@ -28,7 +26,7 @@
 		<img src="<?= $site_assets ?>images/index-art-top-3.png">
 	</div>
 
-
+	<!-- Name -->
 	<div class="clearfix animated fadeIn">
 		<div class="one column alpha"></div>
 		<div class="seven columns">
@@ -40,47 +38,45 @@
 		<div class="one column omega"></div>
 	</div>
 
-
+	<!-- Capture -->
 	<div class="eight columns alpha text-center animated fadeIn">
 		<h2 class="hide">discover patterns in your thinking</h2>
 		<img src="<?= $site_assets ?>images/index-art-bot-1.png">
 	</div>
-
-
 	<div class="seven columns omega animated fadeIn">
-		<h2>Ready to begin?</h2>
-		<form method="post" name="user_signup_short" id="user_signup_short">
-			<label>Name</label>
-			<input type="text" name="name" id="signup_name_short" placeholder="Joe Smith" autocorrect="off" value=""><br>
-			<span id="signup_name_short_error"></span>
-			<label>Email</label>
-			<input type="text" name="email" id="signup_email_short" placeholder="your@email.com" autocorrect="off" value=""><br>
-			<span id="signup_email_short_error"></span>
-			<label>Password</label>
-			<input type="password" name="password" id="signup_password_short" placeholder="********" autocorrect="off" value=""><br>
-			<span id="signup_password_short_error"></span>
-			<label>Language</lable>
-			<select name="language" id="">
-				<option value="" selected="selected">--select--</option>
-				<option value="en">English</option>
-				<option value="fr">French</option>
-				<option value="de">German</option>
-				<option value="es">Spanish</option>
-				<option value="it">Italian</option>
-				<option value="ru">Russian</option>
-				<option value="cn">Chinese</option>
-				<option value="ot">Other</option>
-			</select>
-			<input type="button" name="submit" id="button_signup_short" value="Signup">
-		</form>
+		<div id="index-user-signup-form">
+			<h2>Ready to begin?</h2>
+			<form method="post" name="user_signup_short" id="user_signup_short">
+				<label>Name</label>
+				<input type="text" name="name" id="signup_name_short" placeholder="Joe Smith" autocorrect="off" value=""><br>
+				<span id="signup_name_short_error"></span>
+				<label>Email</label>
+				<input type="text" name="email" id="signup_email_short" placeholder="your@email.com" autocorrect="off" value=""><br>
+				<span id="signup_email_short_error"></span>
+				<label>Password</label>
+				<input type="password" name="password" id="signup_password_short" placeholder="********" autocorrect="off" value=""><br>
+				<span id="signup_password_short_error"></span>
+				<label>Language</lable>
+				<select name="language" id="">
+					<option value="" selected="selected">--select--</option>
+					<option value="en">English</option>
+					<option value="fr">French</option>
+					<option value="de">German</option>
+					<option value="es">Spanish</option>
+					<option value="it">Italian</option>
+					<option value="ru">Russian</option>
+					<option value="cn">Chinese</option>
+					<option value="ot">Other</option>
+				</select>
+				<input type="button" name="submit" id="button_signup_short" value="Signup">
+			</form>
+		</div>
 	</div>
 
-
+	<!-- Press -->
 	<div class="row text-center">
 		<h1>Read about emo<span class="name_ome">ome</span></h1>
 	</div>
-
-	
 	<div class="one-third column text-center">
 		<a href="http://www.readwriteweb.com/archives/how-well-get-beyond-the-emoticon.php" class="no-line" target="_blank">
 			<span class="quote_title">How We'll Get Beyond the Emoticon</span>
@@ -88,7 +84,6 @@
 			<span class="quote_image"><img src="/application/views/site_emoome/assets/images/press-rrw.png"></span>
 		</a>
 	</div>
-
 	<div class="one-third column text-center">
 		<a href="http://www.informationisbeautifulawards.com/shortlist-2/web-tools-shortlist-2/" class="no-line" target="_blank">
 			<span class="quote_title">Shortlisted in Information Is Beautiful Awards 2012</span>
@@ -96,7 +91,6 @@
 			<span class="quote_image"><img src="/application/views/site_emoome/assets/images/press-info.png"></span>
 		</a>
 	</div>
-
 	<div class="one-third column text-center">
 		<a href="http://siliconflorist.com/2012/05/01/emoome-emotional/" class="no-line" target="_blank">
 			<span class="quote_title">Are you trying to get all emotional on me?</span>

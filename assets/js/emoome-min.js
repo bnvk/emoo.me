@@ -374,8 +374,8 @@ var NavigationView = Backbone.View.extend(
 
         // Show Links
         var navigation_links = [
-        	'<li><a href="/#record/feeling" class="navigation_link"><span class="icon-pencil"></span> Record</a></li>',
         	'<li><a href="/#insights" class="navigation_link"><span class="icon-lightbulb"></span> Insights</a></li>',
+        	'<li><a href="/#record/feeling" class="navigation_link"><span class="icon-pencil"></span> Record</a></li>',
         	'<li><a href="/#visualize" class="navigation_link"><span class="icon-eye"></span> Visualize</a></li>',
         	'<li><a href="/#settings" class="navigation_link"><span class="icon-gears"></span> Settings</a></li>'
         ];
@@ -1203,39 +1203,55 @@ var SettingsView = Backbone.View.extend(
 });
 
 /* **********************************************
+     Begin insights-view.js
+********************************************** */
+
+/* Insights */
+var InsightsView = Backbone.View.extend(
+{
+	initialize: function() {
+		this.render();
+	},
+	render: function() {
+	
+		var view_data	= {};
+		var template	= _.template($("#template-insights").html(), view_data);
+		this.$el.html(template);
+
+
+	}
+});
+
+/* **********************************************
      Begin visualize-view.js
 ********************************************** */
 
-// VISUALIZE
+/* Visualize */
 var VisualizeView = Backbone.View.extend(
 {
-	initialize: function()
-	{
+	initialize: function() {
 		this.render();
 	},
-	render: function()
-	{
+	render: function() {
 		var view_data	= {};
 		var template	= _.template($("#visualize").html(), view_data);
-		this.$el.html(template).hide().delay(250).fadeIn();
+		this.$el.html(template);
 
 		// Less or More than 5
-		if (VisualizeModel.get('logs_count') < 5)
-		{
+		if (VisualizeModel.get('logs_count') < 5) {
+
 			$('#visualize_logs_needed_count').html(5 - VisualizeModel.get('logs_count'));
 			$('#visualize_waiting').fadeIn('slow');
 		}
-		else
-		{
+		else {
 			this.renderLastFive();
 		}
 
 		// More Than 10
-		if (VisualizeModel.get('logs_count') > 10)
-		{
+		if (VisualizeModel.get('logs_count') > 10) {
+	
 			// Show Language Map Link
-			if (UserData.get('source') !== 'mobile')
-			{
+			if (UserData.get('source') !== 'mobile') {
 				$('#your_language_map').fadeIn();
 			}
 
@@ -1243,44 +1259,38 @@ var VisualizeView = Backbone.View.extend(
 		}
 
 		// More Than 15
-		if (VisualizeModel.get('logs_count') > 15)
-		{
+		if (VisualizeModel.get('logs_count') > 15) {
 			this.renderStrongExperiences();
 		}
-		
-		
 	},
-	renderLastFive: function()
-	{
+	renderLastFive: function() {
+
 		// Create Pie Chart
 		var types			= VisualizeModel.get('last_five').language;
 		var types_colors	= [];
 		var word_values		= [];
 		var word_percents	= [];
 
-		if (types['undecided'] !== undefined)
-		{
+		if (types['undecided'] !== undefined) {
 			var types_total	= VisualizeModel.get('last_five').language_total - types['undecided'];
 		}
-		else
-		{
+		else {
 			var types_total	= VisualizeModel.get('last_five').language_total;
 		}
 
 		// Build Data Values
-		for (var type in types)
-		{
-			if (type !== 'undecided')
-			{
+		for (var type in types) {
+			if (type !== 'undecided') {
 				var type_percent = types[type] / types_total,
 				type_percent = Math.round(type_percent * 100);
 				word_values.push(types[type]);
-				word_percents.push(type_percent + '% ' + type);
+				word_percents.push(type_percent + '%');
 				types_colors.push(EmoomeSettings.type_colors[type]);
 			}
 		}
 
-		this.renderPieChart(word_values, word_percents, types_colors);
+//		this.renderPieChart(word_values, word_percents, types_colors);
+		this.renderLineChart(word_values, word_percents, types_colors);
 
 		// Mood & Topics
 		this.renderMoodTopics();
@@ -1299,8 +1309,7 @@ var VisualizeView = Backbone.View.extend(
 			}
 		}
 	},
-	renderPieChart: function(word_values, word_percents, types_colors)
-	{
+	renderPieChart: function(word_values, word_percents, types_colors) {
 		// Piechart
 		var pie_container	= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types_container;
 		var pie_size		= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types;
@@ -1317,8 +1326,7 @@ var VisualizeView = Backbone.View.extend(
 		var circle_y = 10;
 		var text_y = 8;
 
-		$.each(word_percents, function(key, percent)
-		{
+		$.each(word_percents, function(key, percent) {
 			paper.circle(10, circle_y, 10).attr({fill: types_colors[key], opacity: 1, 'stroke-width': 1, 'stroke': '#c3c3c3'});
 			paper.text(35, text_y, percent).attr({"text-anchor": "start", "color": "#333333", "font-family": "'Ralway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif", "font-size": 18, "line-height": 18, "font-weight": 100, "letter-spacing": 2});
 
@@ -1326,11 +1334,27 @@ var VisualizeView = Backbone.View.extend(
 			text_y = text_y + 25;
 		});
 	},
-	renderMoodTopics: function()
-	{
+	renderLineChart: function(word_values, word_percents, types_colors) {
+	
+		$.each(word_percents, function(key, percent)
+		{
+			console.log(key + ' --- ' + percent);
+		
+			var bar = '<div class="visualize-language-bar" style="background: ' + types_colors[key] + '; width: ' + percent + '; height: 40px; margin-bottom: 20px"></div>' + percent;
+		
+			$('#visualize_language_pie_legend').append(bar);
+	
+		});	
+		
+	},
+	renderMoodTopics: function() {
+
 		// Mood
-		var sentiment = Math.round(VisualizeModel.get('last_five').sentiment / 5);
-		$('#visualize_mood_emoticon').append('<span class="language-map-emoticons emoticons-' + EmoomeSettings.core_emotions[sentiment] + '"></span>');
+		var sentiment = Math.round(VisualizeModel.get('last_five').sentiment / 20);
+		
+		console.log(sentiment);
+		
+		$('#visualize_mood_emoticon').append('<img src="' + assets_url + 'emoticons/' + EmoomeSettings.core_emotions[sentiment] + '.svg">');
 
 		// Topics
 		$.each(VisualizeModel.get('last_five').topics, function(key, topic)
@@ -1341,8 +1365,8 @@ var VisualizeView = Backbone.View.extend(
 			}
 		});
 	},
-	renderCommonWords: function()
-	{
+	renderCommonWords: function() {
+
 		$visualize_common_words = $('#visualize_common_words');
 
 		var word_count_row	= 0;
@@ -1374,8 +1398,8 @@ var VisualizeView = Backbone.View.extend(
 
 		$('#visualize_common').delay(750).fadeIn();
 	},
-	renderStrongExperiences: function()
-	{
+	renderStrongExperiences: function() {
+
 		$strong_experiences	= $('#strong_experiences');
 
 		$.each(VisualizeModel.get('strong_experiences'), function(key, experience)
@@ -1403,8 +1427,8 @@ var VisualizeView = Backbone.View.extend(
 
 var ApplicationRouter = Backbone.Router.extend(
 {
-	initialize: function(el)
-	{
+	initialize: function(el) {
+
 		this.el = el;
 
 		// Instantiate Navigation
@@ -1432,15 +1456,14 @@ var ApplicationRouter = Backbone.Router.extend(
 		"logout"				: "logout",
 		"record"				: "recordViews",
 		"record/:view"			: "recordViews",
+		"insights"				: "insights",
 		"visualize"				: "visualize",
 		"settings"				: "settingsViews",
 		"settings/:view"		: "settingsViews"
 	},
 	currentView: null,
-	switchView: function(view)
-	{
-		if (this.currentView)
-		{
+	switchView: function(view) {
+		if (this.currentView) {
 			this.currentView.remove();	// Detach the old view
 		}
 
@@ -1448,16 +1471,12 @@ var ApplicationRouter = Backbone.Router.extend(
 		view.render();					// Render view after it is in the DOM (styles are applied)
 		this.currentView = view;
 	},
-	setActiveNav: function(url)		// For Main Nav Links and Shit
-	{			    
-	    $.each(['record', 'visualize', 'settings'], function(key, value)
-	    {		
-		    if (value == type)
-			{
+	setActiveNav: function(url)	{	// For Main Nav Links and Shit
+	    $.each(['record', 'visualize', 'settings'], function(key, value) {		
+		    if (value == type) {
 				$('#record_feeling_' + value).fadeIn();
 			}
-			else
-			{
+			else {
 				$('#record_feeling_' + value).hide(); 
 			}
 	    });
@@ -1466,36 +1485,31 @@ var ApplicationRouter = Backbone.Router.extend(
 	    $('div.left_control_links').removeClass('icon_small_text_on icon_small_emoticons_on icon_small_audio_on');
 	    $('#log_feeling_use_' + type).addClass('icon_small_' +  type + '_on');
 	},
-	index: function()
-	{
+	index: function() {
 		if (UserData.get('logged') === 'yes') {
 			Backbone.history.navigate('#/record/feeling', true);	
 		}
 
 		this.switchView(this.indexView);
 	},
-	login: function()
-	{
+	login: function() {
 		if (UserData.get('logged') === 'yes') {
 			Backbone.history.navigate('#/record/feeling', true);
 		}
 
 		this.authView.viewLogin();
 	},
-	signup: function()
-	{
+	signup: function() {
 		if (UserData.get('logged') === 'yes') {
 			Backbone.history.navigate('#/record/feeling', true);
 		}
 
 		this.authView.viewSignup();
 	},
-	forgotPassword: function()
-	{
+	forgotPassword: function() {
 		this.authView.viewForgotPassword();
 	},
-	logout: function()
-	{
+	logout: function() {
 		UserData.set({ logged: 'no', user_id: '', username: '', name: '', user_level_id	: '', name : '', image : '', location : '', geo_enabled : '', language : '', privacy : '', consumer_key : '', consumer_secret : '', token : '', token_secret : '' });
 		this.Navigation.showPublic();
 		this.switchView(this.logoutView);
@@ -1503,8 +1517,7 @@ var ApplicationRouter = Backbone.Router.extend(
 	notFound: function() {
 		this.switchView(this.notFoundView);
 	},
-	recordViews: function(view)
-	{
+	recordViews: function(view) {
 		if (UserData.get('logged') !== 'yes') {
 			Backbone.history.navigate('#/login', true);
 		}
@@ -1523,29 +1536,31 @@ var ApplicationRouter = Backbone.Router.extend(
 		else
 			this.switchView(this.notFoundView);
 	},
-	visualize: function(view)
-	{	
+	insights: function() {
+		InsightViews = new InsightsView({ el: $('#content')});
+	},
+	visualize: function(view) {
+
 		if (UserData.get('logged') !== 'yes') {
 			Backbone.history.navigate('#/login', true);
 		}
 
 		// Get / Render Visualize
-		if (VisualizeModel.get('data') !== 'updated')
-		{
-			$.oauthAjax(
-			{
-				oauth 		: UserData,	
+		if (VisualizeModel.get('data') !== 'updated') {
+			$.oauthAjax({
+				oauth		: UserData,
 				url			: base_url + 'api/emoome/analyze/me',
 				type		: 'GET',
 				dataType	: 'json',
-			  	success		: function(result)
-			  	{
+				success		: function(result) {
+
 					// Is Saved
 					if (result.status === 'success') {
+
 						// Update Model
 						VisualizeModel.set(result);
 						VisualizeModel.set({ data : 'updated' });
-	
+
 						// Render View
 						VisualizeViews = new VisualizeView({ el: $('#content')});
 					}
@@ -1555,13 +1570,12 @@ var ApplicationRouter = Backbone.Router.extend(
 				}
 			});
 		}
-		else
-		{
+		else {
 			VisualizeViews = new VisualizeView({ el: $('#content')});
 		}
 	},
-	settingsViews: function(view)
-	{
+	settingsViews: function(view) {
+
 		if (UserData.get('logged') !== 'yes') {
 			Backbone.history.navigate('#/login', true);
 		}

@@ -1,33 +1,29 @@
-// VISUALIZE
+/* Visualize */
 var VisualizeView = Backbone.View.extend(
 {
-	initialize: function()
-	{
+	initialize: function() {
 		this.render();
 	},
-	render: function()
-	{
+	render: function() {
 		var view_data	= {};
 		var template	= _.template($("#visualize").html(), view_data);
-		this.$el.html(template).hide().delay(250).fadeIn();
+		this.$el.html(template);
 
 		// Less or More than 5
-		if (VisualizeModel.get('logs_count') < 5)
-		{
+		if (VisualizeModel.get('logs_count') < 5) {
+
 			$('#visualize_logs_needed_count').html(5 - VisualizeModel.get('logs_count'));
 			$('#visualize_waiting').fadeIn('slow');
 		}
-		else
-		{
+		else {
 			this.renderLastFive();
 		}
 
 		// More Than 10
-		if (VisualizeModel.get('logs_count') > 10)
-		{
+		if (VisualizeModel.get('logs_count') > 10) {
+	
 			// Show Language Map Link
-			if (UserData.get('source') !== 'mobile')
-			{
+			if (UserData.get('source') !== 'mobile') {
 				$('#your_language_map').fadeIn();
 			}
 
@@ -35,44 +31,38 @@ var VisualizeView = Backbone.View.extend(
 		}
 
 		// More Than 15
-		if (VisualizeModel.get('logs_count') > 15)
-		{
+		if (VisualizeModel.get('logs_count') > 15) {
 			this.renderStrongExperiences();
 		}
-		
-		
 	},
-	renderLastFive: function()
-	{
+	renderLastFive: function() {
+
 		// Create Pie Chart
 		var types			= VisualizeModel.get('last_five').language;
 		var types_colors	= [];
 		var word_values		= [];
 		var word_percents	= [];
 
-		if (types['undecided'] !== undefined)
-		{
+		if (types['undecided'] !== undefined) {
 			var types_total	= VisualizeModel.get('last_five').language_total - types['undecided'];
 		}
-		else
-		{
+		else {
 			var types_total	= VisualizeModel.get('last_five').language_total;
 		}
 
 		// Build Data Values
-		for (var type in types)
-		{
-			if (type !== 'undecided')
-			{
+		for (var type in types) {
+			if (type !== 'undecided') {
 				var type_percent = types[type] / types_total,
 				type_percent = Math.round(type_percent * 100);
 				word_values.push(types[type]);
-				word_percents.push(type_percent + '% ' + type);
+				word_percents.push(type_percent + '%');
 				types_colors.push(EmoomeSettings.type_colors[type]);
 			}
 		}
 
-		this.renderPieChart(word_values, word_percents, types_colors);
+//		this.renderPieChart(word_values, word_percents, types_colors);
+		this.renderLineChart(word_values, word_percents, types_colors);
 
 		// Mood & Topics
 		this.renderMoodTopics();
@@ -91,8 +81,7 @@ var VisualizeView = Backbone.View.extend(
 			}
 		}
 	},
-	renderPieChart: function(word_values, word_percents, types_colors)
-	{
+	renderPieChart: function(word_values, word_percents, types_colors) {
 		// Piechart
 		var pie_container	= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types_container;
 		var pie_size		= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types;
@@ -109,8 +98,7 @@ var VisualizeView = Backbone.View.extend(
 		var circle_y = 10;
 		var text_y = 8;
 
-		$.each(word_percents, function(key, percent)
-		{
+		$.each(word_percents, function(key, percent) {
 			paper.circle(10, circle_y, 10).attr({fill: types_colors[key], opacity: 1, 'stroke-width': 1, 'stroke': '#c3c3c3'});
 			paper.text(35, text_y, percent).attr({"text-anchor": "start", "color": "#333333", "font-family": "'Ralway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif", "font-size": 18, "line-height": 18, "font-weight": 100, "letter-spacing": 2});
 
@@ -118,11 +106,27 @@ var VisualizeView = Backbone.View.extend(
 			text_y = text_y + 25;
 		});
 	},
-	renderMoodTopics: function()
-	{
+	renderLineChart: function(word_values, word_percents, types_colors) {
+	
+		$.each(word_percents, function(key, percent)
+		{
+			console.log(key + ' --- ' + percent);
+		
+			var bar = '<div class="visualize-language-bar" style="background: ' + types_colors[key] + '; width: ' + percent + '; height: 40px; margin-bottom: 20px"></div>' + percent;
+		
+			$('#visualize_language_pie_legend').append(bar);
+	
+		});	
+		
+	},
+	renderMoodTopics: function() {
+
 		// Mood
-		var sentiment = Math.round(VisualizeModel.get('last_five').sentiment / 5);
-		$('#visualize_mood_emoticon').append('<span class="language-map-emoticons emoticons-' + EmoomeSettings.core_emotions[sentiment] + '"></span>');
+		var sentiment = Math.round(VisualizeModel.get('last_five').sentiment / 20);
+		
+		console.log(sentiment);
+		
+		$('#visualize_mood_emoticon').append('<img src="' + assets_url + 'emoticons/' + EmoomeSettings.core_emotions[sentiment] + '.svg">');
 
 		// Topics
 		$.each(VisualizeModel.get('last_five').topics, function(key, topic)
@@ -133,8 +137,8 @@ var VisualizeView = Backbone.View.extend(
 			}
 		});
 	},
-	renderCommonWords: function()
-	{
+	renderCommonWords: function() {
+
 		$visualize_common_words = $('#visualize_common_words');
 
 		var word_count_row	= 0;
@@ -166,8 +170,8 @@ var VisualizeView = Backbone.View.extend(
 
 		$('#visualize_common').delay(750).fadeIn();
 	},
-	renderStrongExperiences: function()
-	{
+	renderStrongExperiences: function() {
+
 		$strong_experiences	= $('#strong_experiences');
 
 		$.each(VisualizeModel.get('strong_experiences'), function(key, experience)

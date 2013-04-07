@@ -39,6 +39,23 @@
 <?= $template_visualize ?>
 <?= $template_settings ?>
 
+<script type="text/template" id="template-insights">
+	<div class="row text-center animated bounceInLeft">
+		<h1>Insights</h1>
+	</div>
+	<div class="animated bounceInUp">
+		<div class="eight columns alpha text-center">
+			<a class="button-big-secondary full-width" href="/#settings/password"><span class="icon-key"></span> Password</a>
+			<a class="button-big-secondary full-width" href="/#settings/logout"><span class="icon-keyhole"></span> Logout</a>
+		</div>
+		<div class="eight columns omega text-center">
+			<a class="button-big-secondary full-width" href="/#settings/password"><span class="icon-key"></span> Password</a>
+			<a class="button-big-secondary full-width" href="/#settings/logout"><span class="icon-keyhole"></span> Logout</a>
+		</div>
+	</div>	
+</script>
+
+
 <!-- Web Javascripts -->
 <script type="text/javascript" src="<?= $site_assets ?>js/libs/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="<?= $site_assets ?>js/libs-min.js"></script>
@@ -85,6 +102,7 @@ var App = (function ($, Backbone, global) {
 
         // URL
         global.base_url = '<?= base_url() ?>';
+        global.assets_url = '<?= base_url() ?>application/views/site_emoome/assets/';
 
         // Model
         global.UserData = new UserData();

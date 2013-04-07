@@ -1,7 +1,7 @@
 var ApplicationRouter = Backbone.Router.extend(
 {
-	initialize: function(el)
-	{
+	initialize: function(el) {
+
 		this.el = el;
 
 		// Instantiate Navigation
@@ -29,15 +29,14 @@ var ApplicationRouter = Backbone.Router.extend(
 		"logout"				: "logout",
 		"record"				: "recordViews",
 		"record/:view"			: "recordViews",
+		"insights"				: "insights",
 		"visualize"				: "visualize",
 		"settings"				: "settingsViews",
 		"settings/:view"		: "settingsViews"
 	},
 	currentView: null,
-	switchView: function(view)
-	{
-		if (this.currentView)
-		{
+	switchView: function(view) {
+		if (this.currentView) {
 			this.currentView.remove();	// Detach the old view
 		}
 
@@ -45,16 +44,12 @@ var ApplicationRouter = Backbone.Router.extend(
 		view.render();					// Render view after it is in the DOM (styles are applied)
 		this.currentView = view;
 	},
-	setActiveNav: function(url)		// For Main Nav Links and Shit
-	{			    
-	    $.each(['record', 'visualize', 'settings'], function(key, value)
-	    {		
-		    if (value == type)
-			{
+	setActiveNav: function(url)	{	// For Main Nav Links and Shit
+	    $.each(['record', 'visualize', 'settings'], function(key, value) {		
+		    if (value == type) {
 				$('#record_feeling_' + value).fadeIn();
 			}
-			else
-			{
+			else {
 				$('#record_feeling_' + value).hide(); 
 			}
 	    });
@@ -63,36 +58,31 @@ var ApplicationRouter = Backbone.Router.extend(
 	    $('div.left_control_links').removeClass('icon_small_text_on icon_small_emoticons_on icon_small_audio_on');
 	    $('#log_feeling_use_' + type).addClass('icon_small_' +  type + '_on');
 	},
-	index: function()
-	{
+	index: function() {
 		if (UserData.get('logged') === 'yes') {
 			Backbone.history.navigate('#/record/feeling', true);	
 		}
 
 		this.switchView(this.indexView);
 	},
-	login: function()
-	{
+	login: function() {
 		if (UserData.get('logged') === 'yes') {
 			Backbone.history.navigate('#/record/feeling', true);
 		}
 
 		this.authView.viewLogin();
 	},
-	signup: function()
-	{
+	signup: function() {
 		if (UserData.get('logged') === 'yes') {
 			Backbone.history.navigate('#/record/feeling', true);
 		}
 
 		this.authView.viewSignup();
 	},
-	forgotPassword: function()
-	{
+	forgotPassword: function() {
 		this.authView.viewForgotPassword();
 	},
-	logout: function()
-	{
+	logout: function() {
 		UserData.set({ logged: 'no', user_id: '', username: '', name: '', user_level_id	: '', name : '', image : '', location : '', geo_enabled : '', language : '', privacy : '', consumer_key : '', consumer_secret : '', token : '', token_secret : '' });
 		this.Navigation.showPublic();
 		this.switchView(this.logoutView);
@@ -100,8 +90,7 @@ var ApplicationRouter = Backbone.Router.extend(
 	notFound: function() {
 		this.switchView(this.notFoundView);
 	},
-	recordViews: function(view)
-	{
+	recordViews: function(view) {
 		if (UserData.get('logged') !== 'yes') {
 			Backbone.history.navigate('#/login', true);
 		}
@@ -120,29 +109,31 @@ var ApplicationRouter = Backbone.Router.extend(
 		else
 			this.switchView(this.notFoundView);
 	},
-	visualize: function(view)
-	{	
+	insights: function() {
+		InsightViews = new InsightsView({ el: $('#content')});
+	},
+	visualize: function(view) {
+
 		if (UserData.get('logged') !== 'yes') {
 			Backbone.history.navigate('#/login', true);
 		}
 
 		// Get / Render Visualize
-		if (VisualizeModel.get('data') !== 'updated')
-		{
-			$.oauthAjax(
-			{
-				oauth 		: UserData,	
+		if (VisualizeModel.get('data') !== 'updated') {
+			$.oauthAjax({
+				oauth		: UserData,
 				url			: base_url + 'api/emoome/analyze/me',
 				type		: 'GET',
 				dataType	: 'json',
-			  	success		: function(result)
-			  	{
+				success		: function(result) {
+
 					// Is Saved
 					if (result.status === 'success') {
+
 						// Update Model
 						VisualizeModel.set(result);
 						VisualizeModel.set({ data : 'updated' });
-	
+
 						// Render View
 						VisualizeViews = new VisualizeView({ el: $('#content')});
 					}
@@ -152,13 +143,12 @@ var ApplicationRouter = Backbone.Router.extend(
 				}
 			});
 		}
-		else
-		{
+		else {
 			VisualizeViews = new VisualizeView({ el: $('#content')});
 		}
 	},
-	settingsViews: function(view)
-	{
+	settingsViews: function(view) {
+
 		if (UserData.get('logged') !== 'yes') {
 			Backbone.history.navigate('#/login', true);
 		}

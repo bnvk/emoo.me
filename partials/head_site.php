@@ -20,7 +20,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
 <!-- CSS Style -->
-<link rel="stylesheet" media="screen" href="<?= $site_assets ?>css/style.css" type="text/css" />
+<link rel="stylesheet" media="screen" href="<?= $site_assets ?>css/style.css?<?= now() ?>" type="text/css" />
 
 <!-- Apple Icons -->
 <link rel="apple-touch-icon-precomposed" href="<?= $site_assets ?>icons/apple-touch-icon-precomposed.png" />

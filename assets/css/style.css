@@ -294,295 +294,6 @@ you can use the generic selector below, but it's slower:
 .icons_topics_intelligence {
   background-position: -300px -600px;
 }
-/* Icons - Emoticons */
-.emoticons-small-acceptance {
-  background: url(../images/emoticons-small.png) -75px 0px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 69px;
-}
-.emoticons-small-amazement {
-  background: url(../images/emoticons-small.png) -150px 0px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 69px;
-}
-.emoticons-small-anger {
-  background: url(../images/emoticons-small.png) 0px -81px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-}
-.emoticons-small-annoyed {
-  background: url(../images/emoticons-small.png) -75px -81px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-}
-.emoticons-small-cool {
-  background: url(../images/emoticons-small.png) -150px -81px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 69px;
-}
-.emoticons-small-crazy {
-  background: url(../images/emoticons-small.png) -225px 0px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 69px;
-}
-.emoticons-small-disapproval {
-  background: url(../images/emoticons-small.png) -225px -74px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 69px;
-}
-.emoticons-small-disgust {
-  background: url(../images/emoticons-small.png) 0px -156px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-}
-.emoticons-small-fear {
-  background: url(../images/emoticons-small.png) -75px -156px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 69px;
-}
-.emoticons-small-goofy {
-  background: url(../images/emoticons-small.png) -300px 0px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-}
-.emoticons-small-grief {
-  background: url(../images/emoticons-small.png) -300px -231px no-repeat;
-  display: inline-block;
-  width: 69px;
-  height: 69px;
-}
-.emoticons-small-happy {
-  background: url(../images/emoticons-small.png) -300px -75px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-}
-.emoticons-small-interest {
-  background: url(../images/emoticons-small.png) -300px -150px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 69px;
-}
-.emoticons-small-joy {
-  background: url(../images/emoticons-small.png) -150px -156px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 69px;
-}
-.emoticons-small-loathing {
-  background: url(../images/emoticons-small.png) 0px -231px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-}
-.emoticons-small-love {
-  background: url(../images/emoticons-small.png) -75px -231px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-}
-.emoticons-small-neutral {
-  background: url(../images/emoticons-small.png) -225px -156px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 69px;
-}
-.emoticons-small-optimism {
-  background: url(../images/emoticons-small.png) -150px -231px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 69px;
-}
-.emoticons-small-rage {
-  background: url(../images/emoticons-small.png) -375px 0px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-}
-.emoticons-small-sad {
-  background: url(../images/emoticons-small.png) -375px -75px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-}
-.emoticons-small-serenity {
-  background: url(../images/emoticons-small.png) 0px 0px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 76px;
-}
-.emoticons-small-shame {
-  background: url(../images/emoticons-small.png) -375px -150px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 69px;
-}
-.emoticons-small-surprise {
-  background: url(../images/emoticons-small.png) -375px -224px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 69px;
-}
-.emoticons-small-undefined {
-  background: url(../images/emoticons-small.png) -225px -231px no-repeat;
-  display: inline-block;
-  width: 70px;
-  height: 69px;
-}
-.emoticons-acceptance {
-  background: url(../images/emoticons.png) -994px -692px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 324px;
-}
-.emoticons-amazement {
-  background: url(../images/emoticons.png) -1325px 0px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 324px;
-}
-.emoticons-anger {
-  background: url(../images/emoticons.png) -332px 0px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 327px;
-}
-.emoticons-annoyed {
-  background: url(../images/emoticons.png) -663px 0px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 327px;
-}
-.emoticons-cool {
-  background: url(../images/emoticons.png) -1325px -329px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 324px;
-}
-.emoticons-crazy {
-  background: url(../images/emoticons.png) -1325px -658px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 324px;
-}
-.emoticons-disapproval {
-  background: url(../images/emoticons.png) 0px -1024px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 324px;
-}
-.emoticons-disgust {
-  background: url(../images/emoticons.png) 0px -360px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 327px;
-}
-.emoticons-fear {
-  background: url(../images/emoticons.png) -331px -1024px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 324px;
-}
-.emoticons-goofy {
-  background: url(../images/emoticons.png) -331px -360px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 327px;
-}
-.emoticons-grief {
-  background: url(../images/emoticons.png) -1656px -987px no-repeat;
-  display: inline-block;
-  width: 325px;
-  height: 325px;
-}
-.emoticons-happy {
-  background: url(../images/emoticons.png) -662px -360px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 327px;
-}
-.emoticons-interest {
-  background: url(../images/emoticons.png) -662px -1024px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 324px;
-}
-.emoticons-joy {
-  background: url(../images/emoticons.png) -993px -1024px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 324px;
-}
-.emoticons-loathing {
-  background: url(../images/emoticons.png) -994px 0px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 327px;
-}
-.emoticons-love {
-  background: url(../images/emoticons.png) -994px -332px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 327px;
-}
-.emoticons-neutral {
-  background: url(../images/emoticons.png) -1324px -1024px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 324px;
-}
-.emoticons-optimism {
-  background: url(../images/emoticons.png) -1656px 0px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 324px;
-}
-.emoticons-rage {
-  background: url(../images/emoticons.png) 0px -692px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 327px;
-}
-.emoticons-sad {
-  background: url(../images/emoticons.png) -331px -692px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 327px;
-}
-.emoticons-serenity {
-  background: url(../images/emoticons.png) 0px 0px no-repeat;
-  display: inline-block;
-  width: 327px;
-  height: 355px;
-}
-.emoticons-shame {
-  background: url(../images/emoticons.png) -1656px -329px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 324px;
-}
-.emoticons-surprise {
-  background: url(../images/emoticons.png) -1656px -658px no-repeat;
-  display: inline-block;
-  width: 326px;
-  height: 324px;
-}
-.emoticons-undefined {
-  background: url(../images/emoticons.png) -662px -692px no-repeat;
-  display: inline-block;
-  width: 327px;
-  height: 325px;
-}
 /*
 * Skeleton V1.2
 * Copyright 2011, Dave Gamache
@@ -4791,37 +4502,34 @@ legend span {
 }
 .row {
   width: 100%;
-  max-width: 1140px;
-  margin: 0 auto 20px auto;
+  margin-bottom: 20px;
   overflow: hidden;
 }
-.container .one.column,
-.container .one.columns,
-.container .two.columns,
-.container .three.columns,
-.container .four.columns,
-.container .five.columns,
-.container .six.columns,
-.container .seven.columns,
-.container .eight.columns,
-.container .nine.columns,
-.container .ten.columns,
-.container .eleven.columns,
-.container .twelve.columns,
-.container .thirteen.columns,
-.container .fourteen.columns,
-.container .fifteen.columns {
-  margin-right: 2.5%;
-  float: left;
+.column.alpha,
+.columns.alpha {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+.column.omega,
+.columns.omega {
+  margin-right: 0px;
+  margin-left: 10px;
+}
+.alpha.omega {
+  margin-left: 0;
+  margin-right: 0;
 }
 .container .one-third.column {
   width: 31%;
+  margin-bottom: 3%;
 }
 .container .two-thirds.column {
-  width: 52.5%;
+  width: 52%;
+  margin-bottom: 3%;
 }
 .container .half.column {
-  width: 47.5%;
+  width: 47%;
+  margin-bottom: 3%;
 }
 .container .one.column,
 .container .one.columns {
@@ -4846,7 +4554,7 @@ legend span {
   width: 42.4%;
 }
 .container .eight.columns {
-  width: 48.8%;
+  width: 48.75%;
 }
 .container .nine.columns {
   width: 55.2%;
@@ -4859,7 +4567,6 @@ legend span {
 }
 .container .twelve.columns {
   width: 74.4%;
-  float: left;
 }
 .container .thirteen.columns {
   width: 80.8%;
@@ -4872,7 +4579,52 @@ legend span {
 }
 .container .sixteen.columns {
   width: 100%;
-  float: left;
+}
+/* Offsets */
+.container .offset-by-one {
+  padding-left: 4%;
+}
+.container .offset-by-two {
+  padding-left: 10.4%;
+}
+.container .offset-by-three {
+  padding-left: 16.8%;
+}
+.container .offset-by-four {
+  padding-left: 23.2%;
+}
+.container .offset-by-five {
+  padding-left: 29.6%;
+}
+.container .offset-by-six {
+  padding-left: 36%;
+}
+.container .offset-by-seven {
+  padding-left: 42.4%;
+}
+.container .offset-by-eight {
+  padding-left: 47%;
+}
+.container .offset-by-nine {
+  padding-left: 55.2%;
+}
+.container .offset-by-ten {
+  padding-left: 61.6%;
+}
+.container .offset-by-eleven {
+  padding-left: 68%;
+}
+.container .offset-by-twelve {
+  padding-left: 74.4%;
+}
+.container .offset-by-thirteen {
+  padding-left: 80.8%;
+}
+.container .offset-by-fourteen {
+  padding-left: 87.2%;
+}
+.container .offset-by-fifteen {
+  padding-left: 93.6%;
 }
 /* #Base 960 Grid
 ================================================== */
@@ -4887,21 +4639,22 @@ legend span {
   }
   .container .column,
   .container .columns {
-    float: left;
-    display: inline;
     margin-left: 10px;
     margin-right: 10px;
   }
-  .row {
-    margin-bottom: 20px;
-  }
   .column.alpha,
   .columns.alpha {
-    margin-left: 20px;
+    margin-left: 0;
+    margin-right: 10px;
   }
   .column.omega,
   .columns.omega {
-    margin-right: 20px;
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .alpha.omega {
+    margin-left: 0;
+    margin-right: 0;
   }
   /* Base Grid */
   .container .one.column,
@@ -5434,6 +5187,13 @@ span.quote_quote {
   color: #666;
   text-decoration: none;
 }
+/* Visualize */
+.visualize-language-bar {
+  color: #EEE;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+}
 /* =============== Web Style =============== */
 /* Larger than 1024 (standard browsers) */
 @media only screen and (min-width: 1025px) {
@@ -5497,6 +5257,9 @@ span.quote_quote {
     right: 30px;
     padding: 0;
     list-style: none;
+  }
+  #navigation_menu {
+    letter-spacing: -1px;
   }
   #navigation_menu ul {
     height: 30px;
@@ -5695,7 +5458,7 @@ span.quote_quote {
     width: 45%;
     min-height: 435px;
     float: left;
-    margin: 2em 2em 2em 0;
+    margin: 0 2em 2em 0;
   }
   #visualize_language_pie {
     width: 326px;
@@ -5703,8 +5466,7 @@ span.quote_quote {
     float: left;
   }
   #visualize_language_pie_legend {
-    width: 200px;
-    min-height: 125px;
+    width: 300px;
     float: left;
     margin: 2em 0 0 2.5em;
   }
@@ -5713,18 +5475,16 @@ span.quote_quote {
     width: 50%;
     min-height: 435px;
     float: left;
-    margin: 2em 0 2em 0;
+    margin: 0 0 2em 0;
   }
   #visualize_mood_emoticon {
     width: 326px;
     height: 324px;
     float: left;
   }
-  #visualize_mood_topics {
-    width: 270px;
-    min-height: 100px;
-    float: left;
-    margin: 2em 0 0 2.25em;
+  #visualize_mood_emoticon img {
+    width: 100%;
+    height: 100%;
   }
   #visualize_mood_topics div.topic_container {
     float: left;
@@ -5860,6 +5620,11 @@ span.quote_quote {
   img.index-art-top-2 {
     display: none;
   }
+  /* Visualize */
+  #visualize_language_pie_legend {
+    width: 150px;
+    height: 150px;
+  }
 }
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
@@ -5867,6 +5632,10 @@ span.quote_quote {
 }
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* Index */
+  #index-user-signup-form {
+    display: none;
+  }
   /* Record */
   #record-sub-controls {
     width: 100px;
@@ -5892,6 +5661,17 @@ span.quote_quote {
     margin: 0 auto 25px auto;
     font-size: 6em;
     line-height: 1.5em;
+  }
+  img.index-art-top-2 {
+    display: none;
+  }
+  #index-user-signup-form {
+    display: none;
+  }
+  /* Visualize */
+  #visualize_mood_topics svg {
+    width: 75%;
+    height: 75px;
   }
 }
 /* Mobile - Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -5960,6 +5740,9 @@ span.quote_quote {
     line-height: 1.5em;
   }
   img.index-art-top-2 {
+    display: none;
+  }
+  #index-user-signup-form {
     display: none;
   }
   /* Visualize - Your Language */

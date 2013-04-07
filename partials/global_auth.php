@@ -39,7 +39,7 @@
 <script type="text/template" id="logout">
 	<div class="row text-center">
 		<h1>Thanks</h1>
-		<h1 class="icon-smile"></h1>
+		<img src="<?= $site_assets ?>emoticons/happy.svg" width="150" height="150">
 		<h3>You are now logged out</h3>
 	</div>
 </script>
