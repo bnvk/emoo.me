@@ -1,16 +1,14 @@
 <script type="text/template" id="index">
-	<div class="row text-center">	
+	<div class="row text-center" id="index-logo-circles">	
 		<h1 class="index-logo">emo<span class="name_ome">ome</span></h1>
-		<div id="index-logo-circles">
-			<ul>
-				<li class="circle-E"></li>
-				<li class="circle-I"></li>
-				<li class="circle-D"></li>
-				<li class="circle-S"></li>
-				<li class="circle-P"></li>
-				<li class="circle-A"></li>
-			</ul>
-		</div>
+		<ul>
+			<li class="circle-E"></li>
+			<li class="circle-I"></li>
+			<li class="circle-D"></li>
+			<li class="circle-S"></li>
+			<li class="circle-P"></li>
+			<li class="circle-A"></li>
+		</ul>
 		<h2 class="hide">record your experiences & feelings</h2>
 		<h2 class="hide">visualize moments from your life</h2>
 		<h2 class="hide">discover patterns in your thinking</h2>

@@ -64,7 +64,7 @@
 		<div class="four columns alpha"></div>
 		<div class="eight columns text-center">
 			<h1>Describe in three words</h1>
-			<p id="log_describe_this">"<%= describe_this %>"</p>
+			<p id="log_describe_this">"{{ describe_this }}"</p>
 			<input type="text" name="log_describe_1" id="log_describe_1_value" class="center" placeholder="Three" value="">
 			<input type="text" name="log_describe_2" id="log_describe_2_value" class="center" placeholder="Separate" value="">
 			<input type="text" name="log_describe_3" id="log_describe_3_value" class="center" placeholder="Words" value="">
@@ -77,7 +77,7 @@
 <script type="text/template" id="record_thanks">
 	<div id="log_thanks_view" class="content_center text-center">
 		<h1>Thanks :)</h1>
-		<h3 id="log_completion_message"><%= complete_message %></h3>
+		<h3 id="log_completion_message">{{ complete_message }}</h3>
 		<p><a id="log_thanks_next" class="button-secondary" href="#">Another</a></p>
 	</div>
 </script>

@@ -5,7 +5,9 @@
     More info at: http://lesselements.com
   ---------------------------------------------------*/
 /* Shapes */
-/* Font - Raleway */
+/* #Fonts
+================================================== */
+/* Raleway */
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/raleway_thin-webfont.eot");
@@ -13,6 +15,7 @@
   font-weight: normal;
   font-style: normal;
 }
+/* Icons - Interface */
 @font-face {
   font-family: 'Icons-Interface';
   src: url('../fonts/Icons-Interface.eot');
@@ -166,133 +169,302 @@ you can use the generic selector below, but it's slower:
 .icon-checkmark:before {
   content: "\e01d";
 }
-/* Icons - Topics */
-.icons_topics {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  background-image: url(../images/topics_sprite.png);
-  background-repeat: no-repeat;
+@font-face {
+  font-family: 'Icon-Topics';
+  src: url('../fonts/Icon-Topics.eot');
+  src: url('../fonts/Icon-Topics.eot?#iefix') format('embedded-opentype'), url('../fonts/Icon-Topics.woff') format('woff'), url('../fonts/Icon-Topics.ttf') format('truetype'), url('../fonts/Icon-Topics.svg#Icon-Topics') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-.icons_topics_undecided {
-  background-position: 0px 0px;
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'Icon-Topics';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
-.icons_topics_alcohol {
-  background-position: -100px 0px;
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-topic-work,
+.icon-topic-weapons,
+.icon-topic-violence,
+.icon-topic-urban,
+.icon-topic-undecided,
+.icon-topic-transportation,
+.icon-topic-touch,
+.icon-topic-time,
+.icon-topic-talking,
+.icon-topic-sports,
+.icon-topic-sound,
+.icon-topic-social,
+.icon-topic-smell,
+.icon-topic-slang,
+.icon-topic-significance,
+.icon-topic-sexuality,
+.icon-topic-science,
+.icon-topic-psychological,
+.icon-topic-posession,
+.icon-topic-politics,
+.icon-topic-places,
+.icon-topic-philosophy,
+.icon-topic-perception,
+.icon-topic-people,
+.icon-topic-office,
+.icon-topic-objects,
+.icon-topic-numbers,
+.icon-topic-news,
+.icon-topic-nature,
+.icon-topic-names,
+.icon-topic-music,
+.icon-topic-movement,
+.icon-topic-moral,
+.icon-topic-medicine,
+.icon-topic-measurement,
+.icon-topic-love,
+.icon-topic-legal,
+.icon-topic-internet,
+.icon-topic-intelligence,
+.icon-topic-hygiene,
+.icon-topic-humor,
+.icon-topic-home,
+.icon-topic-health,
+.icon-topic-gibberish,
+.icon-topic-gender,
+.icon-topic-games,
+.icon-topic-food,
+.icon-topic-financial,
+.icon-topic-feeling,
+.icon-topic-family,
+.icon-topic-exercise,
+.icon-topic-education,
+.icon-topic-drugs,
+.icon-topic-culture,
+.icon-topic-crime,
+.icon-topic-companies,
+.icon-topic-common,
+.icon-topic-colors,
+.icon-topic-clothing,
+.icon-topic-challenges,
+.icon-topic-caffeine,
+.icon-topic-architecture,
+.icon-topic-animals,
+.icon-topic-alcohol,
+.icon-topic-age,
+.icon-topic-deception {
+  font-family: 'Icon-Topics';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
-.icons_topics_animals {
-  background-position: -200px 0px;
+.icon-topic-work:before {
+  content: "\e000";
 }
-.icons_topics_clothing {
-  background-position: -300px 0px;
+.icon-topic-weapons:before {
+  content: "\e001";
 }
-.icons_topics_culture {
-  background-position: -400px 0px;
+.icon-topic-violence:before {
+  content: "\e002";
 }
-.icons_topics_color {
-  background-position: -500px 0px;
+.icon-topic-urban:before {
+  content: "\e003";
 }
-.icons_topics_family {
-  background-position: 0px -100px;
+.icon-topic-undecided:before {
+  content: "\e004";
 }
-.icons_topics_age {
-  background-position: -100px -100px;
+.icon-topic-transportation:before {
+  content: "\e005";
 }
-.icons_topics_common {
-  background-position: -200px -100px;
+.icon-topic-touch:before {
+  content: "\e006";
 }
-.icons_topics_psychological {
-  background-position: -300px -100px;
+.icon-topic-time:before {
+  content: "\e007";
 }
-.icons_topics_perception {
-  background-position: -400px -100px;
+.icon-topic-talking:before {
+  content: "\e008";
 }
-.icons_topics_moral {
-  background-position: -500px -100px;
+.icon-topic-sports:before {
+  content: "\e009";
 }
-.icons_topics_people {
-  background-position: 0px -200px;
+.icon-topic-sound:before {
+  content: "\e00a";
 }
-.icons_topics_names {
-  background-position: -100px -200px;
+.icon-topic-social:before {
+  content: "\e00b";
 }
-.icons_topics_numbers {
-  background-position: -200px -200px;
+.icon-topic-smell:before {
+  content: "\e00c";
 }
-.icons_topics_hygiene {
-  background-position: -300px -200px;
+.icon-topic-slang:before {
+  content: "\e00d";
 }
-.icons_topics_urban {
-  background-position: -400px -200px;
+.icon-topic-significance:before {
+  content: "\e00e";
 }
-.icons_topics_sports {
-  background-position: -500px -200px;
+.icon-topic-sexuality:before {
+  content: "\e00f";
 }
-.icons_topics_time {
-  background-position: 0px -300px;
+.icon-topic-science:before {
+  content: "\e010";
 }
-.icons_topics_talking {
-  background-position: -100px -300px;
+.icon-topic-psychological:before {
+  content: "\e011";
 }
-.icons_topics_food {
-  background-position: -200px -300px;
+.icon-topic-posession:before {
+  content: "\e012";
 }
-.icons_topics_slang {
-  background-position: -300px -300px;
+.icon-topic-politics:before {
+  content: "\e013";
 }
-.icons_topics_home {
-  background-position: -400px -300px;
+.icon-topic-places:before {
+  content: "\e014";
 }
-.icons_topics_movement {
-  background-position: -500px -300px;
+.icon-topic-philosophy:before {
+  content: "\e015";
 }
-.icons_topics_social {
-  background-position: 0px -400px;
+.icon-topic-perception:before {
+  content: "\e016";
 }
-.icons_topics_nature {
-  background-position: -100px -400px;
+.icon-topic-people:before {
+  content: "\e017";
 }
-.icons_topics_love {
-  background-position: -200px -400px;
+.icon-topic-office:before {
+  content: "\e018";
 }
-.icons_topics_significance {
-  background-position: -300px -400px;
+.icon-topic-objects:before {
+  content: "\e019";
 }
-.icons_topics_legal {
-  background-position: -400px -400px;
+.icon-topic-numbers:before {
+  content: "\e01a";
 }
-.icons_topics_sexuality {
-  background-position: -500px -400px;
+.icon-topic-news:before {
+  content: "\e01b";
 }
-.icons_topics_weapons {
-  background-position: 0px -500px;
+.icon-topic-nature:before {
+  content: "\e01c";
 }
-.icons_topics_violence {
-  background-position: -100px -500px;
+.icon-topic-names:before {
+  content: "\e01d";
 }
-.icons_topics_objects {
-  background-position: -200px -500px;
+.icon-topic-music:before {
+  content: "\e01e";
 }
-.icons_topics_technology {
-  background-position: -300px -500px;
+.icon-topic-movement:before {
+  content: "\e01f";
 }
-.icons_topics_place {
-  background-position: -400px -500px;
+.icon-topic-moral:before {
+  content: "\e020";
 }
-.icons_topics_architecture {
-  background-position: -500px -500px;
+.icon-topic-medicine:before {
+  content: "\e021";
 }
-.icons_topics_feeling {
-  background-position: 0px -600px;
+.icon-topic-measurement:before {
+  content: "\e022";
 }
-.icons_topics_exercise {
-  background-position: -100px -600px;
+.icon-topic-love:before {
+  content: "\e023";
 }
-.icons_topics_music {
-  background-position: -200px -600px;
+.icon-topic-legal:before {
+  content: "\e024";
 }
-.icons_topics_intelligence {
-  background-position: -300px -600px;
+.icon-topic-internet:before {
+  content: "\e025";
+}
+.icon-topic-intelligence:before {
+  content: "\e026";
+}
+.icon-topic-hygiene:before {
+  content: "\e027";
+}
+.icon-topic-humor:before {
+  content: "\e028";
+}
+.icon-topic-home:before {
+  content: "\e029";
+}
+.icon-topic-health:before {
+  content: "\e02a";
+}
+.icon-topic-gibberish:before {
+  content: "\e02b";
+}
+.icon-topic-gender:before {
+  content: "\e02c";
+}
+.icon-topic-games:before {
+  content: "\e02d";
+}
+.icon-topic-food:before {
+  content: "\e02e";
+}
+.icon-topic-financial:before {
+  content: "\e02f";
+}
+.icon-topic-feeling:before {
+  content: "\e030";
+}
+.icon-topic-family:before {
+  content: "\e031";
+}
+.icon-topic-exercise:before {
+  content: "\e032";
+}
+.icon-topic-education:before {
+  content: "\e033";
+}
+.icon-topic-drugs:before {
+  content: "\e034";
+}
+.icon-topic-culture:before {
+  content: "\e035";
+}
+.icon-topic-crime:before {
+  content: "\e036";
+}
+.icon-topic-companies:before {
+  content: "\e037";
+}
+.icon-topic-common:before {
+  content: "\e038";
+}
+.icon-topic-colors:before {
+  content: "\e039";
+}
+.icon-topic-clothing:before {
+  content: "\e03a";
+}
+.icon-topic-challenges:before {
+  content: "\e03b";
+}
+.icon-topic-caffeine:before {
+  content: "\e03c";
+}
+.icon-topic-architecture:before {
+  content: "\e03d";
+}
+.icon-topic-animals:before {
+  content: "\e03e";
+}
+.icon-topic-alcohol:before {
+  content: "\e03f";
+}
+.icon-topic-age:before {
+  content: "\e040";
+}
+.icon-topic-deception:before {
+  content: "\e041";
 }
 /*
 * Skeleton V1.2
@@ -3928,6 +4100,7 @@ hr.large {
 /* Circle */
 /* #Typography
 ================================================== */
+/* Headers */
 h1,
 h2,
 h3,
@@ -5188,11 +5361,30 @@ span.quote_quote {
   text-decoration: none;
 }
 /* Visualize */
+#visualize_language_mood img {
+  width: 300px;
+  height: 300px;
+}
 .visualize-language-bar {
-  color: #EEE;
-  font-size: 30px;
-  font-weight: bold;
-  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  margin: 0 0 11px 0;
+}
+.visualize-language-type-color {
+  width: 10px;
+  height: 100%;
+  border-radius: 3px;
+  float: left;
+  margin-right: 10px;
+}
+.visualize-language-type-percent {
+  font-size: 24px;
+  line-height: 28px;
+}
+.visualize-language-type-type {
+  font-size: 12px;
+  line-height: 12px;
+  color: #999999;
 }
 /* =============== Web Style =============== */
 /* Larger than 1024 (standard browsers) */
@@ -5282,6 +5474,11 @@ span.quote_quote {
     font-weight: 100;
     font-size: 24px;
     line-height: 24px;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
   }
   #navigation_menu ul li a span {
     display: inline-block;
@@ -5335,29 +5532,6 @@ span.quote_quote {
   }
   img.index-art-top-2 {
     display: block;
-  }
-  #index_define {
-    width: 900px;
-    margin-bottom: 45px;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  #index_define p {
-    width: 450px;
-    display: block;
-    float: left;
-  }
-  #index_quotes {
-    width: 900px;
-    margin-top: 40px;
-    text-align: center;
-  }
-  .index_container {
-    width: 900px;
-    margin: 0 auto;
-  }
-  .index_content {
-    margin-bottom: 45px;
   }
   /* Record - Feeling - Text */
   #record-sub-controls {
@@ -5453,42 +5627,12 @@ span.quote_quote {
     float: right;
     margin: 1em 0 0 0;
   }
-  #visualize_language {
-    min-width: 335px;
-    width: 45%;
-    min-height: 435px;
-    float: left;
-    margin: 0 2em 2em 0;
-  }
-  #visualize_language_pie {
-    width: 326px;
-    height: 326px;
-    float: left;
-  }
-  #visualize_language_pie_legend {
-    width: 300px;
-    float: left;
-    margin: 2em 0 0 2.5em;
-  }
-  #visualize_mood {
-    min-width: 326px;
-    width: 50%;
-    min-height: 435px;
-    float: left;
-    margin: 0 0 2em 0;
-  }
-  #visualize_mood_emoticon {
-    width: 326px;
-    height: 324px;
-    float: left;
-  }
-  #visualize_mood_emoticon img {
-    width: 100%;
-    height: 100%;
-  }
   #visualize_mood_topics div.topic_container {
     float: left;
     margin: 0 1.5em 2.5em 0;
+  }
+  #visualize_language_types {
+    width: 100%;
   }
   /* Visualize - Common Words */
   #visualize_common {
@@ -5621,10 +5765,6 @@ span.quote_quote {
     display: none;
   }
   /* Visualize */
-  #visualize_language_pie_legend {
-    width: 150px;
-    height: 150px;
-  }
 }
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
@@ -5745,23 +5885,7 @@ span.quote_quote {
   #index-user-signup-form {
     display: none;
   }
-  /* Visualize - Your Language */
-  #visualize_language {
-    margin: 0 0 40px 20px;
-  }
-  #person_circles {
-    width: 100%;
-    min-height: 100px;
-    margin: 0px 0 0 0;
-  }
-  div.person_circles_circle {
-    height: 100px;
-    float: left;
-    margin: 20px 20px 20px 0;
-    font-size: 12px;
-    text-align: center;
-  }
-  /* Visualize - Common Words */
+  /* Visualize */
   #visualize_common {
     margin: 0 20px 40px 20px;
   }
@@ -5792,7 +5916,6 @@ span.quote_quote {
     color: #888888;
     text-transform: capitalize;
   }
-  /* Visualize - Strong Experiences */
   #visualize_experiences {
     margin: 0 0 40px 20px;
   }

@@ -17,8 +17,7 @@
 </div>	
 
 <!-- Where The Magic Happens -->
-<div class="container animated" id="content"></div>
-<div class="clear"></div>
+<div class="container" id="content"></div>
 
 <!-- Partials -->
 <script type="text/template" id="ligthbox_template">

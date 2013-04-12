@@ -61,79 +61,76 @@ var VisualizeView = Backbone.View.extend(
 			}
 		}
 
-//		this.renderPieChart(word_values, word_percents, types_colors);
+		this.renderPieChart(word_values, word_percents, types_colors);
 		this.renderLineChart(word_values, word_percents, types_colors);
 
 		// Mood & Topics
-		this.renderMoodTopics();
+		this.renderMood();
+		this.renderTopics();
+
 
 		// Show Summary
 		$('#visualize_summary').fadeIn();
 
 		// Show Device (User Level Specific Navigation)
-		if (UserData.get('source') !== 'mobile')
-		{
+		if (UserData.get('source') !== 'mobile') {
 			$('#visualize_navigation_language').show();
-		
-			if (UserData.get('user_level_id') <= 3)
-			{
+
+			if (UserData.get('user_level_id') <= 3) {
 				$('#visualize_navigation_search').show();
 			}
 		}
 	},
 	renderPieChart: function(word_values, word_percents, types_colors) {
+
 		// Piechart
 		var pie_container	= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types_container;
 		var pie_size		= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types;
 		var pie_placement	= pie_size;
-		var paperpie = Raphael('visualize_language_pie', pie_container, pie_container);
+		var paperpie 		= Raphael('visualize_language_types_pie', pie_container, pie_container);
 
-		pie = paperpie.piechart(pie_placement, pie_placement, pie_size, word_values,
-		{
+		pie = paperpie.piechart(pie_placement, pie_placement, pie_size, word_values, {
 			colors : types_colors
 	    });
-
-		// Piechart Legend
-		var paper = new Raphael(document.getElementById('visualize_language_pie_legend'), 200, 225);
-		var circle_y = 10;
-		var text_y = 8;
-
-		$.each(word_percents, function(key, percent) {
-			paper.circle(10, circle_y, 10).attr({fill: types_colors[key], opacity: 1, 'stroke-width': 1, 'stroke': '#c3c3c3'});
-			paper.text(35, text_y, percent).attr({"text-anchor": "start", "color": "#333333", "font-family": "'Ralway', 'Helvetica Neue', Helvetica, Arial, Sans-Serif", "font-size": 18, "line-height": 18, "font-weight": 100, "letter-spacing": 2});
-
-			circle_y = circle_y + 50;
-			text_y = text_y + 25;
-		});
 	},
 	renderLineChart: function(word_values, word_percents, types_colors) {
-	
-		$.each(word_percents, function(key, percent)
+		
+		$.each(VisualizeModel.get('last_five').language, function(type, score)
 		{
-			console.log(key + ' --- ' + percent);
-		
-			var bar = '<div class="visualize-language-bar" style="background: ' + types_colors[key] + '; width: ' + percent + '; height: 40px; margin-bottom: 20px"></div>' + percent;
-		
-			$('#visualize_language_pie_legend').append(bar);
-	
+			if (type !== 'undecided') {
+				var decimal = score / VisualizeModel.get('last_five').language_total;
+				var percent = Math.round(decimal * 100);
+			
+				console.log(type + ' --- ' + percent);
+			
+				var type_data = {	
+					color: EmoomeSettings.type_colors[type],
+					percent: percent,
+					type: type
+				}
+
+				var type_html = _.template($('#template-visualize-language-type').html(), type_data);
+			
+				$('#visualize_language_types').append(type_html);
+			}
 		});	
-		
 	},
-	renderMoodTopics: function() {
+	renderMood: function() {
 
 		// Mood
 		var sentiment = Math.round(VisualizeModel.get('last_five').sentiment / 20);
 		
-		console.log(sentiment);
+		console.log('sentiment: ' + sentiment);
 		
-		$('#visualize_mood_emoticon').append('<img src="' + assets_url + 'emoticons/' + EmoomeSettings.core_emotions[sentiment] + '.svg">');
-
-		// Topics
+		$('#visualize_language_mood').append('<img src="' + assets_url + 'emoticons/' + EmoomeSettings.core_emotions[sentiment] + '.svg">');
+	},
+	renderTopics: function() {
+	
 		$.each(VisualizeModel.get('last_five').topics, function(key, topic)
 		{
 			if (key !== 'undecided')
 			{
-				$('#visualize_mood_topics').append('<div class="topic_container"><div class="icons_topics icons_topics_' + key + '"></div><span class="topic_count">' + topic + '</span> <span class="topic_text">' + key + '</span></div>');
+				$('#visualize_mood_topics').append('<div class="topic_container"><div class="icon-topic-' + key + '"></div><span class="topic_count">' + topic + '</span> <span class="topic_text">' + key + '</span></div>');
 			}
 		});
 	},

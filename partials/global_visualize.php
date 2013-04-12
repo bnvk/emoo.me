@@ -12,25 +12,24 @@
 </script>
 
 <script type="text/template" id="visualize">
-
 	<div class="row">
 		<h2>Recently You've Been</h2>
 	</div>
 
-	<div id="visualize_mood" style="border: 1px solid red" class="six columns alpha">
-		<div id="visualize_mood_emoticon"></div>
+	<div class="seven columns alpha animated bounceIn">
+		<div id="visualize_language_mood"></div>
 	</div>
-	<div id="visualize_language" style="border: 1px solid red" class="ten columns omega">
-		<!--<div id="visualize_language_pie"></div>-->
-		<div id="visualize_language_pie_legend"></div>
+	<div class="seven columns animated bounceIn">
+		<div id="visualize_language_types_pie"></div>
+	</div>
+	<div class="two columns omega animated bounceIn">
+		<div id="visualize_language_types"></div>
 	</div>
 
 	<div class="row">
 		<h2>Topics</h2>
 		<div id="visualize_mood_topics"></div>
 	</div>
-
-	<div class="clear"></div>
 
 	<div id="visualize_common" class="sixteen columns hide">
 		<h2>Common Words</h2>
@@ -41,5 +40,12 @@
 		<h2>Strong Experiences</h2>
 		<div id="strong_experiences"></div>
 	</div>
+</script>
 
+<script type="text/template" id="template-visualize-language-type">
+	<div class="visualize-language-bar">
+		<div class="visualize-language-type-color" style="background: {{ color }};"></div>
+		<div class="visualize-language-type-percent">{{ percent }}%</div>
+		<div class="visualize-language-type-type">{{ type }}</div>
+	</div>
 </script>
