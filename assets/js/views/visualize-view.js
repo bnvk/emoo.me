@@ -118,19 +118,15 @@ var VisualizeView = Backbone.View.extend(
 	renderMood: function() {
 
 		// Mood
-		var sentiment = Math.round(VisualizeModel.get('last_five').sentiment / 20);
-		
-		console.log('sentiment: ' + sentiment);
-		
+		var sentiment = Math.round(VisualizeModel.get('last_five').sentiment / 20);		
 		$('#visualize_language_mood').append('<img src="' + assets_url + 'emoticons/' + EmoomeSettings.core_emotions[sentiment] + '.svg">');
 	},
 	renderTopics: function() {
 	
-		$.each(VisualizeModel.get('last_five').topics, function(key, topic)
-		{
-			if (key !== 'undecided')
-			{
-				$('#visualize_mood_topics').append('<div class="topic_container"><div class="icon-topic-' + key + '"></div><span class="topic_count">' + topic + '</span> <span class="topic_text">' + key + '</span></div>');
+		$.each(VisualizeModel.get('last_five').topics, function(key, topic) {
+			if (key !== 'undecided') {
+				var topic_html = _.template($('#template-visualize-topic').html(), { key: key, topic: topic });
+				$('#visualize_mood_topics').append(topic_html);
 			}
 		});
 	},
@@ -141,25 +137,20 @@ var VisualizeView = Backbone.View.extend(
 		var word_count_row	= 0;
 		var common_words	= VisualizeModel.get('all_time').words;
 
-		$.each(common_words, function(word, count)
-		{
-			if (word_count_row < 10)
-			{
-				if ($('#word_count_' +  count).length)
-				{
-					// Add Word To Row
+		$.each(common_words, function(word, count) {
+
+			if (word_count_row < 10) {
+
+				// Increment Existing
+				if ($('#word_count_' +  count).length) {
+
 					$('#word_count_' + count + '_words').append(', ' + word);
 				}
-				else
-				{
-					// Create HTML Row
-					$visualize_common_words.append('<div id="word_count_' + count + '" class="common_words">' +
-						'<div class="common_words_count">' + count + '</div>' +
-						'<div id="word_count_' + count + '_words" class="common_words_words">' + word + '</div>' +
-						'<div class="clear"></div>' +
-					'</div>' +
-					'<div class="common_words_line"></div>');
+				// Add New
+				else {
 
+					var common_html = _.template($('#template-visualize-common').html(), { count: count, word: word });
+					$visualize_common_words.append(common_html);
 					word_count_row++;
 				}
 			}
@@ -171,19 +162,23 @@ var VisualizeView = Backbone.View.extend(
 
 		$strong_experiences	= $('#strong_experiences');
 
-		$.each(VisualizeModel.get('strong_experiences'), function(key, experience)
-		{
+		$.each(VisualizeModel.get('strong_experiences'), function(key, experience) {
+
 			var color		= EmoomeSettings.type_colors[experience.type];
 			var size		= experience.count * EmoomeSettings.visualization_sizes[UserData.get('source')].circle_strong_experiences;
 			var svg_size	= 8 * EmoomeSettings.visualization_sizes[UserData.get('source')].circle_strong_experiences;
 			var position	= svg_size / 2;
 
 			// Create HTML Row
-			$strong_experiences.append('<div class="strong_experience"><div class="strong_experience_circle" id="strong_experience_' + experience.log_id + '"></div><div class="strong_experience_experience">"' + experience.experience + '" <span class="strong_experience_date">' + mysqlDateParser(experience.date).date('short') + '</span></div>' + '<div class="clear"></div></div>');
+			var experience_data = { log_id: experience.log_id, experience: experience.experience, date: mysqlDateParser(experience.date).date('short') };
+			var experience_html = _.template($('#template-visualize-experiences').html(), experience_data);
+			$strong_experiences.append(experience_html);
 
 			// Draw Circle
-			var paper = new Raphael(document.getElementById('strong_experience_' + experience.log_id), svg_size, svg_size);
-			paper.circle(position, position, size).attr({fill: color, opacity: 0, 'stroke-width': 1, 'stroke': '#c3c3c3'}).animate({opacity: 1}, 1500);
+			setTimeout(function() {
+				var paper = new Raphael(document.getElementById('strong_experience_' + experience.log_id), svg_size, svg_size);
+				paper.circle(position, position, size).attr({fill: color, opacity: 0, 'stroke-width': 1, 'stroke': '#c3c3c3'}).animate({opacity: 1}, 1500);
+			}, 250);
 		});
 
 		$('#visualize_experiences').delay(1000).fadeIn();

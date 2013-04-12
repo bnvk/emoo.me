@@ -13,7 +13,7 @@
 
 <script type="text/template" id="visualize">
 	<div class="row">
-		<h2>Recently You've Been</h2>
+		<h2>Last 5 Entries</h2>
 	</div>
 
 	<div class="seven columns alpha animated bounceIn">
@@ -42,10 +42,42 @@
 	</div>
 </script>
 
+
+<!-- Language -->
 <script type="text/template" id="template-visualize-language-type">
 	<div class="visualize-language-bar">
 		<div class="visualize-language-type-color" style="background: {{ color }};"></div>
 		<div class="visualize-language-type-percent">{{ percent }}%</div>
 		<div class="visualize-language-type-type">{{ type }}</div>
+	</div>
+</script>
+
+
+<!-- Topics -->
+<script type="text/template" id="template-visualize-topic">
+	<div class="visualize-topic">
+		<div class="visualize-topic-icon icon-topic-{{ key }}"></div>
+		<span class="visualize-topic-count">{{ topic }}</span> <span class="visualize-topic-text">{{ key }}</span>
+	</div>
+</script>
+
+
+<!-- Common Words -->
+<script type="text/template" id="template-visualize-common">
+	<div id="word_count_{{ count }}" class="common_words">
+		<div class="common_words_count">{{ count }}</div>
+		<div id="word_count_{{ count }}_words" class="common_words_words">{{ word }}</div>
+		<div class="clear"></div>
+	</div>
+	<div class="common_words_line"></div>
+</script>
+
+
+<!-- Strong Experiences -->
+<script type="text/template" id="template-visualize-experiences">
+	<div class="strong_experience">
+		<div class="strong_experience_circle" id="strong_experience_{{ log_id }}"></div>
+		<div class="strong_experience_experience"> {{ experience }} <span class="strong_experience_date"> {{ date }} </span></div>
+		<div class="clear"></div>
 	</div>
 </script>

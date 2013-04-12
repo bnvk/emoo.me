@@ -4663,15 +4663,13 @@ legend span {
   left: 0px;
   width: 90%;
   margin: 0px auto;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 .container .column,
 .container .columns {
   float: left;
   display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 .row {
   width: 100%;
@@ -4680,13 +4678,13 @@ legend span {
 }
 .column.alpha,
 .columns.alpha {
-  margin-left: 0px;
-  margin-right: 10px;
+  margin-left: 0;
+  margin-right: 1%;
 }
 .column.omega,
 .columns.omega {
-  margin-right: 0px;
-  margin-left: 10px;
+  margin-right: 0;
+  margin-left: 1%;
 }
 .alpha.omega {
   margin-left: 0;
@@ -5386,6 +5384,87 @@ span.quote_quote {
   line-height: 12px;
   color: #999999;
 }
+.visualize-topic {
+  width: 145px;
+  float: left;
+  margin: 0 2em 2em 0;
+  padding: 1em 0;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.visualize-topic-icon {
+  font-size: 72px;
+  line-height: 72px;
+  margin-bottom: .25em;
+}
+.visualize-topic-count {
+  color: #999999;
+}
+.visualize-topic-text {
+  text-transform: capitalize;
+}
+/* Visualize - Common Words */
+#visualize_common {
+  margin: 0 0 60px 0;
+}
+div.common_words {
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px 20px;
+}
+div.common_words_line {
+  width: 100%;
+  height: 1px;
+  background: #999999;
+}
+div.common_words_count {
+  width: 80px;
+  height: 100%;
+  margin-right: 20px;
+  text-align: center;
+  float: left;
+  font-size: 36px;
+  border-right: 1px solid #333333;
+}
+div.common_words_words {
+  margin-top: 6px;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 30px;
+  color: #888888;
+  text-transform: capitalize;
+}
+/* Visualize - Strong Experiences */
+#visualize_experiences {
+  margin: 0 0 60px 0;
+}
+#strong_experiences {
+  margin-bottom: 45px;
+}
+div.strong_experience {
+  margin-bottom: 25px;
+}
+div.strong_experience_circle {
+  float: left;
+}
+div.strong_experience_experience {
+  float: left;
+  margin-top: 12px;
+  margin-left: 20px;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 30px;
+  color: #888888;
+}
+span.strong_experience_date {
+  display: block;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  color: #333333;
+}
 /* =============== Web Style =============== */
 /* Larger than 1024 (standard browsers) */
 @media only screen and (min-width: 1025px) {
@@ -5627,74 +5706,6 @@ span.quote_quote {
     float: right;
     margin: 1em 0 0 0;
   }
-  #visualize_mood_topics div.topic_container {
-    float: left;
-    margin: 0 1.5em 2.5em 0;
-  }
-  #visualize_language_types {
-    width: 100%;
-  }
-  /* Visualize - Common Words */
-  #visualize_common {
-    margin: 0 0 60px 0;
-  }
-  div.common_words {
-    width: 100%;
-    margin: 15px 0;
-    padding: 10px 20px;
-  }
-  div.common_words_line {
-    width: 100%;
-    height: 1px;
-    background: #999999;
-  }
-  div.common_words_count {
-    width: 80px;
-    height: 100%;
-    margin-right: 20px;
-    text-align: center;
-    float: left;
-    font-size: 36px;
-    border-right: 1px solid #333333;
-  }
-  div.common_words_words {
-    margin-top: 6px;
-    font-style: italic;
-    font-size: 24px;
-    line-height: 30px;
-    color: #888888;
-    text-transform: capitalize;
-  }
-  /* Visualize - Strong Experiences */
-  #visualize_experiences {
-    margin: 0 0 60px 0;
-  }
-  #strong_experiences {
-    margin-bottom: 45px;
-  }
-  div.strong_experience {
-    margin-bottom: 25px;
-  }
-  div.strong_experience_circle {
-    float: left;
-  }
-  div.strong_experience_experience {
-    float: left;
-    margin-top: 12px;
-    margin-left: 20px;
-    font-style: italic;
-    font-size: 24px;
-    line-height: 30px;
-    color: #888888;
-  }
-  span.strong_experience_date {
-    display: block;
-    margin-left: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
-    color: #333333;
-  }
 }
 /* =============== Tablet Style =============== */
 @media only screen and (max-width: 1024px) {
@@ -5884,65 +5895,6 @@ span.quote_quote {
   }
   #index-user-signup-form {
     display: none;
-  }
-  /* Visualize */
-  #visualize_common {
-    margin: 0 20px 40px 20px;
-  }
-  div.common_words {
-    width: 100%;
-    margin: 10px 0;
-    padding: 5px 0px;
-  }
-  div.common_words_line {
-    width: 100%;
-    height: 1px;
-    background: #999999;
-  }
-  div.common_words_count {
-    width: 50px;
-    height: 100%;
-    margin-right: 10px;
-    text-align: center;
-    float: left;
-    font-size: 24px;
-    border-right: 1px solid #333333;
-  }
-  div.common_words_words {
-    margin-top: 2px;
-    font-style: italic;
-    font-size: 18px;
-    line-height: 21px;
-    color: #888888;
-    text-transform: capitalize;
-  }
-  #visualize_experiences {
-    margin: 0 0 40px 20px;
-  }
-  div.strong_experience {
-    margin: 15px 0 15px 0;
-  }
-  div.strong_experience_circle {
-    width: 40;
-    float: left;
-  }
-  div.strong_experience_experience {
-    width: 240px;
-    float: left;
-    margin-top: 0px;
-    margin-left: 8px;
-    font-style: italic;
-    font-size: 14px;
-    line-height: 18px;
-    color: #888888;
-  }
-  span.strong_experience_date {
-    display: block;
-    margin-left: 0px;
-    font-size: 11px;
-    font-weight: bold;
-    font-style: normal;
-    color: #333333;
   }
 }
 /* Web Only */
