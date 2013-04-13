@@ -87,7 +87,7 @@ var VisualizeView = Backbone.View.extend(
 		var pie_container	= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types_container;
 		var pie_size		= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types;
 		var pie_placement	= pie_size;
-		var paperpie 		= Raphael('visualize_language_types_pie', pie_container, pie_container);
+		var paperpie 		= Raphael('visualize-language-types-pie', pie_container, pie_container);
 
 		pie = paperpie.piechart(pie_placement, pie_placement, pie_size, word_values, {
 			colors : types_colors
@@ -99,10 +99,7 @@ var VisualizeView = Backbone.View.extend(
 		{
 			if (type !== 'undecided') {
 				var decimal = score / VisualizeModel.get('last_five').language_total;
-				var percent = Math.round(decimal * 100);
-			
-				console.log(type + ' --- ' + percent);
-			
+				var percent = Math.round(decimal * 100);			
 				var type_data = {	
 					color: EmoomeSettings.type_colors[type],
 					percent: percent,
@@ -110,8 +107,7 @@ var VisualizeView = Backbone.View.extend(
 				}
 
 				var type_html = _.template($('#template-visualize-language-type').html(), type_data);
-			
-				$('#visualize_language_types').append(type_html);
+				$('#visualize-language-types').append(type_html);
 			}
 		});	
 	},
@@ -122,17 +118,17 @@ var VisualizeView = Backbone.View.extend(
 		$('#visualize_language_mood').append('<img src="' + assets_url + 'emoticons/' + EmoomeSettings.core_emotions[sentiment] + '.svg">');
 	},
 	renderTopics: function() {
-	
-		$.each(VisualizeModel.get('last_five').topics, function(key, topic) {
+
+		$.each(VisualizeModel.get('last_five').topics, function(key, topic) {			
 			if (key !== 'undecided') {
 				var topic_html = _.template($('#template-visualize-topic').html(), { key: key, topic: topic });
-				$('#visualize_mood_topics').append(topic_html);
+				$('#visualize-mood-topics').append(topic_html);
 			}
 		});
 	},
 	renderCommonWords: function() {
 
-		$visualize_common_words = $('#visualize_common_words');
+		$visualize_common_words = $('#visualize-common-words');
 
 		var word_count_row	= 0;
 		var common_words	= VisualizeModel.get('all_time').words;
@@ -142,9 +138,9 @@ var VisualizeView = Backbone.View.extend(
 			if (word_count_row < 10) {
 
 				// Increment Existing
-				if ($('#word_count_' +  count).length) {
+				if ($('#word-count-' +  count).length) {
 
-					$('#word_count_' + count + '_words').append(', ' + word);
+					$('#word-count-' + count + '-words').append(', ' + word);
 				}
 				// Add New
 				else {
@@ -156,11 +152,11 @@ var VisualizeView = Backbone.View.extend(
 			}
 		});
 
-		$('#visualize_common').delay(750).fadeIn();
+		$('#visualize_common');
 	},
 	renderStrongExperiences: function() {
 
-		$strong_experiences	= $('#strong_experiences');
+		$strong_experiences	= $('#visualize-strong-experiences');
 
 		$.each(VisualizeModel.get('strong_experiences'), function(key, experience) {
 
@@ -176,11 +172,11 @@ var VisualizeView = Backbone.View.extend(
 
 			// Draw Circle
 			setTimeout(function() {
-				var paper = new Raphael(document.getElementById('strong_experience_' + experience.log_id), svg_size, svg_size);
+				var paper = new Raphael(document.getElementById('strong-experience-' + experience.log_id), svg_size, svg_size);
 				paper.circle(position, position, size).attr({fill: color, opacity: 0, 'stroke-width': 1, 'stroke': '#c3c3c3'}).animate({opacity: 1}, 1500);
 			}, 250);
 		});
 
-		$('#visualize_experiences').delay(1000).fadeIn();
+		$strong_experiences.delay(1000).fadeIn();
 	}
 });

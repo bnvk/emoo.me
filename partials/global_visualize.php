@@ -20,25 +20,26 @@
 		<div id="visualize_language_mood"></div>
 	</div>
 	<div class="seven columns animated bounceIn">
-		<div id="visualize_language_types_pie"></div>
+		<div id="visualize-language-types-pie"></div>
 	</div>
 	<div class="two columns omega animated bounceIn">
-		<div id="visualize_language_types"></div>
+		<div id="visualize-language-types"></div>
 	</div>
+	<div class="clear"></div>
 
-	<div class="row">
+	<div id="visualize-topics" class="row">
 		<h2>Topics</h2>
-		<div id="visualize_mood_topics"></div>
+		<div id="visualize-mood-topics"></div>
 	</div>
 
-	<div id="visualize_common" class="sixteen columns hide">
+	<div id="visualize-common" class="sixteen columns hide">
 		<h2>Common Words</h2>
-		<div id="visualize_common_words"></div>
+		<div id="visualize-common-words"></div>
 	</div>
 
-	<div id="visualize_experiences" class="sixteen columns hide">
+	<div id="visualize-experiences" class="sixteen columns hide">
 		<h2>Strong Experiences</h2>
-		<div id="strong_experiences"></div>
+		<div id="visualize-strong-experiences"></div>
 	</div>
 </script>
 
@@ -55,7 +56,7 @@
 
 <!-- Topics -->
 <script type="text/template" id="template-visualize-topic">
-	<div class="visualize-topic">
+	<div class="visualize-topic animated bounceIn">
 		<div class="visualize-topic-icon icon-topic-{{ key }}"></div>
 		<span class="visualize-topic-count">{{ topic }}</span> <span class="visualize-topic-text">{{ key }}</span>
 	</div>
@@ -64,20 +65,20 @@
 
 <!-- Common Words -->
 <script type="text/template" id="template-visualize-common">
-	<div id="word_count_{{ count }}" class="common_words">
-		<div class="common_words_count">{{ count }}</div>
-		<div id="word_count_{{ count }}_words" class="common_words_words">{{ word }}</div>
+	<div id="word_count_{{ count }}" class="common-words">
+		<div class="common-words-count">{{ count }}</div>
+		<div id="word-count-{{ count }}-words" class="common-words-words">{{ word }}</div>
 		<div class="clear"></div>
 	</div>
-	<div class="common_words_line"></div>
+	<div class="common-words-line"></div>
 </script>
 
 
 <!-- Strong Experiences -->
 <script type="text/template" id="template-visualize-experiences">
-	<div class="strong_experience">
-		<div class="strong_experience_circle" id="strong_experience_{{ log_id }}"></div>
-		<div class="strong_experience_experience"> {{ experience }} <span class="strong_experience_date"> {{ date }} </span></div>
+	<div class="strong-experience animated bounceIn">
+		<div class="strong-experience-circle" id="strong-experience-{{ log_id }}"></div>
+		<div class="strong-experience-experience"> {{ experience }} <span class="strong-experience-date"> {{ date }} </span></div>
 		<div class="clear"></div>
 	</div>
 </script>
