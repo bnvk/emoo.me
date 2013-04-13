@@ -4,7 +4,7 @@
 		<div class="five columns"></div>
 		<div class="six columns text-center">
 			<h1>Settings</h1>
-			<a class="button-big-secondary full-width" href="/#settings/notifications"><span class="icon-antenna"></span> Notifications</a>
+			<!-- <a class="button-big-secondary full-width" href="/#settings/notifications"><span class="icon-antenna"></span> Notifications</a> -->
 			<a class="button-big-secondary full-width" href="/#settings/account"><span class="icon-person"></span> Account</a>
 			<a class="button-big-secondary full-width" href="/#settings/password"><span class="icon-key"></span> Password</a>
 			<a class="button-big-secondary full-width" href="/#settings/logout"><span class="icon-keyhole"></span> Logout</a>
@@ -39,13 +39,13 @@
 		<h1>Account</h1>
 		<form name="settings_account" id="settings_account">	
 			<label>Name</label>
-			<input type="text" name="name" id="profile_name" placeholder="Your Name" value="<%= name %>">
+			<input type="text" name="name" id="profile_name" placeholder="Your Name" value="{{ name }}">
 			<span id="profile_name_error"></span>
 			<label>Email</label>
-			<input type="email" name="email" id="profile_email" placeholder="you@email.com" value="<%= email %>">
+			<input type="email" name="email" id="profile_email" placeholder="you@email.com" value="{{ email }}">
 			<span id="profile_email_error"></span>
 			<label>Phone (for reminders)</label>
-			<input type="text" name="phone_number" id="profile_phone" placeholder="503-111-2222" value="<%= phone_number %>">
+			<input type="text" name="phone_number" id="profile_phone" placeholder="503-111-2222" value="{{ phone_number }}">
 			<label>Language</lable>
 			<select name="language" id="profile_language">
 				<option value="">--select--</option>

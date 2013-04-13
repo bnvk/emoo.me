@@ -9,7 +9,7 @@
 
 <script type="text/template" id="visualize_search_box">
 	<h2 id="search_title">
-		<%= title %>
+		{{ title }}
 		<select name="start_time" id="start_time">
 			<option value="01">1</option>
 			<option value="02">2</option>
@@ -57,10 +57,10 @@
 </script>	
 
 <script type="text/template" id="search_hour_mood">
-	<div id="mood_bar_<%= mood %>" class="search_mood_row">
-		<div class="search_mood_emoticon"><span class="emoticons-small-<%= mood %>"></span></div>
-		<div class="search_mood_pie_chart" id="search_mood_language_<%= mood %>"></div>
-		<div class="search_mood_topics"><%= topics %></div>
-		<div class="search_mood_words" id="search_mood_words_<%= mood %>"></div>
+	<div id="mood_bar_{{ mood }}" class="search_mood_row">
+		<div class="search_mood_emoticon"><span class="emoticons-small-{{ mood }}"></span></div>
+		<div class="search_mood_pie_chart" id="search_mood_language_{{ mood }}"></div>
+		<div class="search_mood_topics">{{ topics }}</div>
+		<div class="search_mood_words" id="search_mood_words_{{ mood }}"></div>
 	</div>		
 </script>

@@ -5511,6 +5511,7 @@ span.strong-experience-date {
     float: left;
     width: 36px;
     height: 36px;
+    border-radius: 5px;
   }
   #navigation_info h1 {
     position: relative;
