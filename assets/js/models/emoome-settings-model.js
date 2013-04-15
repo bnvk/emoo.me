@@ -57,24 +57,5 @@ var EmoomeSettings = Backbone.Model.extend({
 		"-9":"loathing",
 		"-10":"anger",
 		"-11":"rage"
-	},
-	visualization_sizes : {
-		"mobile" : {
-			"pie_word_types_container" : 300,
-			"pie_word_types" : 125,
-			"circle_strong_experiences" : 5
-		},
-		"tablet" : {
-			"pie_word_types_container" : 225,
-			"pie_word_types" : 75,
-			"circle_strong_experiences" : 10
-		},
-		"web" : {
-			"pie_word_types_container" : 300,
-			"pie_word_types"	: 150,
-			"circle_strong_experiences" : 10
-		}
 	}
 });
-
-var EmoomeSettings	= new EmoomeSettings();

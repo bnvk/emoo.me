@@ -31,6 +31,28 @@
 	<p>Apologies, but we could not find what you were looking for</p>
 </script>
 
+<script type="text/template" id="template-navigation-public">
+	<div id="navigation_info"><h1 class="navigation_title"><a href="/#">emo<span class="name_ome">ome</span></a></h1></div>
+	<div id="navigation_menu">
+		<ul id="navigation_menu_links"><li id="navigation_link_home"><a href="/#" class="navigation_link"><span class="icon-home"></span> Home</a></li><li><a href="/#login" class="navigation_link"><span class="icon-keyhole"></span> Login</a></li><li><a href="/#signup" class="navigation_link"><span class="icon-person"></span> Signup</a></li></ul>
+	</div>
+	<div id="navigation_logo"></div>
+	<div class="clear"></div>
+</script>
+
+<script type="text/template" id="template-navigation-logged">
+	<div id="navigation_info"><img src="http://localhost/application/views/site_emoome/assets/images/medium_no_profile.png"> <h1>Brennan Novak</h1></div>
+	<div id="navigation_menu">
+		<ul id="navigation_menu_links">
+			<li><a href="/#record/feeling" class="navigation_link"><span class="icon-pencil"></span> Record</a></li>
+			<li><a href="/#visualize" class="navigation_link"><span class="icon-eye"></span> Visualize</a></li>
+			<li><a href="/#settings" class="navigation_link"><span class="icon-gears"></span> Settings</a></li></ul>
+	</div>
+	<div id="navigation_logo"></div>
+	<div class="clear"></div>
+</script>
+
+
 <!-- Web Templates -->
 <?= $template_public ?>
 <?= $template_auth ?>
@@ -87,7 +109,15 @@ var App = (function ($, Backbone, global) {
         global.assets_url = '<?= base_url() ?>application/views/site_emoome/assets/';
 
         // Model
-        global.UserData = new UserData();
+        global.EmoomeSettings  = new EmoomeSettings();
+        global.UserData        = new UserData();
+        global.UIMessages      = new UIMessages();
+        global.LogFeelingModel = new LogFeelingModel();
+
+        // Views
+        global.Lightbox = new LightboxView({ el: $('body') });
+        global.Navigation = new NavigationView({ el: $('#navigation') });
+        global.AuthView	= new AuthView({ el: $('#content') });
 
 		// Create Router
 		global.Router = new ApplicationRouter($('#content'));

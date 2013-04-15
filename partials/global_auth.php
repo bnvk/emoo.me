@@ -6,7 +6,7 @@
 			<input type="text" name="email" id="login_email" placeholder="you@email.com" autocorrect="off" value="">
 			<label>Password <span id="login_password_error"></span></label>
 			<input type="password" name="password" id="login_password" placeholder="********" autocorrect="off" value="">
-			<input type="button" name="submit" id="button_login" value="Login">
+			<input type="submit" name="submit" id="button_login" value="Login">
 			<a class="button-secondary" href="#/forgot_password">Forgot Password</a>
 		</form>
 	</div>
@@ -26,7 +26,7 @@
 			<input type="password" name="password" id="signup_password" placeholder="********" autocorrect="off" value="">
 			<label>Language</lable>
 			<?= form_dropdown('language', config_item('languages'), 'en') ?>
-			<input type="button" name="submit" id="button_signup" value="Signup">
+			<input type="submit" name="submit" id="button_signup" value="Signup">
 		</form>
 	</div>
 </script>
@@ -48,7 +48,7 @@
 			<input type="text" name="email" id="forgot_email" placeholder="you@email.com" value="">
 			<span id="forgot_email_error"></span>
 			<p id="email_error"></p>
-			<input type="button" name="submit" id="button_forgot_password" value="Reset Password" />
+			<input type="submit" name="submit" id="button_forgot_password" value="Reset Password" />
 		</form>
 	</div>
 </script>

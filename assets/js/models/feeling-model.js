@@ -15,12 +15,12 @@ var LogFeelingModel = Backbone.Model.extend({
         geo_lon			: 0.00
     },
     initialize: function() {},
-    startFeeling: function()
-    {    
+    startFeeling: function() {
+    
 		this.set({ time_feeling : new Date().getTime() });
     },
-    processFeeling: function(feeling)
-    {    	
+    processFeeling: function(feeling) {
+    	
 	    var now_time = new Date().getTime();	
 		var time_feeling = now_time - this.get('time_feeling');    
     
@@ -30,8 +30,8 @@ var LogFeelingModel = Backbone.Model.extend({
 			time_experience : now_time,
 	 	});	 	   
     },
-    processExperience: function()
-    {
+    processExperience: function() {
+
 	    var now_time = new Date().getTime();	
 		var time_experience = now_time - this.get('time_experience');  
     
@@ -42,8 +42,8 @@ var LogFeelingModel = Backbone.Model.extend({
 			time_describe	: now_time
 		});    
     },
-    processDescribe: function()
-    {
+    processDescribe: function() {
+    
 	    var now_time		= new Date().getTime();	
 		var time_describe	= now_time - this.get('time_describe');  
 		var time_total		= this.get('time_feeling') + this.get('time_experience') + time_describe; 
@@ -56,8 +56,8 @@ var LogFeelingModel = Backbone.Model.extend({
 			describe_3		: $('#log_describe_3_value').val()
 		});		    
     },
-    returnData: function()
-    {
+    returnData: function() {
+
 		var log_data = [];
 		
 		$.each(LogFeelingModel.attributes, function(key, value)
@@ -68,5 +68,3 @@ var LogFeelingModel = Backbone.Model.extend({
 		return log_data;	
     }
 });
-
-var LogFeelingModel = new LogFeelingModel();

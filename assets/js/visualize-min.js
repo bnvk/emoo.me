@@ -129,7 +129,7 @@ var VisualizeLanguageView = Backbone.View.extend(
 				text: function(api)
 				{
 					var sentiment = sentimentFromArray($(this).data('sentiment').split(','));
-					var tooltip = '<span class="language-map-emoticons emoticons-small-' + EmoomeSettings.core_emotions[sentiment] + '"></span>';
+					var tooltip = '<img class="language-map-emoticons" src="/application/views/site_emoome/assets/emoticons/' + EmoomeSettings.core_emotions[sentiment] + '.svg">';
 					tooltip +='<span class="language-map-experience">' + $(this).data('experience') + ' <i>' + mysqlDateParser($(this).data('created_date')).date('short') + '</i></span>';
 					return tooltip;
 				}

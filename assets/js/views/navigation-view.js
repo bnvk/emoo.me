@@ -5,6 +5,7 @@ var NavigationView = Backbone.View.extend(
 		this.render();
 	},
 	render: function() {
+
 		// Logged State
 		if (UserData.get('user_id') != '') {
 			this.showLogged();
@@ -12,17 +13,13 @@ var NavigationView = Backbone.View.extend(
 		else {
 			this.showPublic();
 		}
-
-		if (UserData.get('source') != 'mobile') {
-			this.showLogo();
-			$('#navigation_menu').show();
-		}
 	},
     events: {
     	"click #navigation_logo"	: "goToIndex",
 		"click .navigation_link"	: "toggleLinkSelected"
 	},
 	showPublic: function() {
+
 		// Show Info
         $('#navigation_info').html('<h1 class="navigation_title"><a href="/#">emo<span class="name_ome">ome</span></a></h1>');
 
@@ -35,6 +32,7 @@ var NavigationView = Backbone.View.extend(
         this.showNavigation(navigation_links);
 	},
 	showLogged: function() {
+
 		// Show Info
         $('#navigation_info').html('<img src="' + UserData.get('image') + '"> <h1>' + UserData.get('name') + '</h1>');
 
@@ -49,8 +47,9 @@ var NavigationView = Backbone.View.extend(
         this.showNavigation(navigation_links);
 	},
 	showNavigation: function(links) {
+
 		$('#navigation_menu_links').html('');
-	
+
         $.each(links, function(key, link) {
 	    	$('#navigation_menu_links').append(link);
         });
@@ -82,7 +81,7 @@ var NavigationView = Backbone.View.extend(
 				circle_x += 10;
 				i++;
 			}
-		});		
+		});
 	},
 	toggleLinkSelected: function(e) {
 

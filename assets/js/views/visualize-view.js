@@ -84,8 +84,8 @@ var VisualizeView = Backbone.View.extend(
 	renderPieChart: function(word_values, word_percents, types_colors) {
 
 		// Piechart
-		var pie_container	= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types_container;
-		var pie_size		= EmoomeSettings.visualization_sizes[UserData.get('source')].pie_word_types;
+		var pie_container	= 300;
+		var pie_size		= 125;
 		var pie_placement	= pie_size;
 		var paperpie 		= Raphael('visualize-language-types-pie', pie_container, pie_container);
 
@@ -161,8 +161,8 @@ var VisualizeView = Backbone.View.extend(
 		$.each(VisualizeModel.get('strong_experiences'), function(key, experience) {
 
 			var color		= EmoomeSettings.type_colors[experience.type];
-			var size		= experience.count * EmoomeSettings.visualization_sizes[UserData.get('source')].circle_strong_experiences;
-			var svg_size	= 8 * EmoomeSettings.visualization_sizes[UserData.get('source')].circle_strong_experiences;
+			var size		= experience.count * 10;
+			var svg_size	= 8 * 10;
 			var position	= svg_size / 2;
 
 			// Create HTML Row

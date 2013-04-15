@@ -4617,8 +4617,11 @@ legend span {
   font-size: 14px;
   color: #444;
 }
+a {
+  font-style: normal;
+}
 label span.form_error {
-  margin-left: 10px;
+  margin: 0 0 0 3px;
   color: #840303;
 }
 /* Navigation */
@@ -5663,9 +5666,6 @@ span.strong-experience-date {
     width: 450px;
     margin: 0 auto;
     text-align: center;
-  }
-  /* Record - Thanks */#log_thanks_view h3 {
-    margin: 1em 0px;
   }
   /* Visualize - Waiting */
   #visualize_waiting {

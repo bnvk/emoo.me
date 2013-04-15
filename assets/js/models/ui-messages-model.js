@@ -14,5 +14,3 @@ var UIMessages = Backbone.Model.extend({
 		"It is a poor sort of memory that only works backwards. ~Lewis Carroll"
 	]
 });
-
-var UIMessages = new UIMessages();

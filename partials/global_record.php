@@ -75,9 +75,13 @@
 </script>
 
 <script type="text/template" id="record_thanks">
-	<div id="log_thanks_view" class="content_center text-center">
-		<h1>Thanks</h1>
-		<h3 id="log_completion_message">{{ complete_message }}</h3>
-		<p><a id="log_thanks_next" class="button-secondary" href="#">Another</a></p>
+	<div class="animated bounceInUp">
+		<div class="four columns alpha"></div>
+		<div class="eight columns text-center">
+			<h1>Thanks</h1>
+			<h3 id="log_completion_message">{{ complete_message }}</h3>
+			<p><a class="button-secondary" href="#record/feeling">Another</a></p>
+		</div>
+		<div class="four columns omega"></div>
 	</div>
 </script>

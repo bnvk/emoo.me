@@ -4,12 +4,8 @@ var ApplicationRouter = Backbone.Router.extend(
 
 		this.el = el;
 
-		// Instantiate Navigation
-		this.Navigation				= new NavigationView({ el: $('#navigation') });
-
-		// Public Views
+		// Generic Views
 		this.indexView				= new ContentView('#index');
-		this.authView				= new AuthView({ el: $('#content') });
 		this.logoutView				= new ContentView('#logout');
 		this.notFoundView			= new ContentView('#not_found');
 
@@ -60,54 +56,55 @@ var ApplicationRouter = Backbone.Router.extend(
 	},
 	index: function() {
 		if (UserData.get('logged') === 'yes') {
-			Backbone.history.navigate('#/record/feeling', true);	
+			Backbone.history.navigate('#record/feeling', true);	
 		}
-
 		this.switchView(this.indexView);
 	},
 	login: function() {
 		if (UserData.get('logged') === 'yes') {
-			Backbone.history.navigate('#/record/feeling', true);
+			Backbone.history.navigate('#record/feeling', true);
 		}
-
-		this.authView.viewLogin();
+		AuthView.viewLogin();
 	},
 	signup: function() {
 		if (UserData.get('logged') === 'yes') {
-			Backbone.history.navigate('#/record/feeling', true);
+			Backbone.history.navigate('#record/feeling', true);
 		}
-
-		this.authView.viewSignup();
+		AuthView.viewSignup();
 	},
 	forgotPassword: function() {
-		this.authView.viewForgotPassword();
+		AuthView.viewForgotPassword();
 	},
 	logout: function() {
-		UserData.set({ logged: 'no', user_id: '', username: '', name: '', user_level_id	: '', name : '', image : '', location : '', geo_enabled : '', language : '', privacy : '', consumer_key : '', consumer_secret : '', token : '', token_secret : '' });
-		this.Navigation.showPublic();
 		this.switchView(this.logoutView);
 	},
 	notFound: function() {
 		this.switchView(this.notFoundView);
 	},
 	recordViews: function(view) {
+
 		if (UserData.get('logged') !== 'yes') {
-			Backbone.history.navigate('#/login', true);
+			Backbone.history.navigate('#login', true);
 		}
 
-		// View
-		if (view === undefined)
+		if (view === undefined) {
 			this.switchView(this.recordIndex);
-		else if (view === 'feeling')
+		}
+		else if (view === 'feeling') {
 			this.recordFeeling.viewFeeling();
-		else if (view === 'experience')
+		}
+		else if (view === 'experience') {
 			this.recordFeeling.viewExperience();
-		else if (view === 'describe')
+		}
+		else if (view === 'describe') {
 			this.recordFeeling.viewDescribe();
-		else if (view === 'thanks')
+		}
+		else if (view === 'thanks') {
 			this.recordFeeling.viewThanks();
-		else
+		}
+		else {
 			this.switchView(this.notFoundView);
+		}
 	},
 	insights: function() {
 		InsightViews = new InsightsView({ el: $('#content')});
@@ -150,21 +147,23 @@ var ApplicationRouter = Backbone.Router.extend(
 	settingsViews: function(view) {
 
 		if (UserData.get('logged') !== 'yes') {
-			Backbone.history.navigate('#/login', true);
+			Backbone.history.navigate('#login', true);
 		}
 
-		// View
-		if (view === undefined)
+		if (view === undefined) {
 			this.switchView(this.settingsIndex);
-		else if (view === 'notifications')
+		}
+		else if (view === 'notifications') {
 			this.settingsViews.viewNotifications();
-		else if (view === 'account')
+		}
+		else if (view === 'account') {
 			this.settingsViews.viewAccount();
-		else if (view === 'password')
+		}
+		else if (view === 'password') {
 			this.settingsViews.viewPassword();
-		else if (view === 'logout')
-			this.settingsViews.processLogout();
-		else
+		}
+		else {
 			this.switchView(this.notFoundView);
+		}
 	}
 });

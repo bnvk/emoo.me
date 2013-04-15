@@ -1,59 +1,55 @@
 // LIGHTBOX
 var LightboxView = Backbone.View.extend(
 {
-	initialize: function()
-	{
+	initialize: function() {
 		this.render();
 	},
-	render: function()
-	{
-		var data     = { lightbox_message: 'Yo dog, sup?' };
-        var template = _.template($("#ligthbox_template").html(), data);
-        this.$el.append(template);
+	render: function() {
+        this.$el.append(_.template($("#ligthbox_template").html(), { lightbox_message: 'Yo dog, sup?' }));
 	},
-	requestMade: function(message)
-	{
+	requestMade: function(message) {
+
 		$('#lightbox_message').removeClass('lightbox_message_success lightbox_message_error').addClass('lightbox_message_normal').html(message);
 		$('#request_lightbox').delay(150).fadeIn();
 
 		// Adjust Height For Device
-		if (UserData.get('source') === 'mobile')
-		{
-			$('#lightbox_message').css('top', $(window).scrollTop() + 50);
-			$('#request_lightbox').height($('body').height() + 250);
+		if (UserData.get('source') === 'mobile') {
+			$('#request_lightbox').height($('body').height() + 500);
+			$('#request_lightbox').height($('body').width() + 500);
 		}
-		else
-		{
-			$('#lightbox_message').css('top', $(window).scrollTop() + 100);
+		else {
 			$('#request_lightbox').height($('body').height() + 1000);
+			$('#request_lightbox').height($('body').width() + 1000);
 		}
 	},
-	requestComplete: function(message, status)
-	{
+	requestComplete: function(message, status, successCallback) {
+
 		$('#lightbox_message').html(message);
-		
-		if (status === 'success')
-		{
+
+		if (status === 'success') {
+
+			// Empty Stage
+			$('#content').html('');
+
+			// Hide Lightbox
 			$('#lightbox_message').addClass('lightbox_message_success');
-			$("#request_lightbox").delay(250).fadeOut();
+			$("#request_lightbox").delay(250).fadeOut(function() {
+				successCallback();
+			});
 		}
-		else
-		{
+		else {
 			$('#lightbox_message').addClass('lightbox_message_error');
 			$("#request_lightbox").delay(2000).fadeOut();
 		}
 	},
-	printUserMessage: function(message)
-	{
+	printUserMessage: function(message) {
+
 		$('#lightbox_message').removeClass('lightbox_message_success lightbox_message_error').addClass('lightbox_message_normal').html(message);
 		$('#request_lightbox').delay(150).fadeIn();
 		$("#request_lightbox").delay(1000).fadeOut();
 	},
-	closeFast: function()
-	{
+	closeFast: function() {
+
 		$("#request_lightbox").fadeOut('fast');
 	}
 });
-
-// Instantiate Lightbox
-var Lightbox = new LightboxView({ el: $('body') });
