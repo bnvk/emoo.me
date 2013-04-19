@@ -58,19 +58,25 @@ var ApplicationRouter = Backbone.Router.extend(
 		if (UserData.get('logged') === 'yes') {
 			Backbone.history.navigate('#record/feeling', true);	
 		}
-		this.switchView(this.indexView);
+		else {
+			this.switchView(this.indexView);
+		}
 	},
 	login: function() {
 		if (UserData.get('logged') === 'yes') {
 			Backbone.history.navigate('#record/feeling', true);
 		}
-		AuthView.viewLogin();
+		else {
+			AuthView.viewLogin();
+		}
 	},
 	signup: function() {
 		if (UserData.get('logged') === 'yes') {
 			Backbone.history.navigate('#record/feeling', true);
 		}
-		AuthView.viewSignup();
+		else {
+			AuthView.viewSignup();
+		}
 	},
 	forgotPassword: function() {
 		AuthView.viewForgotPassword();
@@ -82,12 +88,10 @@ var ApplicationRouter = Backbone.Router.extend(
 		this.switchView(this.notFoundView);
 	},
 	recordViews: function(view) {
-
 		if (UserData.get('logged') !== 'yes') {
 			Backbone.history.navigate('#login', true);
 		}
-
-		if (view === undefined) {
+		else if (view === undefined) {
 			this.switchView(this.recordIndex);
 		}
 		else if (view === 'feeling') {
@@ -114,34 +118,36 @@ var ApplicationRouter = Backbone.Router.extend(
 		if (UserData.get('logged') !== 'yes') {
 			Backbone.history.navigate('#/login', true);
 		}
-
-		// Get / Render Visualize
-		if (VisualizeModel.get('data') !== 'updated') {
-			$.oauthAjax({
-				oauth		: UserData,
-				url			: base_url + 'api/emoome/analyze/me',
-				type		: 'GET',
-				dataType	: 'json',
-				success		: function(result) {
-
-					// Is Saved
-					if (result.status === 'success') {
-
-						// Update Model
-						VisualizeModel.set(result);
-						VisualizeModel.set({ data : 'updated' });
-
-						// Render View
-						VisualizeViews = new VisualizeView({ el: $('#content')});
-					}
-					else {
-						VisualizeViews = new VisualizeView({ el: $('#content')});
-					}
-				}
-			});
-		}
 		else {
-			VisualizeViews = new VisualizeView({ el: $('#content')});
+
+			// Get / Render Visualize
+			if (VisualizeModel.get('data') !== 'updated') {
+				$.oauthAjax({
+					oauth		: UserData,
+					url			: base_url + 'api/emoome/analyze/me',
+					type		: 'GET',
+					dataType	: 'json',
+					success		: function(result) {
+
+						// Is Saved
+						if (result.status === 'success') {
+
+							// Update Model
+							VisualizeModel.set(result);
+							VisualizeModel.set({ data : 'updated' });
+
+							// Render View
+							VisualizeViews = new VisualizeView({ el: $('#content')});
+						}
+						else {
+							VisualizeViews = new VisualizeView({ el: $('#content')});
+						}
+					}
+				});
+			}
+			else {
+				VisualizeViews = new VisualizeView({ el: $('#content')});
+			}
 		}
 	},
 	settingsViews: function(view) {
@@ -149,8 +155,7 @@ var ApplicationRouter = Backbone.Router.extend(
 		if (UserData.get('logged') !== 'yes') {
 			Backbone.history.navigate('#login', true);
 		}
-
-		if (view === undefined) {
+		else if (view === undefined) {
 			this.switchView(this.settingsIndex);
 		}
 		else if (view === 'notifications') {

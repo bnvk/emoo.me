@@ -4658,12 +4658,12 @@ label span.form_error {
 */
 /* Table of Contents
 ==================================================
-    #Added 1140 Grid
-    #Base 960 Grid
-    #Tablet (Portrait)
-    #Mobile (Portrait)
-    #Mobile (Landscape)
-    #Clearing */
+    # Web Big 1140 Grid
+    # Web 960 Grid
+    # Tablet (Portrait)
+    # Mobile (Portrait)
+    # Mobile (Landscape)
+    # Clearing */
 .container {
   position: relative;
   top: 120px;
@@ -4804,8 +4804,7 @@ label span.form_error {
 .container .offset-by-fifteen {
   padding-left: 93.6%;
 }
-/* #Base 960 Grid
-================================================== */
+/* Web 960 Grid ================================================== */
 @media only screen and (min-width: 960px) and (max-width: 1139px) {
   .container {
     position: relative;
@@ -4940,16 +4939,15 @@ label span.form_error {
     padding-left: 900px;
   }
 }
-/* #Tablet All for a width of 1024px ================================================== */
+/* Tablet All for a width of 1024px ================================================== */
 @media only screen and (max-width: 1024px) {
   .container {
     position: relative;
     top: 45px;
     left: 0px;
-    width: 768px;
   }
 }
-/* #Tablet (Portrait) Design for a width of 768px ================================================== */
+/* Tablet (Portrait) Design for a width of 768px ================================================== */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .container {
     position: relative;
@@ -5081,7 +5079,7 @@ label span.form_error {
     padding-left: 720px;
   }
 }
-/*  #Mobile (Portrait) Design for a width of 320px ================================================== */
+/*  Mobile (Portrait) Design for a width of 320px ================================================== */
 @media only screen and (max-width: 767px) {
   .container {
     position: relative;
@@ -5133,7 +5131,7 @@ label span.form_error {
     padding-left: 0;
   }
 }
-/* #Mobile (Landscape) Design for a width of 480px ================================================== */
+/* Mobile (Landscape) Design for a width of 480px ================================================== */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 420px;
@@ -5165,7 +5163,7 @@ label span.form_error {
     width: 420px;
   }
 }
-/* #Clearing - Self Clearing Goodness ================================================== */
+/* Clearing - Self Clearing Goodness ================================================== */
 .container:after {
   content: "\0020";
   display: block;
@@ -5696,13 +5694,16 @@ span.strong-experience-date {
     font-weight: bold;
     color: #333333;
   }
-  /* Visualize - Summary */
+  /* Visualize */
   #visualize_summary h1 {
     display: inline-block;
   }
   #visualize_navigation {
     float: right;
     margin: 1em 0 0 0;
+  }
+  div.strong-experience-experience {
+    width: 625px;
   }
 }
 /* =============== Tablet Style =============== */
@@ -5770,9 +5771,13 @@ span.strong-experience-date {
     font-size: 85px;
     line-height: 85px;
   }
+  /* Visualize */
+  div.strong-experience-experience {
+    width: 625px;
+  }
 }
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {
+@media only screen and (min-width: 768px) and (max-width: 959px) {
   
 }
 /* Tablet Portrait size to standard 960 (devices and browsers) */

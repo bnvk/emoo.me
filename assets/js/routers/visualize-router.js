@@ -1,15 +1,14 @@
 var VisualizeRouter = Backbone.Router.extend(
 {
-	initialize: function(el)
-	{
+	initialize: function(el) {
 		this.el = el;
 	},
 	routes: {
 		"visualize/language"	: "visualizeLanguage",
 		"visualize/search"		: "visualizeSearch"
 	},
-	visualizeLanguage: function()
-	{
+	visualizeLanguage: function() {
+
 		if (UserData.get('logged') !== 'yes' && UserData.get('source') === 'web') {
 			Backbone.history.navigate('#/login', true);
 		}
@@ -18,8 +17,7 @@ var VisualizeRouter = Backbone.Router.extend(
 		VisualizeLanguage = new VisualizeLanguageView({ el: $('#content')});
 
 		// Get / Render Visualize Language
-		if (VisualizeLanguageModel.get('data') !== 'updated')
-		{
+		if (VisualizeLanguageModel.get('data') !== 'updated') {
 			$.oauthAjax(
 			{
 				oauth		: UserData,
@@ -37,13 +35,12 @@ var VisualizeRouter = Backbone.Router.extend(
 				}
 			});
 		}
-		else
-		{
+		else {
 			VisualizeLanguage.renderLanguage();
 		}
 	},
-	visualizeSearch: function()
-	{
+	visualizeSearch: function() {
+
 		if (UserData.get('logged') !== 'yes' && UserData.get('source') === 'web') {
 			Backbone.history.navigate('#/login', true);
 		}

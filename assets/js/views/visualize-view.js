@@ -68,7 +68,6 @@ var VisualizeView = Backbone.View.extend(
 		this.renderMood();
 		this.renderTopics();
 
-
 		// Show Summary
 		$('#visualize_summary').fadeIn();
 
@@ -85,7 +84,7 @@ var VisualizeView = Backbone.View.extend(
 
 		// Piechart
 		var pie_container	= 300;
-		var pie_size		= 125;
+		var pie_size		= 150;
 		var pie_placement	= pie_size;
 		var paperpie 		= Raphael('visualize-language-types-pie', pie_container, pie_container);
 
@@ -95,8 +94,8 @@ var VisualizeView = Backbone.View.extend(
 	},
 	renderLineChart: function(word_values, word_percents, types_colors) {
 		
-		$.each(VisualizeModel.get('last_five').language, function(type, score)
-		{
+		$.each(VisualizeModel.get('last_five').language, function(type, score) {
+
 			if (type !== 'undecided') {
 				var decimal = score / VisualizeModel.get('last_five').language_total;
 				var percent = Math.round(decimal * 100);			

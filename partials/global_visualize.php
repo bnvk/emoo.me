@@ -7,7 +7,7 @@
 			<div id="visualize_logs_needed_count"></div> 
 			<p>More entries to visualize</p>
 		</div>
-		<a href="#/record/feeling" class="button">Log Entry</a>
+		<a href="#record/feeling" class="button">Log Entry</a>
 	</div>
 </script>
 
