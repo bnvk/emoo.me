@@ -343,7 +343,7 @@ var NavigationView = Backbone.View.extend(
         var navigation_links = [
         	//'<li><a href="/#insights" class="navigation_link"><span class="icon-lightbulb"></span> Insights</a></li>',
         	'<li><a href="/#record/feeling" class="navigation_link"><span class="icon-pencil"></span> Record</a></li>',
-        	'<li><a href="/#visualize" class="navigation_link"><span class="icon-eye"></span> Visualize</a></li>',
+        	'<li><a href="/#visualize" class="navigation_link"><span class="icon-pie_graph"></span> Visualize</a></li>',
         	'<li><a href="/#settings" class="navigation_link"><span class="icon-gears"></span> Settings</a></li>'
         ];
 

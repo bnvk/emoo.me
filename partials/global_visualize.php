@@ -47,7 +47,7 @@
 <!-- Language -->
 <script type="text/template" id="template-visualize-language-type">
 	<div class="visualize-language-bar">
-		<div class="visualize-language-type-color" style="background: {{ color }};"></div>
+		<div class="visualize-language-type-color icon-{{ type }}" style="color: {{ color }};"></div>
 		<div class="visualize-language-type-percent">{{ percent }}%</div>
 		<div class="visualize-language-type-type">{{ type }}</div>
 	</div>

@@ -15,17 +15,16 @@
   font-weight: normal;
   font-style: normal;
 }
-/* Icons - Interface */
 @font-face {
-  font-family: 'Icons-Interface';
-  src: url('../fonts/Icons-Interface.eot');
-  src: url('../fonts/Icons-Interface.eot?#iefix') format('embedded-opentype'), url('../fonts/Icons-Interface.woff') format('woff'), url('../fonts/Icons-Interface.ttf') format('truetype'), url('../fonts/Icons-Interface.svg#Icons-Interface') format('svg');
+  font-family: 'Icon-Interface';
+  src: url('../fonts/Icon-Interface.eot');
+  src: url('../fonts/Icon-Interface.eot?#iefix') format('embedded-opentype'), url('../fonts/Icon-Interface.woff') format('woff'), url('../fonts/Icon-Interface.ttf') format('truetype'), url('../fonts/Icon-Interface.svg#Icon-Interface') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
-  font-family: 'Icons-Interface';
+  font-family: 'Icon-Interface';
   content: attr(data-icon);
   speak: none;
   font-weight: normal;
@@ -40,37 +39,34 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-menu,
 .icon-woman,
 .icon-text,
 .icon-smile,
-.icon-community,
-.icon-brain,
-.icon-antenna,
+.icon-sensory,
+.icon-search,
 .icon-profile,
 .icon-pie_graph,
+.icon-physical,
 .icon-person,
 .icon-pencil,
-.icon-navigation,
-.icon-man,
+.icon-microphone,
+.icon-menu,
+.icon-map,
 .icon-location,
 .icon-lightbulb,
+.icon-language,
 .icon-keyhole,
 .icon-key,
+.icon-intellectual,
 .icon-home,
 .icon-gears,
-.icon-eye,
-.icon-search,
-.icon-language,
-.icon-map,
-.icon-microphone,
-.icon-arrow-left,
-.icon-arrow-right,
-.icon-plus,
-.icon-minus,
-.icon-close,
-.icon-checkmark {
-  font-family: 'Icons-Interface';
+.icon-emotional,
+.icon-descriptive,
+.icon-community,
+.icon-antenna,
+.icon-action,
+.icon-man {
+  font-family: 'Icon-Interface';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -78,9 +74,6 @@ you can use the generic selector below, but it's slower:
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-}
-.icon-menu:before {
-  content: "\e00f";
 }
 .icon-woman:before {
   content: "\e000";
@@ -91,31 +84,34 @@ you can use the generic selector below, but it's slower:
 .icon-smile:before {
   content: "\e002";
 }
-.icon-community:before {
+.icon-sensory:before {
   content: "\e003";
 }
-.icon-brain:before {
+.icon-search:before {
   content: "\e004";
 }
-.icon-antenna:before {
+.icon-profile:before {
   content: "\e005";
 }
-.icon-profile:before {
+.icon-pie_graph:before {
+  content: "\e006";
+}
+.icon-physical:before {
   content: "\e007";
 }
-.icon-pie_graph:before {
+.icon-person:before {
   content: "\e008";
 }
-.icon-person:before {
+.icon-pencil:before {
   content: "\e009";
 }
-.icon-pencil:before {
+.icon-microphone:before {
   content: "\e00a";
 }
-.icon-navigation:before {
+.icon-menu:before {
   content: "\e00b";
 }
-.icon-man:before {
+.icon-map:before {
   content: "\e00c";
 }
 .icon-location:before {
@@ -124,50 +120,41 @@ you can use the generic selector below, but it's slower:
 .icon-lightbulb:before {
   content: "\e00e";
 }
+.icon-language:before {
+  content: "\e00f";
+}
 .icon-keyhole:before {
   content: "\e010";
 }
 .icon-key:before {
   content: "\e011";
 }
-.icon-home:before {
+.icon-intellectual:before {
   content: "\e012";
 }
-.icon-gears:before {
+.icon-home:before {
   content: "\e013";
 }
-.icon-eye:before {
+.icon-gears:before {
   content: "\e014";
 }
-.icon-search:before {
-  content: "\e006";
-}
-.icon-language:before {
+.icon-emotional:before {
   content: "\e015";
 }
-.icon-map:before {
+.icon-descriptive:before {
   content: "\e016";
 }
-.icon-microphone:before {
+.icon-community:before {
   content: "\e017";
 }
-.icon-arrow-left:before {
+.icon-antenna:before {
   content: "\e018";
 }
-.icon-arrow-right:before {
+.icon-action:before {
   content: "\e019";
 }
-.icon-plus:before {
+.icon-man:before {
   content: "\e01a";
-}
-.icon-minus:before {
-  content: "\e01b";
-}
-.icon-close:before {
-  content: "\e01c";
-}
-.icon-checkmark:before {
-  content: "\e01d";
 }
 @font-face {
   font-family: 'Icon-Topics';
@@ -5386,16 +5373,17 @@ span.quote_quote {
   height: 300px;
 }
 .visualize-language-bar {
-  width: 100px;
+  width: 130px;
   height: 40px;
   margin: 0 0 11px 0;
 }
 .visualize-language-type-color {
-  width: 10px;
+  width: 36px;
   height: 100%;
-  border-radius: 3px;
   float: left;
-  margin-right: 10px;
+  margin: 4px 10px 0 0;
+  font-size: 36px;
+  line-height: 36px;
 }
 .visualize-language-type-percent {
   font-size: 24px;

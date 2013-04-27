@@ -22,7 +22,7 @@
 <!-- Partials -->
 <script type="text/template" id="ligthbox_template">
 	<div id="request_lightbox">
-		<div id="lightbox_message"><%= lightbox_message %></div>
+		<div id="lightbox_message">{{ lightbox_message }}</div>
 	</div>
 </script>
 
@@ -45,7 +45,7 @@
 	<div id="navigation_menu">
 		<ul id="navigation_menu_links">
 			<li><a href="/#record/feeling" class="navigation_link"><span class="icon-pencil"></span> Record</a></li>
-			<li><a href="/#visualize" class="navigation_link"><span class="icon-eye"></span> Visualize</a></li>
+			<li><a href="/#visualize" class="navigation_link"><span class="icon-pie_graph"></span> Visualize</a></li>
 			<li><a href="/#settings" class="navigation_link"><span class="icon-gears"></span> Settings</a></li></ul>
 	</div>
 	<div id="navigation_logo"></div>
