@@ -1,3 +1,17 @@
+/* Emoome - style.css
+   All code has been written or arranged by Brennan Novak
+    - Skeleton.css Boilerplate by Dave Gamache http://www.getskeleton.com
+    - Animate.css Transitions by Dan Eden http://daneden.me/animate
+   
+   Icon Credits
+	- Microchip designed by Márcio Duarte from The Noun Project
+	- Stage designed by Juan Pablo Bravo from The Noun Project
+	- Television from The Noun Project
+	- Beach designed by Garrett Dash Nelson from The Noun Project
+	- Dolphin designed by Luis Martins from The Noun Project
+	- Fish designed by Jens Tärning from The Noun Project
+	- Religion designed by Renee Ramsey-Passmore from The Noun Project
+*/
 /*---------------------------------------------------
     LESS Elements 0.9
   ---------------------------------------------------
@@ -180,72 +194,82 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-topic-work,
-.icon-topic-weapons,
-.icon-topic-violence,
-.icon-topic-urban,
-.icon-topic-undecided,
-.icon-topic-transportation,
-.icon-topic-touch,
-.icon-topic-time,
-.icon-topic-talking,
-.icon-topic-sports,
-.icon-topic-sound,
-.icon-topic-social,
-.icon-topic-smell,
-.icon-topic-slang,
-.icon-topic-significance,
-.icon-topic-sexuality,
-.icon-topic-science,
-.icon-topic-psychological,
-.icon-topic-posession,
-.icon-topic-politics,
-.icon-topic-places,
-.icon-topic-philosophy,
-.icon-topic-perception,
-.icon-topic-people,
-.icon-topic-office,
-.icon-topic-objects,
-.icon-topic-numbers,
-.icon-topic-news,
-.icon-topic-nature,
-.icon-topic-names,
-.icon-topic-music,
-.icon-topic-movement,
-.icon-topic-moral,
-.icon-topic-medicine,
-.icon-topic-measurement,
-.icon-topic-love,
-.icon-topic-legal,
-.icon-topic-internet,
-.icon-topic-intelligence,
-.icon-topic-hygiene,
-.icon-topic-humor,
-.icon-topic-home,
-.icon-topic-health,
-.icon-topic-gibberish,
-.icon-topic-gender,
-.icon-topic-games,
-.icon-topic-food,
-.icon-topic-financial,
-.icon-topic-feeling,
-.icon-topic-family,
-.icon-topic-exercise,
-.icon-topic-education,
-.icon-topic-drugs,
-.icon-topic-culture,
-.icon-topic-crime,
-.icon-topic-companies,
-.icon-topic-common,
-.icon-topic-colors,
-.icon-topic-clothing,
-.icon-topic-challenges,
-.icon-topic-caffeine,
-.icon-topic-architecture,
-.icon-topic-animals,
-.icon-topic-alcohol,
-.icon-topic-age,
-.icon-topic-deception {
+.icon-work,
+.icon-weapons,
+.icon-violence,
+.icon-urban,
+.icon-undecided,
+.icon-travel,
+.icon-smell,
+.icon-sleep,
+.icon-slang,
+.icon-significance,
+.icon-sexuality,
+.icon-science,
+.icon-perception,
+.icon-people,
+.icon-office,
+.icon-ocean,
+.icon-objects,
+.icon-numbers,
+.icon-legal,
+.icon-internet,
+.icon-intelligence,
+.icon-hygiene,
+.icon-humor,
+.icon-home,
+.icon-exercise,
+.icon-events,
+.icon-entertainment,
+.icon-education,
+.icon-drugs,
+.icon-deception,
+.icon-body,
+.icon-art,
+.icon-architecture,
+.icon-animals,
+.icon-alcohol,
+.icon-agesvg,
+.icon-transportation,
+.icon-touch,
+.icon-time,
+.icon-technology,
+.icon-talking,
+.icon-sports,
+.icon-sound,
+.icon-social,
+.icon-romance,
+.icon-religion,
+.icon-psychological,
+.icon-posession,
+.icon-politics,
+.icon-places,
+.icon-philosophy,
+.icon-performing,
+.icon-news,
+.icon-nature,
+.icon-names,
+.icon-music,
+.icon-movement,
+.icon-moral,
+.icon-medicine,
+.icon-measurement,
+.icon-health,
+.icon-gibberish,
+.icon-gender,
+.icon-games,
+.icon-food,
+.icon-financial,
+.icon-feeling,
+.icon-family,
+.icon-culture,
+.icon-crime,
+.icon-companies,
+.icon-common,
+.icon-color,
+.icon-clothing,
+.icon-challenges,
+.icon-caffeine {
   font-family: 'Icon-Topics';
   speak: none;
   font-style: normal;
@@ -255,203 +279,233 @@ you can use the generic selector below, but it's slower:
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
-.icon-topic-work:before {
+.icon-work:before {
   content: "\e000";
 }
-.icon-topic-weapons:before {
+.icon-weapons:before {
   content: "\e001";
 }
-.icon-topic-violence:before {
+.icon-violence:before {
   content: "\e002";
 }
-.icon-topic-urban:before {
+.icon-urban:before {
   content: "\e003";
 }
-.icon-topic-undecided:before {
+.icon-undecided:before {
   content: "\e004";
 }
-.icon-topic-transportation:before {
+.icon-travel:before {
   content: "\e005";
 }
-.icon-topic-touch:before {
+.icon-smell:before {
   content: "\e006";
 }
-.icon-topic-time:before {
+.icon-sleep:before {
   content: "\e007";
 }
-.icon-topic-talking:before {
+.icon-slang:before {
   content: "\e008";
 }
-.icon-topic-sports:before {
+.icon-significance:before {
   content: "\e009";
 }
-.icon-topic-sound:before {
+.icon-sexuality:before {
   content: "\e00a";
 }
-.icon-topic-social:before {
+.icon-science:before {
   content: "\e00b";
 }
-.icon-topic-smell:before {
+.icon-perception:before {
   content: "\e00c";
 }
-.icon-topic-slang:before {
+.icon-people:before {
   content: "\e00d";
 }
-.icon-topic-significance:before {
+.icon-office:before {
   content: "\e00e";
 }
-.icon-topic-sexuality:before {
+.icon-ocean:before {
   content: "\e00f";
 }
-.icon-topic-science:before {
+.icon-objects:before {
   content: "\e010";
 }
-.icon-topic-psychological:before {
+.icon-numbers:before {
   content: "\e011";
 }
-.icon-topic-posession:before {
+.icon-legal:before {
   content: "\e012";
 }
-.icon-topic-politics:before {
+.icon-internet:before {
   content: "\e013";
 }
-.icon-topic-places:before {
+.icon-intelligence:before {
   content: "\e014";
 }
-.icon-topic-philosophy:before {
+.icon-hygiene:before {
   content: "\e015";
 }
-.icon-topic-perception:before {
+.icon-humor:before {
   content: "\e016";
 }
-.icon-topic-people:before {
+.icon-home:before {
   content: "\e017";
 }
-.icon-topic-office:before {
+.icon-exercise:before {
   content: "\e018";
 }
-.icon-topic-objects:before {
+.icon-events:before {
   content: "\e019";
 }
-.icon-topic-numbers:before {
+.icon-entertainment:before {
   content: "\e01a";
 }
-.icon-topic-news:before {
+.icon-education:before {
   content: "\e01b";
 }
-.icon-topic-nature:before {
+.icon-drugs:before {
   content: "\e01c";
 }
-.icon-topic-names:before {
+.icon-deception:before {
   content: "\e01d";
 }
-.icon-topic-music:before {
+.icon-body:before {
   content: "\e01e";
 }
-.icon-topic-movement:before {
+.icon-art:before {
   content: "\e01f";
 }
-.icon-topic-moral:before {
+.icon-architecture:before {
   content: "\e020";
 }
-.icon-topic-medicine:before {
+.icon-animals:before {
   content: "\e021";
 }
-.icon-topic-measurement:before {
+.icon-alcohol:before {
   content: "\e022";
 }
-.icon-topic-love:before {
+.icon-agesvg:before {
   content: "\e023";
 }
-.icon-topic-legal:before {
+.icon-transportation:before {
   content: "\e024";
 }
-.icon-topic-internet:before {
+.icon-touch:before {
   content: "\e025";
 }
-.icon-topic-intelligence:before {
+.icon-time:before {
   content: "\e026";
 }
-.icon-topic-hygiene:before {
+.icon-technology:before {
   content: "\e027";
 }
-.icon-topic-humor:before {
+.icon-talking:before {
   content: "\e028";
 }
-.icon-topic-home:before {
+.icon-sports:before {
   content: "\e029";
 }
-.icon-topic-health:before {
+.icon-sound:before {
   content: "\e02a";
 }
-.icon-topic-gibberish:before {
+.icon-social:before {
   content: "\e02b";
 }
-.icon-topic-gender:before {
+.icon-romance:before {
   content: "\e02c";
 }
-.icon-topic-games:before {
+.icon-religion:before {
   content: "\e02d";
 }
-.icon-topic-food:before {
+.icon-psychological:before {
   content: "\e02e";
 }
-.icon-topic-financial:before {
+.icon-posession:before {
   content: "\e02f";
 }
-.icon-topic-feeling:before {
+.icon-politics:before {
   content: "\e030";
 }
-.icon-topic-family:before {
+.icon-places:before {
   content: "\e031";
 }
-.icon-topic-exercise:before {
+.icon-philosophy:before {
   content: "\e032";
 }
-.icon-topic-education:before {
+.icon-performing:before {
   content: "\e033";
 }
-.icon-topic-drugs:before {
+.icon-news:before {
   content: "\e034";
 }
-.icon-topic-culture:before {
+.icon-nature:before {
   content: "\e035";
 }
-.icon-topic-crime:before {
+.icon-names:before {
   content: "\e036";
 }
-.icon-topic-companies:before {
+.icon-music:before {
   content: "\e037";
 }
-.icon-topic-common:before {
+.icon-movement:before {
   content: "\e038";
 }
-.icon-topic-colors:before {
+.icon-moral:before {
   content: "\e039";
 }
-.icon-topic-clothing:before {
+.icon-medicine:before {
   content: "\e03a";
 }
-.icon-topic-challenges:before {
+.icon-measurement:before {
   content: "\e03b";
 }
-.icon-topic-caffeine:before {
+.icon-health:before {
   content: "\e03c";
 }
-.icon-topic-architecture:before {
+.icon-gibberish:before {
   content: "\e03d";
 }
-.icon-topic-animals:before {
+.icon-gender:before {
   content: "\e03e";
 }
-.icon-topic-alcohol:before {
+.icon-games:before {
   content: "\e03f";
 }
-.icon-topic-age:before {
+.icon-food:before {
   content: "\e040";
 }
-.icon-topic-deception:before {
+.icon-financial:before {
   content: "\e041";
+}
+.icon-feeling:before {
+  content: "\e042";
+}
+.icon-family:before {
+  content: "\e043";
+}
+.icon-culture:before {
+  content: "\e044";
+}
+.icon-crime:before {
+  content: "\e045";
+}
+.icon-companies:before {
+  content: "\e046";
+}
+.icon-common:before {
+  content: "\e047";
+}
+.icon-color:before {
+  content: "\e048";
+}
+.icon-clothing:before {
+  content: "\e049";
+}
+.icon-challenges:before {
+  content: "\e04a";
+}
+.icon-caffeine:before {
+  content: "\e04b";
 }
 /*
 * Skeleton V1.2
@@ -4937,10 +4991,10 @@ label span.form_error {
 /* Tablet (Portrait) Design for a width of 768px ================================================== */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .container {
+    width: 728px;
     position: relative;
     top: 45px;
     left: 0px;
-    width: 768px;
   }
   .container .column,
   .container .columns {
@@ -5011,13 +5065,13 @@ label span.form_error {
     width: 748px;
   }
   .container .one-third.column {
-    width: 236px;
+    width: 220px;
   }
   .container .two-thirds.column {
-    width: 492px;
+    width: 460px;
   }
   .container .half.column {
-    width: 374px;
+    width: 350px;
   }
   /* Offsets */
   .container .offset-by-one {
@@ -5209,7 +5263,7 @@ label span.form_error {
   float: right;
 }
 .text-left {
-  text-align: center;
+  text-align: left;
 }
 .text-center {
   text-align: center;
@@ -6349,10 +6403,12 @@ span.strong-experience-date {
     -ms-filter: none;
   }
 }
-/*
-	Anything smaller than standard 960 on a device 
-	USE LATER for SUPER conditional
-*/
-@media only screen and (max-width: 959px) and (max-device-width: 1000px) {
-  
+/* Ipad Stuff */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  img {
+    width: 85%;
+  }
+  img.index-art-top-2 {
+    width: 75%;
+  }
 }

@@ -1,3 +1,18 @@
+/* Emoome - style.css
+   All code has been written or arranged by Brennan Novak
+    - Skeleton.css Boilerplate by Dave Gamache http://www.getskeleton.com
+    - Animate.css Transitions by Dan Eden http://daneden.me/animate
+   
+   Icon Credits
+	- Microchip designed by Márcio Duarte from The Noun Project
+	- Stage designed by Juan Pablo Bravo from The Noun Project
+	- Television from The Noun Project
+	- Beach designed by Garrett Dash Nelson from The Noun Project
+	- Dolphin designed by Luis Martins from The Noun Project
+	- Fish designed by Jens Tärning from The Noun Project
+	- Religion designed by Renee Ramsey-Passmore from The Noun Project
+*/
+
 @import "mixins/elements.less";
 @import "mixins/shapes.less";
 
@@ -28,19 +43,16 @@
 /* Web Only */
 @media only screen and (min-width: 1025px) {
 	@import "blog.less";
-
 	@import "web/visualize-language.less";
 	@import "web/visualize-search.less";
 	@import "web/qtip2.less";
 }
 
 
-/*
-	Anything smaller than standard 960 on a device 
-	USE LATER for SUPER conditional
-*/
-@media only screen and (max-width: 959px) and (max-device-width: 1000px) {
+/* Ipad Stuff */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
 
-
+	img { width: 85%; }	
+	img.index-art-top-2 { width: 75%; }
 
 }
