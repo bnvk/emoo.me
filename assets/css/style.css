@@ -11,6 +11,9 @@
 	- Dolphin designed by Luis Martins from The Noun Project
 	- Fish designed by Jens Tärning from The Noun Project
 	- Religion designed by Renee Ramsey-Passmore from The Noun Project
+	- Typewriter designed by conoci from The Noun Project
+	- Paper designed by John Caserta from The Noun Project
+	- Protest designed by Juan Pablo Bravo from The Noun Project
 */
 /*---------------------------------------------------
     LESS Elements 0.9
@@ -194,82 +197,84 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-topic-topic-work,
-.icon-topic-weapons,
-.icon-topic-violence,
-.icon-topic-urban,
-.icon-topic-undecided,
-.icon-topic-travel,
-.icon-topic-smell,
-.icon-topic-sleep,
-.icon-topic-slang,
-.icon-topic-significance,
-.icon-topic-sexuality,
-.icon-topic-science,
-.icon-topic-perception,
-.icon-topic-people,
-.icon-topic-office,
-.icon-topic-ocean,
-.icon-topic-objects,
-.icon-topic-numbers,
-.icon-topic-legal,
-.icon-topic-internet,
-.icon-topic-intelligence,
-.icon-topic-hygiene,
-.icon-topic-humor,
-.icon-topic-home,
-.icon-topic-exercise,
-.icon-topic-events,
-.icon-topic-entertainment,
-.icon-topic-education,
-.icon-topic-drugs,
-.icon-topic-deception,
-.icon-topic-body,
-.icon-topic-art,
-.icon-topic-architecture,
-.icon-topic-animals,
-.icon-topic-alcohol,
-.icon-topic-agesvg,
-.icon-topic-transportation,
-.icon-topic-touch,
-.icon-topic-time,
-.icon-topic-technology,
-.icon-topic-talking,
-.icon-topic-sports,
-.icon-topic-sound,
-.icon-topic-social,
-.icon-topic-romance,
-.icon-topic-religion,
-.icon-topic-psychological,
-.icon-topic-posession,
-.icon-topic-politics,
-.icon-topic-places,
-.icon-topic-philosophy,
-.icon-topic-performing,
-.icon-topic-news,
-.icon-topic-nature,
-.icon-topic-names,
-.icon-topic-music,
-.icon-topic-movement,
-.icon-topic-moral,
-.icon-topic-medicine,
-.icon-topic-measurement,
-.icon-topic-health,
-.icon-topic-gibberish,
-.icon-topic-gender,
-.icon-topic-games,
-.icon-topic-food,
-.icon-topic-financial,
-.icon-topic-feeling,
-.icon-topic-family,
-.icon-topic-culture,
-.icon-topic-crime,
-.icon-topic-companies,
-.icon-topic-common,
-.icon-topic-color,
-.icon-topic-clothing,
-.icon-topic-challenges,
-.icon-topic-caffeine {
+.icon-topics-writing,
+.icon-topics-work,
+.icon-topics-weapons,
+.icon-topics-violence,
+.icon-topics-urban,
+.icon-topics-undecided,
+.icon-topics-travel,
+.icon-topics-transportation,
+.icon-topics-touch,
+.icon-topics-time,
+.icon-topics-technology,
+.icon-topics-talking,
+.icon-topics-sports,
+.icon-topics-sound,
+.icon-topics-social,
+.icon-topics-smell,
+.icon-topics-sleep,
+.icon-topics-slang,
+.icon-topics-significance,
+.icon-topics-sexuality,
+.icon-topics-science,
+.icon-topics-romance,
+.icon-topics-religion,
+.icon-topics-psychological,
+.icon-topics-posession,
+.icon-topics-politics,
+.icon-topics-places,
+.icon-topics-philosophy,
+.icon-topics-performing,
+.icon-topics-perception,
+.icon-topics-people,
+.icon-topics-office,
+.icon-topics-ocean,
+.icon-topics-objects,
+.icon-topics-numbers,
+.icon-topics-news,
+.icon-topics-nature,
+.icon-topics-names,
+.icon-topics-music,
+.icon-topics-movement,
+.icon-topics-moral,
+.icon-topics-medicine,
+.icon-topics-measurement,
+.icon-topics-legal,
+.icon-topics-internet,
+.icon-topics-intelligence,
+.icon-topics-hygiene,
+.icon-topics-humor,
+.icon-topics-home,
+.icon-topics-health,
+.icon-topics-gibberish,
+.icon-topics-gender,
+.icon-topics-games,
+.icon-topics-food,
+.icon-topics-financial,
+.icon-topics-feeling,
+.icon-topics-family,
+.icon-topics-exercise,
+.icon-topics-events,
+.icon-topics-entertainment,
+.icon-topics-education,
+.icon-topics-drugs,
+.icon-topics-deception,
+.icon-topics-culture,
+.icon-topics-crime,
+.icon-topics-companies,
+.icon-topics-common,
+.icon-topics-color,
+.icon-topics-clothing,
+.icon-topics-challenges,
+.icon-topics-caffeine,
+.icon-topics-body,
+.icon-topics-art,
+.icon-topics-architecture,
+.icon-topics-animals,
+.icon-topics-alcohol,
+.icon-topics-age,
+.icon-topics-activism {
   font-family: 'Icon-Topics';
   speak: none;
   font-style: normal;
@@ -279,233 +284,239 @@ you can use the generic selector below, but it's slower:
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
-.icon-topic-work:before {
-  content: "\e000";
+.icon-topics-writing:before {
+  content: "\21";
 }
-.icon-topic-weapons:before {
-  content: "\e001";
+.icon-topics-work:before {
+  content: "\22";
 }
-.icon-topic-violence:before {
-  content: "\e002";
+.icon-topics-weapons:before {
+  content: "\23";
 }
-.icon-topic-urban:before {
-  content: "\e003";
+.icon-topics-violence:before {
+  content: "\24";
 }
-.icon-topic-undecided:before {
-  content: "\e004";
+.icon-topics-urban:before {
+  content: "\25";
 }
-.icon-topic-travel:before {
-  content: "\e005";
+.icon-topics-undecided:before {
+  content: "\26";
 }
-.icon-topic-smell:before {
-  content: "\e006";
+.icon-topics-travel:before {
+  content: "\27";
 }
-.icon-topic-sleep:before {
-  content: "\e007";
+.icon-topics-transportation:before {
+  content: "\28";
 }
-.icon-topic-slang:before {
-  content: "\e008";
+.icon-topics-touch:before {
+  content: "\29";
 }
-.icon-topic-significance:before {
-  content: "\e009";
+.icon-topics-time:before {
+  content: "\2a";
 }
-.icon-topic-sexuality:before {
-  content: "\e00a";
+.icon-topics-technology:before {
+  content: "\2b";
 }
-.icon-topic-science:before {
-  content: "\e00b";
+.icon-topics-talking:before {
+  content: "\2c";
 }
-.icon-topic-perception:before {
-  content: "\e00c";
+.icon-topics-sports:before {
+  content: "\2d";
 }
-.icon-topic-people:before {
-  content: "\e00d";
+.icon-topics-sound:before {
+  content: "\2e";
 }
-.icon-topic-office:before {
-  content: "\e00e";
+.icon-topics-social:before {
+  content: "\2f";
 }
-.icon-topic-ocean:before {
-  content: "\e00f";
+.icon-topics-smell:before {
+  content: "\30";
 }
-.icon-topic-objects:before {
-  content: "\e010";
+.icon-topics-sleep:before {
+  content: "\31";
 }
-.icon-topic-numbers:before {
-  content: "\e011";
+.icon-topics-slang:before {
+  content: "\32";
 }
-.icon-topic-legal:before {
-  content: "\e012";
+.icon-topics-significance:before {
+  content: "\33";
 }
-.icon-topic-internet:before {
-  content: "\e013";
+.icon-topics-sexuality:before {
+  content: "\34";
 }
-.icon-topic-intelligence:before {
-  content: "\e014";
+.icon-topics-science:before {
+  content: "\35";
 }
-.icon-topic-hygiene:before {
-  content: "\e015";
+.icon-topics-romance:before {
+  content: "\36";
 }
-.icon-topic-humor:before {
-  content: "\e016";
+.icon-topics-religion:before {
+  content: "\37";
 }
-.icon-topic-home:before {
-  content: "\e017";
+.icon-topics-psychological:before {
+  content: "\38";
 }
-.icon-topic-exercise:before {
-  content: "\e018";
+.icon-topics-posession:before {
+  content: "\39";
 }
-.icon-topic-events:before {
-  content: "\e019";
+.icon-topics-politics:before {
+  content: "\3a";
 }
-.icon-topic-entertainment:before {
-  content: "\e01a";
+.icon-topics-places:before {
+  content: "\3b";
 }
-.icon-topic-education:before {
-  content: "\e01b";
+.icon-topics-philosophy:before {
+  content: "\3c";
 }
-.icon-topic-drugs:before {
-  content: "\e01c";
+.icon-topics-performing:before {
+  content: "\3d";
 }
-.icon-topic-deception:before {
-  content: "\e01d";
+.icon-topics-perception:before {
+  content: "\3e";
 }
-.icon-topic-body:before {
-  content: "\e01e";
+.icon-topics-people:before {
+  content: "\3f";
 }
-.icon-topic-art:before {
-  content: "\e01f";
+.icon-topics-office:before {
+  content: "\40";
 }
-.icon-topic-architecture:before {
-  content: "\e020";
+.icon-topics-ocean:before {
+  content: "\41";
 }
-.icon-topic-animals:before {
-  content: "\e021";
+.icon-topics-objects:before {
+  content: "\42";
 }
-.icon-topic-alcohol:before {
-  content: "\e022";
+.icon-topics-numbers:before {
+  content: "\43";
 }
-.icon-topic-agesvg:before {
-  content: "\e023";
+.icon-topics-news:before {
+  content: "\44";
 }
-.icon-topic-transportation:before {
-  content: "\e024";
+.icon-topics-nature:before {
+  content: "\45";
 }
-.icon-topic-touch:before {
-  content: "\e025";
+.icon-topics-names:before {
+  content: "\46";
 }
-.icon-topic-time:before {
-  content: "\e026";
+.icon-topics-music:before {
+  content: "\47";
 }
-.icon-topic-technology:before {
-  content: "\e027";
+.icon-topics-movement:before {
+  content: "\48";
 }
-.icon-topic-talking:before {
-  content: "\e028";
+.icon-topics-moral:before {
+  content: "\49";
 }
-.icon-topic-sports:before {
-  content: "\e029";
+.icon-topics-medicine:before {
+  content: "\4a";
 }
-.icon-topic-sound:before {
-  content: "\e02a";
+.icon-topics-measurement:before {
+  content: "\4b";
 }
-.icon-topic-social:before {
-  content: "\e02b";
+.icon-topics-legal:before {
+  content: "\4c";
 }
-.icon-topic-romance:before {
-  content: "\e02c";
+.icon-topics-internet:before {
+  content: "\4d";
 }
-.icon-topic-religion:before {
-  content: "\e02d";
+.icon-topics-intelligence:before {
+  content: "\4e";
 }
-.icon-topic-psychological:before {
-  content: "\e02e";
+.icon-topics-hygiene:before {
+  content: "\4f";
 }
-.icon-topic-posession:before {
-  content: "\e02f";
+.icon-topics-humor:before {
+  content: "\50";
 }
-.icon-topic-politics:before {
-  content: "\e030";
+.icon-topics-home:before {
+  content: "\51";
 }
-.icon-topic-places:before {
-  content: "\e031";
+.icon-topics-health:before {
+  content: "\52";
 }
-.icon-topic-philosophy:before {
-  content: "\e032";
+.icon-topics-gibberish:before {
+  content: "\53";
 }
-.icon-topic-performing:before {
-  content: "\e033";
+.icon-topics-gender:before {
+  content: "\54";
 }
-.icon-topic-news:before {
-  content: "\e034";
+.icon-topics-games:before {
+  content: "\55";
 }
-.icon-topic-nature:before {
-  content: "\e035";
+.icon-topics-food:before {
+  content: "\56";
 }
-.icon-topic-names:before {
-  content: "\e036";
+.icon-topics-financial:before {
+  content: "\57";
 }
-.icon-topic-music:before {
-  content: "\e037";
+.icon-topics-feeling:before {
+  content: "\58";
 }
-.icon-topic-movement:before {
-  content: "\e038";
+.icon-topics-family:before {
+  content: "\59";
 }
-.icon-topic-moral:before {
-  content: "\e039";
+.icon-topics-exercise:before {
+  content: "\5a";
 }
-.icon-topic-medicine:before {
-  content: "\e03a";
+.icon-topics-events:before {
+  content: "\5b";
 }
-.icon-topic-measurement:before {
-  content: "\e03b";
+.icon-topics-entertainment:before {
+  content: "\5c";
 }
-.icon-topic-health:before {
-  content: "\e03c";
+.icon-topics-education:before {
+  content: "\5d";
 }
-.icon-topic-gibberish:before {
-  content: "\e03d";
+.icon-topics-drugs:before {
+  content: "\5e";
 }
-.icon-topic-gender:before {
-  content: "\e03e";
+.icon-topics-deception:before {
+  content: "\5f";
 }
-.icon-topic-games:before {
-  content: "\e03f";
+.icon-topics-culture:before {
+  content: "\60";
 }
-.icon-topic-food:before {
-  content: "\e040";
+.icon-topics-crime:before {
+  content: "\61";
 }
-.icon-topic-financial:before {
-  content: "\e041";
+.icon-topics-companies:before {
+  content: "\62";
 }
-.icon-topic-feeling:before {
-  content: "\e042";
+.icon-topics-common:before {
+  content: "\63";
 }
-.icon-topic-family:before {
-  content: "\e043";
+.icon-topics-color:before {
+  content: "\64";
 }
-.icon-topic-culture:before {
-  content: "\e044";
+.icon-topics-clothing:before {
+  content: "\65";
 }
-.icon-topic-crime:before {
-  content: "\e045";
+.icon-topics-challenges:before {
+  content: "\66";
 }
-.icon-topic-companies:before {
-  content: "\e046";
+.icon-topics-caffeine:before {
+  content: "\67";
 }
-.icon-topic-common:before {
-  content: "\e047";
+.icon-topics-body:before {
+  content: "\68";
 }
-.icon-topic-color:before {
-  content: "\e048";
+.icon-topics-art:before {
+  content: "\69";
 }
-.icon-topic-clothing:before {
-  content: "\e049";
+.icon-topics-architecture:before {
+  content: "\6a";
 }
-.icon-topic-challenges:before {
-  content: "\e04a";
+.icon-topics-animals:before {
+  content: "\6b";
 }
-.icon-topic-caffeine:before {
-  content: "\e04b";
+.icon-topics-alcohol:before {
+  content: "\6c";
+}
+.icon-topics-age:before {
+  content: "\6d";
+}
+.icon-topics-activism:before {
+  content: "\6e";
 }
 /*
 * Skeleton V1.2

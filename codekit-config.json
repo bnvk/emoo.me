@@ -70,18 +70,16 @@
       "outputAbbreviatedPath" : "\/assets\/js\/models\/feeling-model-min.js",
       "fileType" : 64
     },
-    "\/assets\/less\/base\/_images.less" : {
+    "\/assets\/js\/plugins\/jquery.validator.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/less\/base\/_images.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/assets\/less\/css\/_images.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.validator.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.validator-min.js",
+      "fileType" : 64
     },
     "\/assets\/images\/index-art-top-2.png" : {
       "ignoreWasSetByUser" : 0,
@@ -94,15 +92,15 @@
       "initialSize" : 5098,
       "fileType" : 8192
     },
-    "\/assets\/less\/base\/_links.less" : {
+    "\/assets\/less\/base\/_images.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/less\/base\/_links.less",
+      "inputAbbreviatedPath" : "\/assets\/less\/base\/_images.less",
       "outputStyle" : 0,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/assets\/less\/css\/_links.css",
+      "outputAbbreviatedPath" : "\/assets\/less\/css\/_images.css",
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
@@ -164,16 +162,18 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/assets\/js\/plugins\/jquery.validator.js" : {
+    "\/assets\/less\/base\/_links.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.validator.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.validator-min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/assets\/less\/base\/_links.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/assets\/less\/css\/_links.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/assets\/less\/layout_mobile.less" : {
       "ignoreWasSetByUser" : 0,
@@ -342,26 +342,26 @@
       "initialSize" : 30328,
       "fileType" : 8192
     },
-    "\/assets\/js\/views\/lightbox-view.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/js\/views\/lightbox-view.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/js\/views\/lightbox-view-min.js",
-      "fileType" : 64
-    },
-    "\/assets\/js\/plugins-web.js" : {
+    "\/assets\/images\/index-art-top-1.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
-      "outputStyle" : 1,
+      "inputAbbreviatedPath" : "\/assets\/images\/index-art-top-1.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/images\/index-art-top-1.png",
+      "initialSize" : 13958,
+      "fileType" : 8192
+    },
+    "\/assets\/js\/emoome.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/js\/emoome.js",
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/js\/plugins-web-min.js",
+      "outputAbbreviatedPath" : "\/assets\/js\/emoome-min.js",
       "fileType" : 64
     },
     "\/assets\/js\/libs.js" : {
@@ -410,17 +410,6 @@
       "outputAbbreviatedPath" : "\/assets\/js\/views\/content-view-min.js",
       "fileType" : 64
     },
-    "\/assets\/js\/dataviz.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/js\/dataviz.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/js\/dataviz-min.js",
-      "fileType" : 64
-    },
     "\/assets\/less\/blog.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -433,6 +422,17 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/assets\/js\/views\/lightbox-view.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/js\/views\/lightbox-view.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/js\/views\/lightbox-view-min.js",
+      "fileType" : 64
     },
     "\/assets\/less\/web\/visualize-language.less" : {
       "ignoreWasSetByUser" : 0,
@@ -458,15 +458,15 @@
       "outputAbbreviatedPath" : "\/assets\/js\/plugins-mobile-min-min.js",
       "fileType" : 64
     },
-    "\/assets\/js\/emoome.js" : {
+    "\/assets\/js\/dataviz.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/js\/emoome.js",
-      "outputStyle" : 0,
+      "inputAbbreviatedPath" : "\/assets\/js\/dataviz.js",
+      "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/js\/emoome-min.js",
+      "outputAbbreviatedPath" : "\/assets\/js\/dataviz-min.js",
       "fileType" : 64
     },
     "\/thumbnail.jpg" : {
@@ -480,16 +480,16 @@
       "initialSize" : 4662,
       "fileType" : 4096
     },
-    "\/assets\/images\/index-art-top-1.png" : {
+    "\/assets\/js\/plugins-web.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/images\/index-art-top-1.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/images\/index-art-top-1.png",
-      "initialSize" : 13958,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/js\/plugins-web-min.js",
+      "fileType" : 64
     },
     "\/assets\/less\/base\/_icons_topics.less" : {
       "ignoreWasSetByUser" : 0,
@@ -640,17 +640,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/assets\/icons\/apple-touch-icon-precomposed.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/icons\/apple-touch-icon-precomposed.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/assets\/icons\/apple-touch-icon-precomposed.png",
-      "initialSize" : 3172,
-      "fileType" : 8192
-    },
     "\/assets\/js\/plugins\/auth.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -661,6 +650,17 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/assets\/js\/plugins\/auth-min.js",
       "fileType" : 64
+    },
+    "\/assets\/icons\/apple-touch-icon-precomposed.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/icons\/apple-touch-icon-precomposed.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/assets\/icons\/apple-touch-icon-precomposed.png",
+      "initialSize" : 3172,
+      "fileType" : 8192
     },
     "\/assets\/images\/website-logo.png" : {
       "ignoreWasSetByUser" : 0,
@@ -799,19 +799,6 @@
       "outputAbbreviatedPath" : "\/assets\/js\/plugins\/iscroll-min.js",
       "fileType" : 64
     },
-    "\/assets\/less\/base\/_base.less" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/less\/base\/_base.less",
-      "outputStyle" : 0,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/assets\/less\/css\/_base.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
-    },
     "\/assets\/js\/dataviz\/g.raphael.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -831,6 +818,19 @@
       "inputAbbreviatedPath" : "\/partials\/web_visualize.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/assets\/less\/base\/_base.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/less\/base\/_base.less",
+      "outputStyle" : 0,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/assets\/less\/css\/_base.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/assets\/images\/large_no_profile.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1246,15 +1246,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/partials\/global_insights.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/partials\/global_insights.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/assets\/js\/visualize.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1266,16 +1257,14 @@
       "outputAbbreviatedPath" : "\/assets\/js\/visualize-min.js",
       "fileType" : 64
     },
-    "\/assets\/js\/dataviz\/raphael.js" : {
+    "\/partials\/global_insights.php" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/assets\/js\/dataviz\/raphael.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/assets\/js\/dataviz\/raphael-min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/partials\/global_insights.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/assets\/images\/index-art-top-3.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1287,6 +1276,17 @@
       "outputAbbreviatedPath" : "\/assets\/images\/index-art-top-3.png",
       "initialSize" : 34975,
       "fileType" : 8192
+    },
+    "\/assets\/js\/dataviz\/raphael.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/assets\/js\/dataviz\/raphael.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/assets\/js\/dataviz\/raphael-min.js",
+      "fileType" : 64
     },
     "\/assets\/icons\/icon-32.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1440,195 +1440,6 @@
     {
       "type" : 1,
       "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/libs\/modernizr.custom.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/libs.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/libs\/underscore.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/libs.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/libs\/backbone.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/libs.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/dataviz\/raphael.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/dataviz.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/dataviz\/g.raphael.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/dataviz.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/dataviz\/g.bar.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/dataviz.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 3,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/dataviz\/g.dot.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/dataviz.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 4,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/dataviz\/g.line.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/dataviz.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 5,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/dataviz\/g.pie.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/dataviz.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/functions.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/auth.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.jkey.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 3,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.timers.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 4,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.ui.map.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 5,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.url.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 6,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.validator.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-mobile.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/functions.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/auth.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.jkey.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 3,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.qtip.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 4,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.timers.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 5,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.ui.map.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 6,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.url.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 7,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.validator.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/views\/visualize-language-view.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/visualize.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/views\/visualize-search-view.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/visualize.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 2,
-      "linkedFileAbbreviatedPath" : "\/assets\/js\/routers\/visualize-router.js",
-      "baseFileAbbreviatedPath" : "\/assets\/js\/visualize.js",
-      "followForSyntaxChecking" : 1
-    },
-    {
-      "type" : 1,
-      "position" : 0,
       "linkedFileAbbreviatedPath" : "\/assets\/js\/models\/emoome-settings-model.js",
       "baseFileAbbreviatedPath" : "\/assets\/js\/emoome.js",
       "followForSyntaxChecking" : 1
@@ -1729,6 +1540,195 @@
       "position" : 14,
       "linkedFileAbbreviatedPath" : "\/assets\/js\/routers\/global-router.js",
       "baseFileAbbreviatedPath" : "\/assets\/js\/emoome.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/dataviz\/raphael.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/dataviz.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/dataviz\/g.raphael.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/dataviz.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/dataviz\/g.bar.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/dataviz.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 3,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/dataviz\/g.dot.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/dataviz.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 4,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/dataviz\/g.line.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/dataviz.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 5,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/dataviz\/g.pie.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/dataviz.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/functions.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/auth.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.jkey.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 3,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.qtip.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 4,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.timers.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 5,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.ui.map.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 6,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.url.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 7,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.validator.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-web.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/functions.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/auth.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.jkey.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 3,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.timers.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 4,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.ui.map.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 5,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.url.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 6,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/plugins\/jquery.validator.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/plugins-mobile.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/libs\/modernizr.custom.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/libs.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/libs\/underscore.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/libs.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/libs\/backbone.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/libs.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/views\/visualize-language-view.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/visualize.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/views\/visualize-search-view.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/visualize.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/assets\/js\/routers\/visualize-router.js",
+      "baseFileAbbreviatedPath" : "\/assets\/js\/visualize.js",
       "followForSyntaxChecking" : 1
     }
   ],
